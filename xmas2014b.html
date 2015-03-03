@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>X-Mas 2014</title>
+        <link rel="shortcut icon" href="http://favicon-generator.org/favicons/2014-11-06/2be887e441bf89e7bfcbe0abf94f6d37.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta content="http://closure-compiler.appspot.com/home" >
+        <meta content="http://www.w3schools.com/tags/ref_canvas.asp" >
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!--<script src="js/easeljs/createjs-2013.12.12.min.js"></script>-->
+        <script src="js/easeljs/easeljs-0.7.0.min.js"></script>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            a{
+                text-decoration: none;
+                color: #0088cc;
+            }
+            ol{
+                color: #DA8028;
+            }
+            .canvas{
+                background: #048CAD;
+            }
+            table{
+                border-collapse: collapse;
+                background: #E6E9F5;
+            }
+            table td, talbe td{
+                border: 1px solid #fff;
+                padding: 5px 12px;
+                vertical-align: top;
+            }
+            .crosslink{
+                color: #52ABF2;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas width="1366" height="150" id="canvas" class="canvas"></canvas>
+
+        <script>
+
+            //snowflake particles
+            var mp = 25; //max particles
+            var angle = 0;
+
+            var container;
+            var captureContainers;
+            var captureIndex;
+            var canvas, stage, width, height;
+
+            function init() {
+                canvas = document.getElementById('canvas');
+                width = canvas.width;
+                height = canvas.height;
+                stage = new createjs.Stage(canvas);
+
+                _snowfall();
+
+
+//                helloworld();
+
+//                var c = _circle();
+//                stage.addChild(c);
+
+                stage.update();
+            }
+
+            function helloworld() {
+                for (var i = 0; i < 25; i++) {
+                    var text = new createjs.Text('Here I Am', '36px Arial', '#940000');
+                    text.x = Math.floor(Math.random() * width);
+                    text.y = Math.floor(Math.random() * height);
+                    text.rotation = Math.floor(Math.random() * 360);
+                    text.alpha = Math.random() * 1;
+                    text.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                    stage.addChild(text);
+                    stage.update();
+                }
+            }
+
+            function _circle() {
+                var circle = new createjs.Shape();
+                circle.graphics.f('#FF9900').dc(0, 0, 50);
+                circle.x = width / 2;
+                circle.y = height / 2;
+
+                return circle;
+            }
+
+            function _layer1() {
+                var img = new createjs.Bitmap('banner/xmas2014/h-001@1.png');
+                stage.addChild(img);
+                stage.update();
+            }
+
+            function _snowfall() {
+                container = new createjs.Container();
+                stage.addChild(container);
+
+                captureContainers = [];
+                captureIndex = 0;
+
+                for (var i = 0; i < mp; i++) {
+                    var flakes = new createjs.Shape();
+                    flakes.graphics.f(createjs.Graphics.getHSL(0, 0, 255, 0.8)).dc(Math.random() * width, Math.random() * height, Math.random() * 4 + 1, 0, Math.PI * 2);
+                    flakes.y = -100;
+                    container.addChild(flakes);
+                }
+                
+
+                for (i = 0; i < mp; i++) {
+                    var captureContainer = new createjs.Container();
+                    captureContainer.cache(0, 0, width, height);
+                    captureContainers.push(captureContainer);
+                }
+
+                // start the tick and point it at the window so we can do some work before updating the stage:
+                createjs.Ticker.addEventListener("tick", tick);
+                createjs.Ticker.setFPS(30);
+            }
+
+            function tick(event) {
+                var w = canvas.width;
+                var h = canvas.height;
+                var l = container.getNumChildren();
+
+                captureIndex = (captureIndex + 1) % captureContainers.length;
+                stage.removeChildAt(0);
+                var captureContainer = captureContainers[captureIndex];
+                stage.addChildAt(captureContainer, 0);
+                captureContainer.addChild(container);
+
+                // iterate through all the children and move them according to their velocity:
+                for (var i = 0; i < l; i++) {
+                    var flakes = container.getChildAt(i);
+                    if (flakes.y < -50) {
+                        flakes._x = Math.random() * w;
+                        flakes.y = h * (1 + Math.random()) + 50;
+                        flakes.perX = (1 + Math.random()) * h;
+                        flakes.offX = Math.random() * h;
+                        flakes.ampX = flakes.perX * 0.1 * (0.2 + Math.random());
+                        flakes.velY = -Math.random() * 2 - 2;
+                        flakes.scaleX = flakes.scaleY = Math.random() + 1;
+                        flakes.rotation = Math.random() * 40 - 20;
+                        flakes.alpha = Math.random();
+                    }
+                    flakes.y += flakes.velY;
+                    flakes.x = flakes._x + Math.cos((flakes.offX + flakes.y) / flakes.perX * Math.PI * 2) * flakes.ampX;
+                }
+
+                captureContainer.updateCache("source-over");
+
+                // draw the updates to stage:
+                stage.update(event);
+            }
+
+            init();
+        </script>
+
+
+        <ol>
+            <li><a href="http://code.tutsplus.com/tutorials/using-createjs-easeljs--net-34840">Using CreateJS - EaselJS</a></li>
+            <li><a href="http://createjs.com/Docs/EaselJS/classes/Graphics.html">Graphics</a></li>
+            <li><a href="http://createjs.com/Docs/EaselJS/classes/Shape.html">Shape</a></li>
+            <li><a href="http://createjs.com/Docs/EaselJS/classes/Ticker.html">Ticker [There is a way to not have to repeatedly call stage.update()]</a></li>
+            <li><a href="http://createjs.com/Docs/EaselJS/classes/Text.html">Text</a></li>
+            <li><a href="http://code.tutsplus.com/courses/canvas-essentials">Canvas Essentials</a></li>
+        </ol>
+        <table>
+            <tbody><tr><td><b>Tiny</b></td><td><b>Method</b></td><td><b>Tiny</b></td><td><b>Method</b></td></tr>
+                <tr><td>mt</td><td><a class="crosslink">moveTo</a> </td>
+                    <td>lt</td> <td><a class="crosslink">lineTo</a></td></tr>
+                <tr><td>a/at</td><td><a class="crosslink">arc</a> / <a class="crosslink">arcTo</a> </td>
+                    <td>bt</td><td><a class="crosslink">bezierCurveTo</a> </td></tr>
+                <tr><td>qt</td><td><a class="crosslink">quadraticCurveTo</a> (also curveTo)</td>
+                    <td>r</td><td><a class="crosslink">rect</a> </td></tr>
+                <tr><td>cp</td><td><a class="crosslink">closePath</a> </td>
+                    <td>c</td><td><a class="crosslink">clear</a> </td></tr>
+                <tr><td>f</td><td><a class="crosslink">beginFill</a> </td>
+                    <td>lf</td><td><a class="crosslink">beginLinearGradientFill</a> </td></tr>
+                <tr><td>rf</td><td><a class="crosslink">beginRadialGradientFill</a> </td>
+                    <td>bf</td><td><a class="crosslink">beginBitmapFill</a> </td></tr>
+                <tr><td>ef</td><td><a class="crosslink">endFill</a> </td>
+                    <td>ss</td><td><a class="crosslink">setStrokeStyle</a> </td></tr>
+                <tr><td>s</td><td><a class="crosslink">beginStroke</a> </td>
+                    <td>ls</td><td><a class="crosslink">beginLinearGradientStroke</a> </td></tr>
+                <tr><td>rs</td><td><a class="crosslink">beginRadialGradientStroke</a> </td>
+                    <td>bs</td><td><a class="crosslink">beginBitmapStroke</a> </td></tr>
+                <tr><td>es</td><td><a class="crosslink">endStroke</a> </td>
+                    <td>dr</td><td><a class="crosslink">drawRect</a> </td></tr>
+                <tr><td>rr</td><td><a class="crosslink">drawRoundRect</a> </td>
+                    <td>rc</td><td><a class="crosslink">drawRoundRectComplex</a> </td></tr>
+                <tr><td>dc</td><td><a class="crosslink">drawCircle</a> </td>
+                    <td>de</td><td><a class="crosslink">drawEllipse</a> </td></tr>
+                <tr><td>dp</td><td><a class="crosslink">drawPolyStar</a> </td>
+                    <td>p</td><td><a class="crosslink">decodePath</a> </td></tr>
+            </tbody></table>
+
+    </body>
+</html>

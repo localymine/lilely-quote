@@ -1,0 +1,207 @@
+@background-cover: #F2F2F2;
+@text-color: #333;
+.gallery{
+    .bk-block{
+        div{
+            .item{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+.bk-list{
+    li{
+        .bk-front:after{
+            /*width: 0 !important;*/
+        }
+        .bk-left{
+            transform: rotate3d(0, 1, 0, -89deg);
+            /*left: -21px;*/
+        }
+        .bk-right{
+            /*left: -21px;*/
+        }
+    }
+} 
+.bk-book{
+    .bk-front{
+        div{
+            background-color: @background-cover;
+        }
+    }
+    .bk-front:after{
+        background-color: @background-cover;
+    }
+    .bk-back{
+        background-color: @background-cover;
+        p{
+            color: @text-color !important;
+        }
+    }
+    .bk-cover{
+        h2{
+            background: none;
+            color: @text-color !important;
+            left: 40px;
+            padding-top: 15px;
+            position: absolute;
+            right: 40px;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+            top: 40px;
+        }
+        h2 span:first-child{
+            font-size: 13px;
+            font-weight: 400;
+            padding-right: 20px;
+            text-transform: uppercase;
+        }
+        h2 span:last-child{
+            font-size: 26px;
+        }
+    }
+    .bk-left{
+        background-color: @background-cover;
+        h2{
+            color: @text-color !important;
+        }
+    }
+    .bk-info-holder{
+        position: absolute;
+        background: transparent;
+        .author{
+            padding-left: 0;
+            padding-right: 5px;
+        }
+        div{
+            padding-right: 20px;
+        }
+    }
+    .bk-page{
+        .bk-content{
+            background: #F2F2F2 !important;
+            padding: 0 !important;
+            bottom: 0 !important;
+            .quote-video-holder{
+                position: absolute;
+                left: 38%;
+                top: 24%;
+            }
+            .hold-hashtag-title{
+                margin-left: 0px;
+                margin-top: -20px;
+                position: absolute;
+                .hashtag-title{
+                    display: block;
+                    padding: 2px 5px;
+                    background: rgba(0,0,0,0.75);
+                    a, a:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.bk-holder{
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+.bk-bar{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: -25px;
+}
+
+.bk-s-1{
+    margin-left: 5px;
+    .book-1{
+        left: 20%;
+    }
+    .bk-info{
+        margin-left: 110px;
+    }
+}
+.bk-s-2{
+    margin-left: -3px;
+    .book-1{
+        left: 10%;
+    }
+    .bk-info{
+        margin-left: 75px;
+    }
+}
+.bk-s-3{
+    margin-left: -3px;
+    .bk-info{
+        margin-left: 25px;
+    }
+}
+.book-item-1{
+    background: url('../../img/bookshelf_01.png');
+    /*background: url('../../img/bookshelf-shadow_01.png');*/
+    background-repeat: no-repeat;
+    background-position: 0 92.5%;
+    background-size: contain;
+}
+.book-item-2{
+    background: url('../../img/bookshelf_02.png');
+    /*background: url('../../img/bookshelf-shadow_02.png');*/
+    background-repeat: no-repeat;
+    background-position: 0 92.5%;
+    background-size: contain;
+}
+.book-item-3{
+    background: url('../../img/bookshelf_03.png');
+    /*background: url('../../img/bookshelf-shadow_03.png');*/
+    background-repeat: no-repeat;
+    background-position: 0 92.5%;
+    background-size: contain;
+}
+@media (max-width: 768px) {
+    .col-xs-12{
+        .book-item-1, .book-item-2, .book-item-3{
+            background: url('../../img/bookshelf_02.png');
+            background-repeat: no-repeat;
+            background-position: 0 92.5%;
+        }
+    }
+    .bk-s-1, .bk-s-2, .bk-s-3{
+        margin-left: 0 !important;
+        .book-1{
+            left: -5%;
+        }
+        .bk-info{
+            margin-left: -15px !important;
+        }
+    }
+    .book-gallery{
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+    }
+}
+
+
+.trans-book.hide, .trans-book-back.hide{
+    display: none;
+}
+
+.bk-info {
+    text-align: center;
+    margin-left: -20px;
+    button{
+        background: transparent !important;
+        box-shadow: none;
+    }
+    button:active{
+        box-shadow: none;
+    }
+    button.bk-active{
+        box-shadow: none;
+    }
+}
+
+.bk-bookangle{
+    transform: rotate3d(0,1,0,35deg);
+}

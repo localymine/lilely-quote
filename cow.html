@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Cow</title>
+        <link rel="shortcut icon" href="http://favicon-generator.org/favicons/2014-11-06/2be887e441bf89e7bfcbe0abf94f6d37.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="http://closure-compiler.appspot.com/home" >
+        <script src="js/cavasengine/canvasengine-1.3.2.all.min.js"></script>
+        <script src="js/cavasengine/hammer.min.js"></script>
+    </head>
+    <body>
+        <canvas height="234" width="437" id="canvas" class="canvas"></canvas>
+        <script>
+            var canvas = CE.defines("canvas").
+                    extend([Input,Animation,Text]).
+                    ready(function() {
+                        canvas.Scene.call("MyScene");
+                    });
+
+            var direction = false;
+
+            canvas.Scene.new({
+                name: "MyScene",
+                materials: {
+                    // Usually put relatives links
+                    images: {
+                        "background": "banner/test/background.png",
+                        "cow": "banner/test/cow.png"
+                    }
+                },
+                called: function(stage) {
+                    // Initialize an element
+                    this.el = this.createElement();
+                    stage.append(this.el);
+                },
+                preload: function(stage, pourcent, material) {
+                    this.el.drawImage("background", 0, 0);
+                },
+                ready: function(stage) {
+                    this.el_cow = this.createElement();
+                    this.el_cow.drawImage("cow", 300, 180);
+                    stage.append(this.el_cow);
+                    // use stage.empty() for clear stage
+                    
+                    canvas.Input.keyDown([Input.Left, Input.Right]);
+                    canvas.Input.keyUp([Input.Left, Input.Right]);
+                    
+                    function _entity(x, y) {
+                        var entity = Class.New("Entity", [stage]);
+                        entity.rect(100); // square
+                        entity.position(x, y);
+                        entity.el.drawImage("cow");
+                        stage.append(entity.el);
+                        return entity;
+                    }
+                    
+                    this.entityA = _entity(0, 130);
+                    this.entityB = _entity(150, 130);
+                    
+                    //
+                    var el = this.createElement();
+                    el.font = '40pt Arial';
+                    el.fillStyle = "red";
+                    el.shadowColor = "white";
+                    el.fillText("Cow^^", 50, 50);
+                    stage.append(el);
+                    
+                    //
+                    var content = this.createElement();
+                    var text = canvas.Text.new(this, "Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur ad mortem, indumento.");
+                    text.style({
+                        size: "18px",
+                        lineWidth: 300,
+                    }).draw(content, 20, 20, {
+                       line: { // animation
+                           frames: 50
+                       } 
+                    });
+                    stage.append(content);
+                    
+                    var el = this.createElement();
+                    el.fillStyle = "red";
+                    el.fillRect(0, 0, 100, 100);
+
+                    el.on("drag", function(e, mouse) {
+                        this.x = e.gesture.deltaX;
+                        this.y = e.gesture.deltaY;
+                    });
+
+                    stage.append(el);
+                },
+                render: function(stage) {
+                    this.entityA.move(1); // x += 2;
+                    
+                    this.entityB.hit([this.entityA], function(state, el){
+                        if (state == "over"){
+                            el.opacity = 0.5;
+                        }
+                        if (state == "out"){
+                            el.opacity = 1;
+                        }
+                    });
+                    //
+                    if (canvas.Input.isPressed(Input.Right)) {
+                        this.el_cow.x++;
+                        this.entityB.move(2);
+                    }
+                    else if (canvas.Input.isPressed(Input.Left)) {
+                        this.el_cow.x--;
+                        this.entityB.move(-2);
+                    }
+                    stage.refresh();
+                }
+            });
+
+
+
+//            var canvas = document.getElementById("canvas");
+//            var context = canvas.getContext("2d");
+//
+//            var imageObj = new Image();
+//            imageObj.onload = function() {
+//                var pattern = context.createPattern(imageObj, "repeat");
+//                context.rect(0, 0, canvas.width, canvas.height);
+//                context.fillStyle = pattern;
+//                context.fill();
+//            };
+//            imageObj.src = "img/test/background.png";
+//            var images = {};
+//            loadImage("tail");
+//            loadImage("body");
+//            loadImage("head");
+//            function loadImage(name) {
+//                images[name] = new Image();
+//                images[name].onload = function() {
+//                    resourceLoaded();
+//                }
+//                images[name].src = "img/test/" + name + ".png";
+//            }
+//
+//                var totalResources = 3;
+//                var numResourcesLoaded = 0;
+//                var fps = 30;
+//                function resourceLoaded() {
+//                    numResourcesLoaded += 1;
+//                    if (numResourcesLoaded === totalResources) {
+//                        setInterval(redraw, 100 / fps);
+//                    }
+//                }
+//
+//                var charX = 180;
+//                var charY = 180;
+//                function redraw() {
+//                    var x = charX;
+//                    var y = charY;
+//                    canvas.width = canvas.width; // clears the canvas 
+//
+//                    context.drawImage(images["tail"], x + 40, y - 42);
+//                    context.drawImage(images["body"], x + 40, y - 42);
+//                    context.drawImage(images["head"], x + 40, y - 42);
+//                }
+
+//var width = 125;  // Triangle Width
+//var height = 105; // Triangle Height
+//var padding = 20;            
+//            // Draw a path
+//context.beginPath();
+//context.moveTo(padding + width/2, padding);        // Top Corner
+//context.lineTo(padding + width, height + padding); // Bottom Right
+//context.lineTo(padding, height + padding);         // Bottom Left
+//context.closePath();
+//
+//// Fill the path
+//context.fillStyle = "#ffc821";
+//context.fill()
+
+        </script>
+    </body>
+</html>

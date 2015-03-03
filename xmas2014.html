@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <title>X-Mas 2014</title>
+        <link rel="shortcut icon" href="http://favicon-generator.org/favicons/2014-11-06/2be887e441bf89e7bfcbe0abf94f6d37.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta content="http://closure-compiler.appspot.com/home" >
+        <meta content="http://www.w3schools.com/tags/ref_canvas.asp" >
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/cavasengine/canvasengine-1.3.2.all.min.js"></script>
+        <!--<script src="js/cavasengine/hammer.min.js"></script>-->
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            .canvas{
+                background: #048CAD;
+            }
+        </style>
+    </head>
+    <body>
+
+        <canvas width="1366" height="150" id="canvas" class="canvas"></canvas>
+
+        <script>
+            var mp = 25; //max particles
+            var canvas = CE.defines("canvas").
+                    extend([Input, Animation, Scrolling, Spritesheet, Text]).
+                    ready(function() {
+                        canvas.Scene.call("Scene1", {
+                            overlay: true,
+                            exitScenes: {
+                                when: 'afterPreload'
+                            }
+                        });
+                    });
+
+            canvas.Scene.new({
+                name: "Scene1",
+                materials: {
+                    // Usually put relatives links
+                    images: {
+                        'sky': 'banner/xmas2014/h-001@1.png',
+                        'view': 'banner/xmas2014/h-001@2.png',
+                        'fog': 'banner/xmas2014/h-001@3.png',
+                        'left_light': 'banner/xmas2014/o-001@1.png',
+                        'right_light': 'banner/xmas2014/o-001@2.png',
+                        'xmas_tree': 'banner/xmas2014/o-001@3.png',
+                        'livelilely': 'banner/xmas2014/o-001@4.png',
+                        'livelilely_layer': 'banner/xmas2014/o-001@5.png',
+                        'decoration_a': 'banner/xmas2014/o-001@6-1.png',
+                        'decoration_b': 'banner/xmas2014/o-001@6-2.png',
+                        'decoration_c': 'banner/xmas2014/o-001@7-1.png',
+                        'decoration_d': 'banner/xmas2014/o-001@7-2.png',
+                        'boots': 'banner/xmas2014/o-001@8.png',
+                        'snowman': 'banner/xmas2014/o-001@9.png'
+                    }
+                },
+                called: function(stage) {
+                },
+                preload: function(stage, pourcent, material) {
+                },
+                ready: function(stage) {
+                    var _this = this;
+                    var _stage = stage;
+                    var _canvas = this.getCanvas();
+//                    _canvas.setSize(1366, 180, 'fit');
+//                    _canvas.setSize('browser');
+//                    _canvas.setSize('browser', 'stretch');
+//                    _canvas.setSize('fullscreen', 'fit');
+//                    _canvas.setSize('reset');
+                    //
+
+                    var el_sky = this.createElement();
+                    el_sky.drawImage('sky');
+//                    stage.append(el_sky);
+
+                    //snowflake particles
+                    this.particles = [];
+                    for (var i = 0; i < mp; i++) {
+                        this.particles.push({
+                            x: Math.random() * _canvas.width, //x-coordinate
+                            y: Math.random() * _canvas.height, //y-coordinate
+                            r: Math.random() * 4 + 1, //radius
+                            d: Math.random() * mp //density
+                        });
+                    }
+                    _draw_snow(this, stage);
+                    
+                    var el_view = this.createElement();
+                    el_view.drawImage('view');
+                    
+                    var el_fog = this.createElement();
+                    el_fog.x = 490;
+                    el_fog.y = 0;
+                    el_fog.drawImage('fog');
+
+                    var el_left_light = this.createElement();
+                    var an_left_light = canvas.Animation.new({
+                        images: 'left_light',
+                        animations: {
+                            flashing: {
+                                frames: [0, 3],
+                                size: {
+                                    width: 218 / 4,
+                                    height: 153 / 1
+                                },
+                                frequence: 20
+                            }
+                        }
+                    });
+                    an_left_light.add(el_left_light);
+                    el_left_light.x = 143;
+                    an_left_light.play('flashing', 'loop');
+
+                    var el_right_light = this.createElement();
+                    var an_right_light = canvas.Animation.new({
+                        images: 'right_light',
+                        animations: {
+                            flashing: {
+                                frames: [0, 3],
+                                size: {
+                                    width: 218 / 4,
+                                    height: 153 / 1
+                                },
+                                frequence: 20
+                            }
+                        }
+                    });
+                    an_right_light.add(el_right_light);
+                    el_right_light.x = 1175;
+                    an_right_light.play('flashing', 'loop');
+
+                    var el_xmas_tree = this.createElement();
+                    el_xmas_tree.drawImage('xmas_tree', 270, 0);
+                    
+                    var el_livelilely = this.createElement();
+                    el_livelilely.drawImage('livelilely', 540, 30);
+
+                    var el_decoration_a = this.createElement();
+                    el_decoration_a.drawImage('decoration_a', 580, -70);
+
+                    var el_decoration_b = this.createElement();
+                    el_decoration_b.drawImage('decoration_b', 615, -44);
+
+                    var el_decoration_c = this.createElement();
+                    el_decoration_c.drawImage('decoration_c', 773, -40);
+
+                    var el_decoration_d = this.createElement();
+                    el_decoration_d.drawImage('decoration_d', 780, -79);
+
+                    var el_snowman = this.createElement();
+                    el_snowman.drawImage('snowman', 913, 15);
+
+                    var el_livelilely_layer = this.createElement();
+                    el_livelilely_layer.drawImage('livelilely_layer', 530, 30);
+
+                    this.el_boots = this.createElement();
+                    this.an_boots = canvas.Animation.new({
+                        images: 'boots',
+                        animations: {
+                            stop: {
+                                frames: [0, 0],
+                                size: {
+                                    width: 150 / 3,
+                                    height: 100 / 2
+                                },
+                                frequence: 0
+                            },
+                            go_right: {
+                                frames: [3, 5],
+                                size: {
+                                    width: 150 / 3,
+                                    height: 100 / 2
+                                },
+                                frequence: 10
+                            },
+                            go_left: {
+                                frames: [6, 8],
+                                size: {
+                                    width: 150 / 3,
+                                    height: 100 / 2
+                                },
+                                frequence: 10
+                            }
+                        },
+                        finish: function() {
+
+                        }
+                    });
+                    this.an_boots.add(this.el_boots);
+                    this.el_boots.x = 0;
+                    this.el_boots.y = 80;
+                    this.an_boots.play('stop');
+
+                    //
+//                    stage.append(el_sky);
+//                    stage.append(el_snowman);
+//                    stage.append(el_xmas_tree);
+//                    stage.append(el_livelilely);
+//                    stage.append(el_decoration_a);
+//                    stage.append(el_decoration_b);
+//                    stage.append(el_decoration_c);
+//                    stage.append(el_decoration_d);
+//                    stage.append(el_livelilely_layer);
+//                    stage.append(this.el_boots);
+//                    stage.append(el_view);
+//                    stage.append(el_left_light);
+//                    stage.append(el_right_light);
+//                    stage.append(el_fog);
+
+                    //
+                    listenKeyPressed();
+                },
+                render: function(stage) {
+                    
+                    this.an_boots.play('go_right', 'loop');
+                    this.el_boots.x += 0.5;
+
+//                    var angle = 0;
+//                for (var i = 0; i < mp; i++) {
+//                    angle += 0.01;
+//                    var el = this.createElement();
+//                    var p = this.particles[i];
+//                    el.beginPath();
+//                    el.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+//                    el.position(p.x, p.y);
+//                    el.fillStyle = 'rgba(255, 255, 255, 0.8)';
+//                    el.fill();
+//                    var timeline = canvas.Timeline.new(el);
+//                    timeline.add({
+//                        x: Math.sin(angle) * 2, 
+//                        y: Math.cos(angle+p.d) + 1 + p.r/2
+//                    }, 10).loop();
+//                    stage.append(el);
+//                }
+
+                    //
+//                    listenMoveLeftLight(this.el_boots, this.an_boots, stage);
+
+                    //
+                    stage.refresh();
+                }
+            });
+            
+            function _draw_snow(_this, _stage){
+                var angle = 0;
+                for (var i = 0; i < mp; i++) {
+                    angle += 0.01;
+                    var el = _this.createElement();
+                    var p = _this.particles[i];
+                    el.beginPath();
+                    el.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+                    el.position(p.x, p.y);
+                    el.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    el.fill();
+                    var timeline = canvas.Timeline.new(el);
+                    timeline.add({
+                        x: Math.sin(angle) * 2, 
+                        y: Math.cos(angle+p.d) + 1 + p.r/2
+                    }, 10).loop();
+                    _stage.append(el);
+                }
+            }
+
+            function listenKeyPressed() {
+
+                canvas.Input.keyDown([Input.Left, Input.Right, Input.Up, Input.Bottom]);
+                canvas.Input.keyUp([Input.Left, Input.Right, Input.Up, Input.Bottom]);
+
+            }
+
+            function listenMoveLeftLight(_this, _animation, _stage) {
+                if (canvas.Input.isPressed(Input.Left)) {
+                    _animation.play('go_left', 'loop');
+                    _this.x -= 20;
+                } else if (canvas.Input.isPressed(Input.Right)) {
+                    _animation.play('go_right', 'loop');
+                    _this.x += 10;
+                } else {
+                    _animation.play('stop', 'loop');
+                }
+                _stage.refresh();
+            }
+
+        </script>
+    </body>
+</html>

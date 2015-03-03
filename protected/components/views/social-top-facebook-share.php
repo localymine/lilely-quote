@@ -1,0 +1,1 @@
+<a class="top-fb-share" target="_blank" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=<?php echo $share_url ?>&amp;p[images][0]=<?php echo $image_url ?>&amp;p[title]=<?php echo $title ?>&amp;p[summary]=<?php echo $description ?>"><img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl ?>/img/fb-share-b.png"/></a>
