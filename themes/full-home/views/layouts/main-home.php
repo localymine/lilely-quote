@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="language" content="en" >
@@ -19,7 +19,7 @@
         <!-- slim scroll CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/js-slimScroll/style.css" rel="stylesheet">
         <!-- Custom styles for this template -->
-        <!--<link href="<?php // echo Yii::app()->theme->baseUrl ?>/css/style.css" rel="stylesheet">-->
+        <!--<link href="<?php // echo Yii::app()->theme->baseUrl  ?>/css/style.css" rel="stylesheet">-->
         <link href="<?php echo Yii::app()->baseUrl ?>/html/css/style.css" rel="stylesheet">
 
         <script>
@@ -33,23 +33,22 @@
     <body>
         <div id="fb-root"></div>
         <!-- menu -->
-        <?php $this->widget('Menu') ?>
+        <?php $this->widget('MenuHome') ?>
         <!-- /.menu -->
 
-        <div id="wrapper" class="container wrap">
-
+        <div class="container clearfix">
             <!-- Page Content -->
-            <div id="page-content-wrapper">
-                <div id="content-wrapper">
-                    <?php echo $content ?>
-                </div>
-            </div>
+            <?php echo $content ?>
             <!-- /#page-content-wrapper -->
         </div>
+        
+        <div class="container clearfix welcome-home">
+            Chao Mung
+        </div>
 
-        <div class="container clearfix hidden-xs footer-holder">
+        <div class="container clearfix hidden-xs footer-holder-new">
             <!-- Footer -->
-            <?php $this->widget('Footer') ?>
+            <?php $this->widget('FooterNew') ?>
             <!-- // Footer -->
         </div>
 
@@ -65,7 +64,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/common.js"></script>
         <script>
             var ar = new Array(37, 39);
-            $(document).keydown(function(e) {
+            $(document).keydown(function (e) {
                 var key = e.which;
                 //console.log(key);
                 //if(key==35 || key == 36 || key == 37 || key == 39)

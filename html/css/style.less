@@ -32,6 +32,8 @@ and open the template in the editor.
 @font-size: 12px;
 @hashtag-color: #4F9000;
 @font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@top-home-border: #0F0F0F;
+@bottom-home-border: #7b8a95;
 
 html{
     overflow-y: scroll;
@@ -3331,4 +3333,48 @@ nav{
             }
         }
     }
+}
+
+html#html{
+    overflow: hidden;
+}
+.new-top-home{
+    height: 64px;
+    border-top: 3px solid @top-home-border ;
+    border-bottom: 2px solid @bottom-home-border;
+}
+.home-video{
+    margin-top: 55px;
+    top: 105px;
+    min-height: 662px;
+    video#bgvid {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-size: cover;
+    }
+}
+.welcome-home{
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 105px;
+    height: 300px;
+    background: #ddd;
+}
+.footer-holder-new {
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:105px;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    /*border-top: 5px solid @border-color;*/ 
 }

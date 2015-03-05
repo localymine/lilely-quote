@@ -11,7 +11,7 @@
  *
  * @author khangld
  */
-class Footer extends CWidget {
+class FooterNew extends CWidget {
 
     public function init() {
         

@@ -11,11 +11,23 @@ class HomeController extends FrontController {
         $this->languages = Yii::app()->request->languages;
 
         $this->limit = Yii::app()->setting->getValue('SIZE_OF_STORY');
+        $this->layout = 'column-home';
 
         parent::init();
     }
+    
+    public function actionIndex(){
+        
+        $post_type = Yii::app()->user->getState('select_topic');
+        $post_type = isset($post_type) ? $post_type : 'quote';
+        
+        $this->render('index-new', array(
+            
+        ));
+        
+    }
 
-    public function actionIndex() {
+    private function actionIndex_del() {
         $page = 1;
 
         if (Yii::app()->request->isAjaxRequest) {

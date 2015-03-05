@@ -11,7 +11,7 @@
  *
  * @author khangld
  */
-class Menu extends CWidget {
+class MenuHome extends CWidget {
 
     public $lang = 'vi';
     
@@ -27,7 +27,7 @@ class Menu extends CWidget {
         //
         $model = TermTaxonomy::model()->get_all_categories(0)->findAll();
         
-        $this->render('menu', array(
+        $this->render('menu-home', array(
             'controller' => $controller,
             'action' => $action,
             'model' => $model,
