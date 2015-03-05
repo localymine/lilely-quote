@@ -34,6 +34,8 @@ and open the template in the editor.
 @font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 @top-home-border: #0F0F0F;
 @bottom-home-border: #7b8a95;
+@font-new-home: "Open Sans";
+@new-main-color: #ffda39;
 
 html{
     overflow-y: scroll;
@@ -848,13 +850,14 @@ body{
 }
 
 #top-search-form{
-    left: -270px;
-    width: 85%;
+    /*left: -270px;*/
+    /*width: 85%;*/
     height: 100%;
-    background: @background-color;
+    /*background: @background-color;*/
 }
 .top-search{
-    border-radius: 0;
+    border-radius: 0 30px 30px 0;
+    width: 360px;
 }
 
 .side-nav-header{
@@ -1061,8 +1064,8 @@ nav{
 }
 
 @link-hover-bg-color: lightten(@text-color);
-@link-hover-gra-1: #cc0000;
-@link-hover-gra-2: #cc3333;
+@link-hover-gra-1: #fff;
+@link-hover-gra-2: #fff;
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
     background-color: @background-color !important;
@@ -1082,7 +1085,7 @@ nav{
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-    color: #ffffff;
+    color: @new-main-color;
     text-decoration: none;
     background-color: @link-hover-bg-color;
     background-image: -moz-linear-gradient(top, @link-hover-gra-1, @link-hover-gra-2);
@@ -1092,6 +1095,16 @@ nav{
     background-image: linear-gradient(to bottom, @link-hover-gra-1, @link-hover-gra-2);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@link-hover-gra-1', endColorstr='@link-hover-gra-2', GradientType=0);
+    transition: 0.3s ease color;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    &::before{
+        font-family: FontAwesome;
+        content: "\f04b";
+        color: #333;
+        padding-right: 3px;
+    }
 }
 
 .dropdown-submenu {
@@ -2190,16 +2203,20 @@ nav{
 
 /* style icon */
 .inner-addon .glyphicon {
-    position: absolute;
-    padding: 10px;
+    margin-right: 3px;
+    margin-top: 1px;
+    padding: 6px 10px;
     pointer-events: none;
+    position: absolute;
 }
 .inner-addon .glyphicon.search {
-    padding: 16px;
-    color: #777;
+    /*padding: 16px;*/
+    color: #fff;
     pointer-events: inherit;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
+    border-radius: 50px;
+    background: #ffda39;
 }
 
 /* align icon */
@@ -3336,17 +3353,104 @@ nav{
 }
 
 html#html{
-    overflow: hidden;
+    overflow-y: auto;
 }
+@menu-height: 105px;
 .new-top-home{
-    height: 64px;
-    border-top: 3px solid @top-home-border ;
-    border-bottom: 2px solid @bottom-home-border;
+    height: @menu-height;
+    border-top: 8px solid @top-home-border ;
+    .top-holder{
+        width: 1170px;
+        margin: 0 auto;
+        .logo-padding{
+            margin-top: -7px;
+        }
+        .hold-fnc{
+            height: @menu-height;
+            margin-left: 58px;
+            padding-top: 44px;
+            .drop-topics{
+                .btn-topics-st{
+                    font-weight: bold;
+                    font-size: 15px;
+                    font-family: @font-new-home;
+                    width: 120px;
+                    height: 32px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    padding-top: 0;
+                }
+                
+            }
+            .categories{
+                margin-left: 2px;
+                ul, ol{
+                    margin-bottom: 0px;
+                    li{
+                        height: 32px;
+                        width: 53px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                }
+                a{
+                    color: #fff;
+                    padding: 0 !important;
+                    span{
+                        border-right: 1px solid #ffe472;
+                        height: 25px;
+                        width: 54px;
+                        vertical-align: middle;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+                .btn-cate-st{
+                    border-radius: 0;
+                    padding: 0;
+                }
+            }
+            .n-search-form{
+                .form-control{
+                    height: 32px;
+                }
+            }
+            .social-link{
+                margin-left: 20px;
+                margin-top: -3px;
+                .join-us{
+                    font-family: @font-new-home;
+                    margin-top: 10px;
+                }
+                ul{
+                    border-right: 1px solid #959595;
+                    width: 192px;
+                    height: 32px;
+                }
+            }
+        }
+        .lang-btn{
+            display: table;
+            span{
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 12px;
+            }
+        }
+    }
+}
+.lang-link{
+    padding-top: 42px;
+}
+.btn-lilely {
+    background-color: #ffda39;
+    border-color: #ffda39;
+    color: #fff;
 }
 .home-video{
-    margin-top: 55px;
     top: 105px;
-    min-height: 662px;
+    min-height: 665px;
+    background: #ccc;
     video#bgvid {
         position: fixed;
         right: 0;
@@ -3360,21 +3464,12 @@ html#html{
     }
 }
 .welcome-home{
-    position:fixed;
-    left: 0;
-    right: 0;
-    bottom: 105px;
-    height: 300px;
+    height: 599px;
+    width: 100%;
     background: #ddd;
 }
 .footer-holder-new {
-    position:fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height:105px;
+    height:210px;
     width: 100%;
-    background: rgba(0,0,0,0.9);
-    z-index: 9999;
-    /*border-top: 5px solid @border-color;*/ 
+    background: #000;
 }

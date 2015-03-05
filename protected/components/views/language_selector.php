@@ -1,33 +1,14 @@
-<!--<div class="pull-right">-->
-    <!--<i class="glyphicon glyphicon-globe"></i>--><?php // echo $languages[$language]  ?>
+<div class="pull-right">
     <?php foreach ($languages as $l => $lang): ?>
         <?php
         $params['language'] = $l;
+        $icon_global = CHtml::image(Yii::app()->theme->baseurl . '/img/global.png');
         if ($l === $language) {
             continue;
-            echo CHtml::link('<i class="glyphicon glyphicon-globe"></i>', $params, array('class' => "lang-btn $l-lang active"));
+            echo CHtml::link($icon_global . '<span>' . $lang . '</span>', $params, array('class' => "lang-btn $l-lang active"));
         } else {
-            echo CHtml::link('<i class="glyphicon glyphicon-globe"></i>', $params, array('class' => "lang-btn $l-lang"));
+            echo CHtml::link($icon_global . '<span>' . $lang . '</span>', $params, array('class' => "lang-btn $l-lang"));
         }
         ?>
-
     <?php endforeach; ?>
-<!--</div>-->
-
-<?php
-//$script = <<< EOD
-//$(function() {
-//    var showLang = $('.lang-btn.active');
-//    $('.nav-lang').hover(function() {
-//        $('.lang-btn').addClass('active');
-//    }, function() {
-//        $('.lang-btn').removeClass('active');
-//        showLang.addClass('active');
-//    });
-//});
-//EOD;
-?>
-
-<?php
-//Yii::app()->clientScript->registerScript('lang-selector-' . rand(), $script, CClientScript::POS_END);
-?>
+</div>
