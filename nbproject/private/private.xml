@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="14">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="15">
         <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
@@ -25,17 +25,22 @@
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1229</line>
+                <line>1251</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2073</line>
+                <line>2095</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>2869</line>
+                <line>2891</line>
+                <key/>
+            </bookmark>
+            <bookmark id="15">
+                <name/>
+                <line>3394</line>
                 <key/>
             </bookmark>
         </file>
@@ -71,8 +76,20 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/FrontController.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/common.js</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/FooterNew.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/ThumbController.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/FeightController.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
         </group>
     </open-files>
 </project-private>

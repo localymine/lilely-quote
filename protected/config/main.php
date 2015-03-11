@@ -115,6 +115,9 @@ return array(
                 'quote-of-day' => 'quoteOfDay',
                 'famous-quotes' => 'famousQuotes',
                 'best-book-in-month' => 'bestBookInMonth',
+                
+                '<_c:(home|quote|book|music)>' => '<_c>/index',
+                
                 // default controller url setup     
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
@@ -231,6 +234,7 @@ return array(
         'set_author_path' => 'images/author/',
         'set_quote_path' => 'images/quote/',
         'set_quote_sound_path' => 'media/quote/',
+        'set_media_home_path' => 'media/home/',
         'set_book_path' => 'images/book/',
         'set_music_path' => 'images/music/',
         'set_photos_path' => 'photos/',

@@ -22,7 +22,7 @@ class FooterNew extends CWidget {
         $controller = Yii::app()->controller->id;
         $action = Yii::app()->controller->action->id;
 
-        $this->render('footer', array(
+        $this->render('footer-new', array(
             'controller' => $controller,
             'action' => $action,
         ));

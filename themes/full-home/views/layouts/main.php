@@ -33,7 +33,7 @@
     <body>
         <div id="fb-root"></div>
         <!-- menu -->
-        <?php $this->widget('Menu') ?>
+        <?php $this->widget('MenuHome') ?>
         <!-- /.menu -->
 
         <div id="wrapper" class="container wrap">
@@ -47,11 +47,11 @@
             <!-- /#page-content-wrapper -->
         </div>
 
-        <div class="container clearfix hidden-xs footer-holder">
+        <!--<div class="container clearfix hidden-xs footer-holder">-->
             <!-- Footer -->
-            <?php $this->widget('Footer') ?>
+            <?php // $this->widget('Footer') ?>
             <!-- // Footer -->
-        </div>
+        <!--</div>-->
 
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/bootstrap.min.js"></script>
