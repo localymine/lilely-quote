@@ -54,3 +54,7 @@ in D:\xampp\htdocs\lilely-quote\protected\modules\user\controllers\LoginControll
 in D:\xampp\htdocs\lilely-quote\protected\modules\user\components\UserIdentity.php (53)
 in D:\xampp\htdocs\lilely-quote\protected\modules\user\models\UserLogin.php (48)
 in D:\xampp\htdocs\lilely-quote\protected\modules\user\controllers\LoginController.php (20)
+2015/03/12 17:32:20 [trace] [application] backend
+in D:\xampp\htdocs\lilely-quote\protected\modules\user\components\UserIdentity.php (53)
+in D:\xampp\htdocs\lilely-quote\protected\modules\user\models\UserLogin.php (48)
+in D:\xampp\htdocs\lilely-quote\protected\modules\user\controllers\LoginController.php (20)

@@ -211,7 +211,7 @@ return array(
         'ga_request_url' => '',
         /* ------------------------------------------------------------------ */
         'adminEmail' => 'webmaster@example.com',
-        'siteUrl' => 'http://localhost/lilely-quote',
+        'siteUrl' => 'http://lilely-quote.localhost',
         /* ------------------------------------------------------------------ */
         'translatedLanguages' => array('en' => 'English', 'vi' => 'Vietnamese'),
         'defaultLanguage' => 'en',

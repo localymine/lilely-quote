@@ -76,20 +76,13 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/book/show.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/FrontController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/common.js</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/FooterNew.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/ThumbController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/FeightController.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
         </group>
     </open-files>
 </project-private>

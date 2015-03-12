@@ -55,12 +55,9 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
 
 <div class="top-social-holder">
     <div class="col-md-2 col-md-offset-1 col-xs-12 holder">
-        <a data-target="#subscribe-modal" data-toggle="modal" class="subscribe-btn top" id="subscribe" href="javascript:void(0);">
-            <i class="fa fa-rss-square fa-2x themed-color-reddeep"></i>
-        </a>
         <?php
         $this->widget('SocialNetwork', array(
-            'type' => 'social-top-facebook-like-share',
+            'type' => 'social-top-facebook-share',
             'data_href' => $share_url,
             'title' => $title,
             'image_url' => $image_url,
@@ -68,10 +65,12 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
         ));
         ?>
     </div>
-    <div class="col-md-9 col-xs-12">
-        <div class="quote-text">
-            <div class="s-quote-top"><?php echo $post->post_content ?></div>
-            <div class="s-quote-top hidden"><?php echo $model_line->post_content ?></div>
+    <div class="col-md-8 col-xs-12">
+        <div class="music-text">
+            <div><img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/><?php echo $post->post_content ?></div>
+        </div>
+        <div class="music-text hidden">
+            <div><img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/><?php echo $model_line->post_content ?></div>
         </div>
     </div>
 </div>
@@ -271,7 +270,7 @@ $script = <<< EOD
 
 $(function(){
     $('.trans-show-btn').on('click', function(){
-        $('.s-quote').toggleClass('hidden');
+        $('.music-text').toggleClass('hidden');
         $('.s-quote-top').toggleClass('hidden');
         $('.by-author').toggleClass('hidden');
         $('.info-detail').toggleClass('hidden');
@@ -333,7 +332,7 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('yt-player', {
             videoId: '<?php echo isset($yt_video_ids['v']) ? $yt_video_ids['v'] : '' ?>',
-            playerVars: {'autoplay': 1, 'wmode': 'transparent', 'rel': 0},
+            playerVars: {'autoplay': 1, 'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0  ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0  ?>'},
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange

@@ -19,28 +19,50 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
                 </a>
             </div>
         </div>
-        <ul class="home-author">
-            <li>Video by</li>
-            <li>
-                <a>
-                    <span id="author">John Lewis</span>
-                    <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/quote_2_video-2889251853.png"/>
-                </a>
+        <ul class="home-author-group">
+            <li class="g">
+                <ul class="home-author">
+                    <li>Video by</li>
+                    <li>
+                        <a>
+                            <span id="author">John Lewis</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/quote_2_video-2889251853.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="g" style="display: none;">
+                <ul class="home-author">
+                    <li>Video by</li>
+                    <li>
+                        <a>
+                            <span id="author">Steve Jobs</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/steve-jobs-(quote)-1105295959.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="g" style="display: none;">
+                <ul class="home-author">
+                    <li>Video by</li>
+                    <li>
+                        <a>
+                            <span id="author">Richard St. John</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/richard-st.-john-(8)-5668748896.png"/>
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
-    <video autoplay loop poster="" id="bgvid">
-        <!--<source src="<?php // echo Yii::app()->params['set_media_home_path'] ?>trailer.webm" type="video/webm">-->
-        <!--<source src="<?php // echo Yii::app()->params['set_media_home_path'] ?>trailer.mp4" type="video/mp4">-->
-    </video>
+    <video id="bgvid" poster="" autoplay="" muted></video>
 </div>
 
 <div class="container clearfix home-content">
     <div class="welcome-home">
         <h1 class="h-hi-1">Chào mừng</h1>
         <h1 class="h-hi-2">Các bạn đến với Lilely !</h1>
-        <p class="h-ct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            modo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+        <p class="h-ct">We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.</p>
     </div>
 
     <div class="container top-3-cat">
@@ -104,42 +126,22 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
 $url_check = Yii::app()->createUrl('subcribe/exists');
 $url_regist = Yii::app()->createUrl('subcribe/regist');
 
-$media_path = Yii::app()->params['set_media_home_path'];
-$video_sources = array('trailer.webm', 'trailer2.webm', 'trailer3.webm');
+$media_path = Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_media_home_path'];
+$video_sources = array('trailer1.webm', 'trailer2.webm', 'trailer3.webm');
 foreach ($video_sources as $value) {
     $video_source[] = $media_path . $value;
 }
 $video_source = json_encode($video_source);
 
 $script = <<< EOD
-var videoSource = {$video_source};
         
-//var player = new MediaElementPlayer('#bgvid');
-//player.pause();
-//player.setSrc(videoSource[0]);
-//player.play();
-        
-        
-var video = $('#bgvid');
-video.attr('src', videoSource[1]);
-function videoPlay(vNum){
-    video.attr('src', videoSource[vNum]);
-    video.load();
-    video.play();
-}
-
-//video.addEventListener('ended', myHandler, false);
-//function myHandler(){
-//    var count = videoSource.length;
-//    i++;
-//    console.log(i);
-//    if (i == (count -1)){
-//        i = 0;
-//        videoPlay(i);
-//    } else{
-//        videoPlay(i);
-//    }
-//}
+$('#bgvid').autoPlayVideo({
+    source: $video_source,
+    after: function (e) {
+        $('.home-author-group li.g').fadeOut(1000).removeClass('active');
+        $('.home-author-group li.g:nth-child(' + e.index + ')').fadeIn(1000);
+    }
+});
 
 $(function(){
     var form_valid = $('#subscribe-form');

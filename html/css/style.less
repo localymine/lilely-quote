@@ -3134,9 +3134,9 @@ nav{
         display: inline-block;
         letter-spacing: 0.1px;
         text-transform: uppercase;
-        border-bottom: 1px solid @text-color;
+        border-bottom: 1px solid @new-main-color;
         font-size: 1.35em;
-        color: @text-color;
+        color: @new-main-color;
         line-height: 1.35em;
         margin-top: 30px;
         margin-bottom: 5px;
@@ -3491,6 +3491,11 @@ nav{
                 font-size: 14px;
             }
         }
+        .lang-btn:hover{
+            span{
+                color: @new-main-color;
+            }
+        }
     }
 }
 .lang-link{
@@ -3547,30 +3552,35 @@ nav{
                 }
             }
         }
-        ul.home-author{
-            position: absolute;
-            right: 40px;
-            bottom: -40px;
-            list-style: none;
-            font-family: @font-new-home;
-            color: #fff;
-            z-index: 10;
-            li{
-                display: inline-block;
-                font-size: 20px;
-                a{
+        ul.home-author-group{
+            .g{
+                list-style: none;
+                ul.home-author{
+                    position: absolute;
+                    right: 40px;
+                    bottom: -40px;
+                    list-style: none;
+                    font-family: @font-new-home;
                     color: #fff;
-                    span{
-                        padding-right: 7px;
-                        text-transform: uppercase;
+                    z-index: 10;
+                    li{
+                        display: inline-block;
+                        font-size: 20px;
+                        a{
+                            color: #fff;
+                            span{
+                                padding-right: 7px;
+                                text-transform: uppercase;
+                            }
+
+                        }
+                        #author-img{
+                            border-radius: 100%;
+                            border: 3px solid #fff;
+                            width: 78px;
+                            height: 78px;
+                        }
                     }
-                    
-                }
-                #author-img{
-                    border-radius: 100%;
-                    border: 3px solid #fff;
-                    width: 78px;
-                    height: 78px;
                 }
             }
         }
@@ -3809,21 +3819,24 @@ nav{
             display: block;
             height: 1px;
             border: 0;
-            border-top: 1px solid #f26922;
+            /*border-top: 1px solid #f26922;*/
+            border-top: 1px solid @new-main-color;
             margin: 1em 0;
             padding: 0;
         }
         .footer-contanter-2{
             .site-name{
                 text-transform: uppercase;
-                color: #f26922;
+                /*color: #f26922;*/
+                color: @new-main-color;
                 font-size: 24px;
             }
             p{
                 font-size: 14px;
             }
             .ctn{
-                color: #f26922;
+                /*color: #f26922;*/
+                color: @new-main-color;
             }
             .addr{
                 font-family: @font-new-home;

@@ -54,12 +54,9 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
 
 <div class="top-social-holder">
     <div class="col-md-2 col-md-offset-1 col-xs-12 holder">
-        <a data-target="#subscribe-modal" data-toggle="modal" class="subscribe-btn top" id="subscribe" href="javascript:void(0);">
-            <i class="fa fa-rss-square fa-2x themed-color-reddeep"></i>
-        </a>
         <?php
         $this->widget('SocialNetwork', array(
-            'type' => 'social-top-facebook-like-share',
+            'type' => 'social-top-facebook-share',
             'data_href' => $share_url,
             'title' => $title,
             'image_url' => $image_url,
@@ -67,7 +64,7 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
         ));
         ?>
     </div>
-    <div class="col-md-9 col-xs-12">
+    <div class="col-md-8 col-xs-12">
         <div class="book-text">
             <div class="book-title"><img src="<?php echo Yii::app()->theme->baseUrl ?>/img/book-r-16.png"/><?php echo $post->post_title ?></div>
             <div class="book-title hidden"><img src="<?php echo Yii::app()->theme->baseUrl ?>/img/book-r-16.png"/><?php echo $model_line->post_title ?></div>
