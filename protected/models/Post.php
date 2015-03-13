@@ -214,8 +214,9 @@ class Post extends CActiveRecord {
     }
 
     public function get_quote($limit = 3, $current_page = 1) {
-        $offset = $limit * ($current_page - 1);
-
+//        $offset = $limit * ($current_page - 1);
+        $offset = $current_page;
+        
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'quote' ",
             'order' => 'post_date DESC',
