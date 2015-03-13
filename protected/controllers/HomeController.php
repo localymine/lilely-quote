@@ -22,7 +22,7 @@ class HomeController extends FrontController {
         $post_type = isset($post_type) ? $post_type : 'quote';
         
         $this->render('index-new', array(
-            
+            'lang' => $this->lang
         ));
         
     }

@@ -38,21 +38,21 @@ $back_url = Yii::app()->createUrl('home');
             <div class="categories navbar-left">
                 <ul class="nav navbar-nav">
                     <li class="btn-lilely btn-cate-st">
-                        <a href="<?php echo Yii::app()->createUrl('quote') ?>">
+                        <a href="<?php echo Yii::app()->createUrl('quote') ?>" title="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>">
                             <span>
                                 <img src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" />
                             </span>
                         </a>
                     </li>
                     <li class="btn-lilely btn-cate-st">
-                        <a href="<?php echo Yii::app()->createUrl('book') ?>">
+                        <a href="<?php echo Yii::app()->createUrl('book') ?>" title="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>">
                             <span>
                                 <img src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" />
                             </span>
                         </a>
                     </li>
                     <li class="btn-lilely btn-cate-st">
-                        <a href="<?php echo Yii::app()->createUrl('music') ?>">
+                        <a href="<?php echo Yii::app()->createUrl('music') ?>" title="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>">
                             <span>
                                 <img src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" />
                             </span>

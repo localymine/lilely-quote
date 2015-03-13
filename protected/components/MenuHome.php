@@ -31,6 +31,7 @@ class MenuHome extends CWidget {
             'controller' => $controller,
             'action' => $action,
             'model' => $model,
+            'lang' => $this->lang,
         ));
     }
 

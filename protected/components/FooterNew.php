@@ -13,8 +13,10 @@
  */
 class FooterNew extends CWidget {
 
+    public $lang = 'vi';
+
     public function init() {
-        
+        $this->lang = Yii::app()->language;
     }
 
     public function run() {
@@ -25,6 +27,7 @@ class FooterNew extends CWidget {
         $this->render('footer-new', array(
             'controller' => $controller,
             'action' => $action,
+            'lang' => $this->lang,
         ));
     }
 

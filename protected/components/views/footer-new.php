@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col-lg-12">
             <ul class="footer link">
-                <li><a class="<?php echo ($action == 'about') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/about') ?>">Giới Thiệu</a></li>
-                <li><a class="<?php echo ($action == 'contact') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('#') ?>">Tuyển Dụng</a></li>
-                <li><a class="<?php echo ($action == 'advertise') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('advertise') ?>">Quảng Cáo</a></li>
-                <li><a class="<?php echo ($action == 'contact') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/contact') ?>">Liên Hệ</a></li>
-                <li><a class="<?php echo ($action == 'faq') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/faq') ?>">FAQ</a></li>
-                <li><a class="<?php echo ($action == 'terms') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/terms') ?>">Thỏa Thuận Sử Dụng</a></li>
-                <li><a class="<?php echo ($action == 'privacy') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/privacy') ?>">Quy Định Bảo Mật</a></li>
+                <li><a class="<?php echo ($action == 'about') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/about') ?>"><?php echo Common::t('About Us', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'contact') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('#') ?>"><?php echo Common::t('Jobs', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'advertise') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('advertise') ?>"><?php echo Common::t('Advertise', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'contact') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/contact') ?>"><?php echo Common::t('Contact Us', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'faq') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/faq') ?>"><?php echo Common::t('FQA', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'terms') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/terms') ?>"><?php echo Common::t('Terms of Use', 'translate', NULL, $lang) ?></a></li>
+                <li><a class="<?php echo ($action == 'privacy') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/privacy') ?>"><?php echo Common::t('Privacy Statement', 'translate', NULL, $lang) ?></a></li>
             </ul>
         </div>
     </div>

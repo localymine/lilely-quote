@@ -12,10 +12,10 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
         <div class="home-buttons">
             <div class="groups">
                 <a href="#">
-                    <buton class="btn btn-home-st1">Browse Lilely</buton>
+                    <buton class="btn btn-home-st1"><?php echo Common::t('Browser Lilely', 'translate', NULL, $lang) ?></buton>
                 </a>
                 <a href="#">
-                    <buton class="btn btn-home-st2">View Video<i class="fa fa-long-arrow-right"></i></buton>
+                    <buton class="btn btn-home-st2"><?php echo Common::t('View Video', 'translate', NULL, $lang) ?><i class="fa fa-long-arrow-right"></i></buton>
                 </a>
             </div>
         </div>
@@ -60,9 +60,9 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
 
 <div class="container clearfix home-content">
     <div class="welcome-home">
-        <h1 class="h-hi-1">Chào mừng</h1>
-        <h1 class="h-hi-2">Các bạn đến với Lilely !</h1>
-        <p class="h-ct">We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.</p>
+        <h1 class="h-hi-1"><?php echo Common::t('Welcome!', 'translate', NULL, $lang) ?></h1>
+        <h1 class="h-hi-2"><?php echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h1>
+        <p class="h-ct"><?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $lang) ?></p>
     </div>
 
     <div class="container top-3-cat">
@@ -70,21 +70,21 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
             <div class="col-md-4">
                 <div class="hold-title">
                     <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('quote') ?>">Trích dẫn sống</a></div>
+                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('quote') ?>"><?php echo Common::t('Quote to live by', 'translate', NULL, $lang) ?></a></div>
                 </div>
                 <img class="img-responsive bi" src="<?php echo Yii::app()->theme->baseurl ?>/img/quote_06.jpg"/>
             </div>
             <div class="col-md-4">
                 <div class="hold-title">
                     <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('book') ?>">Tri thức là sức mạnh</a></div>
+                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('book') ?>"><?php echo Common::t('Knowledge is power', 'translate', NULL, $lang) ?></a></div>
                 </div>
                 <img class="img-responsive bi" src="<?php echo Yii::app()->theme->baseurl ?>/img/book_06.jpg"/>
             </div>
             <div class="col-md-4">
                 <div class="hold-title">
                     <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('music') ?>">Học tiếng Anh <br/>qua bài hát</a></div>
+                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('music') ?>"><?php echo Common::t('Learn English with songs', 'translate', NULL, $lang) ?></a></div>
                 </div>
                 <img class="img-responsive bi" src="<?php echo Yii::app()->theme->baseurl ?>/img/music_06.jpg"/>
             </div>
@@ -103,15 +103,15 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
         <div class="row">
             <div class="col-md-4 col-md-offset-1 eba">
                 <img src="<?php echo Yii::app()->theme->baseurl ?>/img/email.png"/>
-                <div class="subt">Subscribe for Newsletter</div>
+                <div class="subt"><?php echo Common::t('Subscribe for Newsletter', 'translate', NULL, $lang) ?></div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="enter your email id here..." class="form-control" />
+                    <input type="email" id="email" name="email" placeholder="<?php echo Common::t('Enter your Email Address', 'translate', NULL, $lang) ?>" class="form-control" />
                 </div>
             </div>
             <div class="col-md-4">
-                <button type="submit" class="btn btn-cnt">Kết Nối<i class="fa fa-long-arrow-right"></i></button>
+                <button type="submit" class="btn btn-cnt"><?php echo Common::t('Subscribe', 'translate', NULL, $lang) ?><i class="fa fa-long-arrow-right"></i></button>
             </div>
         </div>
         <?php $this->endWidget(); ?>

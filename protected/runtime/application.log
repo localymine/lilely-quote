@@ -10523,3 +10523,743 @@ Stack trace:
 REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
 HTTP_REFERER=http://lilely-quote.localhost/home
 ---
+2015/03/13 03:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/13 03:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/13 04:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://lilely-quote.localhost/user/profile
+---
+2015/03/13 04:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/avatars/logo-7452381779.png
+HTTP_REFERER=http://lilely-quote.localhost/user/profile
+---
+2015/03/13 04:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/user/profile
+---
+2015/03/13 04:00:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/user/profile
+---
+2015/03/13 04:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/avatars/logo-7452381779.png
+HTTP_REFERER=http://lilely-quote.localhost/backend/slide
+---
+2015/03/13 04:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/avatars/logo-7452381779.png
+HTTP_REFERER=http://lilely-quote.localhost/backend/slide
+---
+2015/03/13 04:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:48:06 [error] [php] Undefined variable: lang (D:\xampp\htdocs\lilely-quote\protected\components\views\footer-new.php:5)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\widgets\CWidget.php(244): FooterNew->renderFile()
+#1 D:\xampp\htdocs\lilely-quote\protected\components\FooterNew.php(28): FooterNew->render()
+#2 D:\xampp\htdocs\yii\web\CBaseController.php(173): FooterNew->run()
+#3 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(47): HomeController->widget()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#5 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#6 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#7 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(206): CContentDecorator->run()
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(300): HomeController->endWidget()
+#11 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): HomeController->endContent()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#13 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#14 D:\xampp\htdocs\yii\web\CController.php(784): HomeController->renderFile()
+#15 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#16 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#17 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#18 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#19 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#20 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#21 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/vi/home
+in D:\xampp\htdocs\lilely-quote\protected\components\views\footer-new.php (5)
+in D:\xampp\htdocs\lilely-quote\protected\components\FooterNew.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (47)
+2015/03/13 04:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/favicon.ico
+---
+2015/03/13 04:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/favicon.ico
+---
+2015/03/13 04:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/favicon.ico
+---
+2015/03/13 04:48:56 [error] [php] Undefined variable: lang (D:\xampp\htdocs\lilely-quote\protected\components\views\footer-new.php:5)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\widgets\CWidget.php(244): FooterNew->renderFile()
+#1 D:\xampp\htdocs\lilely-quote\protected\components\FooterNew.php(30): FooterNew->render()
+#2 D:\xampp\htdocs\yii\web\CBaseController.php(173): FooterNew->run()
+#3 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(47): HomeController->widget()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#5 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#6 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#7 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(206): CContentDecorator->run()
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(300): HomeController->endWidget()
+#11 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): HomeController->endContent()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#13 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#14 D:\xampp\htdocs\yii\web\CController.php(784): HomeController->renderFile()
+#15 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#16 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#17 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#18 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#19 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#20 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#21 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/vi/home
+in D:\xampp\htdocs\lilely-quote\protected\components\views\footer-new.php (5)
+in D:\xampp\htdocs\lilely-quote\protected\components\FooterNew.php (30)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (47)
+2015/03/13 04:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:49:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:54:55 [error] [php] Undefined variable: lang (D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php:63)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CController.php(869): HomeController->renderFile()
+#1 D:\xampp\htdocs\yii\web\CController.php(782): HomeController->renderPartial()
+#2 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#3 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#4 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#6 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#7 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#8 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/vi/home
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php (63)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php (26)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/03/13 04:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:56:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:56:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:58:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:58:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:58:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:58:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 04:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 04:59:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:01:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:04:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:04:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:04:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:04:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 05:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 05:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 06:36:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 06:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 06:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 06:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 06:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/
+---
+2015/03/13 06:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/
+---
+2015/03/13 06:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 06:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 07:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 07:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vi/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/13 07:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/steve-jobs-(quote)-1105295959.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/st...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/steve-jobs-(quote)-1105295959.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/13 07:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/quote/richard-st.-john-(8)-5668748896.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/quote/ri...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/quote/richard-st.-john-(8)-5668748896.png
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
