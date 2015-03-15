@@ -10,6 +10,9 @@ return array(
     'About' => 'Nguồn gốc',
     'Topic' => 'Chủ đề',
     'Topics' => 'Chủ đề',
+    'All Topics' => 'Tất cả chủ đề',
+    'Search...' => 'Tìm kiếm...',
+    'Join Us On' => 'Tham gia',
     
     'About Us' => 'Giới thiệu',
     'Contact Us' => 'Liên hệ',

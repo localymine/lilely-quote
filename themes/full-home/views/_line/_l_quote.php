@@ -24,12 +24,14 @@ foreach ($this->languages as $key => $value){
         $tags = TermRelationships::model()->get_relate_terms($row->id, 'category', 0)->findAll();
         $arr_tags = NULL;
         $arr_trans_tags = NULL;
+        $ori_name = 'name_' . $this->lang;
+        $ori_slug = 'slug_' . $this->lang;
         $trans_name = 'name_' . $lang;
         $trans_slug = 'slug_' . $lang;
         if ($tags != NULL) {
             foreach ($tags as $tag) {
                 $terms = Terms::model()->multilang()->findByPk($tag->term_taxonomy_id);
-                $arr_tags[] = CHtml::link($terms->name, Yii::app()->createUrl('topic', array('slug' => $terms->slug)));
+                $arr_tags[] = CHtml::link($terms->{$ori_name}, Yii::app()->createUrl('topic', array('slug' => $terms->{$ori_slug})));
                 $arr_trans_tags[] = CHtml::link($terms->{$trans_name}, Yii::app()->createUrl('topic', array('slug' => $terms->{$trans_slug}, 'language' => $lang)));
             }
         }
@@ -57,6 +59,7 @@ foreach ($this->languages as $key => $value){
 
             <div id="main-lang-id-<?php echo $row->id ?>" class="box-quote">
                 <div class="q">
+                    <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
                     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
                         <?php echo $row->post_content ?>
                     </a>
@@ -84,6 +87,7 @@ foreach ($this->languages as $key => $value){
             
             <div id="trans-id-<?php echo $row->id ?>" class="box-trans-quote">
                 <div class="q">
+                    <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
                     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $model_line->slug, 'language' => $lang)) ?>">
                         <?php echo $model_line->post_content ?>
                     </a>

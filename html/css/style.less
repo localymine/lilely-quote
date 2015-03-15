@@ -377,9 +377,9 @@ blockquote:after {
     padding-right: 10px;
 }
 .gallery > .row > div{
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .gallery > .row.bk-block > div{
     margin-bottom: 10px;
@@ -579,24 +579,28 @@ blockquote:after {
     }
 } 
 .gallery > .row > div > .item .m-a-quote .quote .q:before{
+    /*
     font-family: FontAwesome;
     content: "\00201C";
     color: @quote-color;
     font-size: calc(@font-size * 2px);
+    font-weight: bold;
+    */
     /*margin-left: -20px;*/
     /*margin-right: 0px;*/
-    font-weight: bold;
     /*position: absolute;*/
 }
 .gallery > .row > div > .item .m-a-quote .quote .q:after{
+    /*
     font-family: FontAwesome;
     content: "\00201D";
     color: @quote-color;
     font-size: calc(@font-size * 2px);
-    /*position: absolute;*/
     margin-top: 0px;
-    /*margin-left: 5px;*/
     font-weight: bold;
+    */
+    /*position: absolute;*/
+    /*margin-left: 5px;*/
 }
 .music-item{
     .m{
@@ -3480,6 +3484,9 @@ nav{
                     height: 32px;
                 }
             }
+            .social-link.vi{
+                padding-right: 30px !important;
+            }
         }
         .lang-btn{
             display: table;
@@ -3860,6 +3867,9 @@ nav{
 }
 
 .newest-quote{
+    .quote-item{
+        height: 545px !important;
+    }
     .item{
         div{
             a {
@@ -3872,6 +3882,7 @@ nav{
         .m-a-quote{
             .quote {
                 height: 114px;
+                width: 85.002% !important;
             }
         }
     }

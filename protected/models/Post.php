@@ -188,7 +188,6 @@ class Post extends CActiveRecord {
 
     public static function item_alias($type, $code = NULL) {
         $_items = array(
-            
         );
 
         if (isset($code))
@@ -216,7 +215,7 @@ class Post extends CActiveRecord {
     public function get_quote($limit = 3, $current_page = 1) {
 //        $offset = $limit * ($current_page - 1);
         $offset = $current_page;
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'quote' ",
             'order' => 'post_date DESC',
@@ -226,38 +225,39 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_book($limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
-            $this->getDbCriteria()->mergeWith(array(
-                'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'book' ",
-                'order' => 'post_date DESC',
-                'limit' => $limit,
-                'offset' => $offset,
-            ));
+        $this->getDbCriteria()->mergeWith(array(
+            'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'book' ",
+            'order' => 'post_date DESC',
+            'limit' => $limit,
+            'offset' => $offset,
+        ));
 
         return $this;
     }
-    
+
     public function get_music($limit = 3, $current_page = 1) {
-        $offset = $limit * ($current_page - 1);
+//        $offset = $limit * ($current_page - 1);
+        $offset = $current_page;
 
-            $this->getDbCriteria()->mergeWith(array(
-                'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'music' ",
-                'order' => 'post_date DESC',
-                'limit' => $limit,
-                'offset' => $offset,
-            ));
+        $this->getDbCriteria()->mergeWith(array(
+            'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'music' ",
+            'order' => 'post_date DESC',
+            'limit' => $limit,
+            'offset' => $offset,
+        ));
 
         return $this;
     }
-    
+
     public function get_lastest($limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
-        
+
         $rand = Yii::app()->user->getState('rand');
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW,
 //            'order' => 'post_date DESC, visits DESC, RAND()',
@@ -269,7 +269,7 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_lastest_sidebar($id = 1, $limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
@@ -282,12 +282,12 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_quote_of_day($limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
         $today = date('Y-m-d');
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_date LIKE '$today%' ",
             'order' => 'post_date DESC',
@@ -297,7 +297,7 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_famous_quotes($limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
@@ -310,12 +310,12 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_best_book_of_month($limit = 3, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
         $month = date('Y-m');
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type ='book' AND post_date LIKE '$month%' AND visits > 0",
             'order' => 'visits DESC, post_title',
@@ -325,16 +325,16 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_post_by_author($alphabet, $limit = 3, $current_page = 1) {
 
         $offset = $limit * ($current_page - 1);
-        
+
         $alphabet = strtolower(trim($alphabet));
         if (strlen($alphabet) > 1) {
             $alphabet = 'a';
         }
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND LOWER(quote_author) LIKE '$alphabet%'",
             'order' => 'quote_author, visits DESC',
@@ -344,7 +344,6 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
 
     public function get_post_by_slug($slug, $post_type = 'quote') {
 
@@ -354,39 +353,39 @@ class Post extends CActiveRecord {
 
         return $this;
     }
-    
+
     public function get_post_by_term($id, $limit = 3, $current_page = 1) {
-        
+
         $offset = $limit * ($current_page - 1);
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND term_taxonomy_id = " . (int) $id,
             'join' => "LEFT JOIN term_relationships ON id = object_id",
             'limit' => $limit,
             'offset' => $offset,
         ));
-        
+
         return $this;
     }
-    
+
     public function get_post_by_term_post_type($id, $post_type = 'quote', $limit = 3, $current_page = 1) {
-        
+
         $offset = $limit * ($current_page - 1);
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "post_type LIKE '$post_type' AND disp_flag = " . self::STATUS_SHOW . " AND term_taxonomy_id = " . (int) $id,
             'join' => "LEFT JOIN term_relationships ON id = object_id",
             'limit' => $limit,
             'offset' => $offset,
         ));
-        
+
         return $this;
     }
-    
-    public function get_relation_post_by_term($term_id, $obj_id, $post_type='quote', $limit = 3, $current_page = 1) {
-        
+
+    public function get_relation_post_by_term($term_id, $obj_id, $post_type = 'quote', $limit = 3, $current_page = 1) {
+
         $offset = $limit * ($current_page - 1);
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND term_taxonomy_id = " . (int) $term_id . " AND post_type LIKE '$post_type'" . " AND object_id != " . (int) $obj_id,
             'join' => "LEFT JOIN term_relationships ON id = object_id",
@@ -394,21 +393,21 @@ class Post extends CActiveRecord {
             'offset' => $offset,
             'order' => 'RAND()',
         ));
-        
+
         return $this;
     }
-    
-    public function get_post_random($obj_id, $post_type='quote', $limit = 3, $current_page = 1) {
-        
+
+    public function get_post_random($obj_id, $post_type = 'quote', $limit = 3, $current_page = 1) {
+
         $offset = $limit * ($current_page - 1);
-        
+
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type LIKE '$post_type'" . " AND id != " . (int) $obj_id,
             'limit' => $limit,
             'offset' => $offset,
             'order' => 'RAND()',
         ));
-        
+
         return $this;
     }
 
@@ -564,8 +563,8 @@ class Post extends CActiveRecord {
 
         return (object) $sum;
     }
-    
-    public function update_last_visited($id){
+
+    public function update_last_visited($id) {
         $post = Post::model()->findByPk((int) $id);
         $post->last_visited = new CDbExpression("NOW()");
         $post->update(array('last_visited'));

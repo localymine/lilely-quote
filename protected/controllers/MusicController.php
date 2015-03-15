@@ -21,23 +21,27 @@ class MusicController extends FrontController {
         
         Yii::app()->user->setState('select_topic', $this->post_type);
 
-        $page = 1;
+        $page = 2;  // this stand for offset
 
         if (Yii::app()->request->isAjaxRequest) {
             $page = Yii::app()->user->getState('front_page_more_music');
-            $page += 1;
+//            $page += 1;
+            $page = $this->limit + $page;   // this is next offset
             $model_story = Post::model()->localized($this->lang)->get_music($this->limit, $page)->findAll();
             Yii::app()->user->setState('front_page_more_music', $page);
             if ($model_story != NULL) {
                 $this->renderPartial('../_line/_story', array('posts' => $model_story), false, true);
             }
         } else {
-            Yii::app()->user->setState('front_page_more_music', 1);
+            Yii::app()->user->setState('front_page_more_music', $page);
             //
             $model_story = Post::model()->localized($this->lang)->get_music($this->limit, $page)->findAll();
+            
+            $model_story_2 = Post::model()->localized($this->lang)->get_music(2, 0)->findAll();
 
             $this->render('index', array(
                 'model_story' => $model_story,
+                'model_story_2' => $model_story_2,
             ));
         }
     }

@@ -19,11 +19,11 @@ $back_url = Yii::app()->createUrl('home');
         <div class="hold-fnc navbar-left">
             <div class="dropdown drop-topics navbar-left">
                 <button class="btn btn-lilely dropdown-toggle btn-topics-st" type="button" id="dropdown-topmenu" data-toggle="dropdown" aria-expanded="true">
-                    <span>Topics</span>
+                    <span><?php echo Common::t('Topics', 'translate', NULL, $lang) ?></span>
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-topmenu">
-                    <li><span class="li-all">All Topics</span></li>
+                    <li><span class="li-all"><?php echo Common::t('All Topics', 'translate', NULL, $lang) ?></span></li>
                     <?php foreach ($model as $row): ?>
                         <?php $active_topic_class = ''; ?>
                         <?php if (isset($_REQUEST['slug'])): ?>
@@ -74,7 +74,7 @@ $back_url = Yii::app()->createUrl('home');
                 ?>
                 <div class="form-group">
                     <div class="inner-addon right-addon">
-                        <?php echo CHtml::textField('kw', (isset($_GET['kw']) ? $_GET['kw'] : ''), array('placeholder' => 'Search...', 'class' => 'form-control top-search')) ?>
+                        <?php echo CHtml::textField('kw', (isset($_GET['kw']) ? $_GET['kw'] : ''), array('placeholder' => Common::t('Search...', 'translate', NULL, $lang), 'class' => 'form-control top-search')) ?>
                         <span>
                             <i type="submit" class="glyphicon glyphicon-search search" onclick="$('#top-search-form').submit();"></i>
                         </span>
@@ -82,9 +82,9 @@ $back_url = Yii::app()->createUrl('home');
                 </div>
                 <?php $this->endWidget(); ?>
             </div>
-            <div class="social-link navbar-left">
+            <div class="social-link navbar-left <?php echo $lang ?>">
                 <ul class="nav navbar-nav">
-                    <li><div class="join-us">Join Us On</div></li>
+                    <li><div class="join-us"><?php echo Common::t('Join Us On', 'translate', NULL, $lang) ?></div></li>
                     <li>
                         <a href="#">
                             <img src="<?php echo Yii::app()->theme->baseurl ?>/img/facebook.png" />
