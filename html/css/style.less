@@ -479,7 +479,8 @@ blockquote:after {
     border-bottom: 1px solid #000;
 }
 .quote-item{
-    height: 425px !important;
+    /*height: 425px !important;*/
+    height: 350px !important;
     border: 1px solid #eee;
     overflow: hidden;
     border-radius: 5px;
@@ -3702,21 +3703,21 @@ nav{
         }
         .h-ct{
             padding-top: 40px;
-            font-size: 16px;
+            font-size: 26px;
             width: 60%;
             margin: 0 auto;
             line-height: 1.72em;
         }
         .h-ct:before{
-            font-family: FontAwesome;
-            content: '\f10d';
+/*            font-family: FontAwesome;
+            content: '\f10d';*/
             /*font-family: "Times New Roman";*/
             /*content: '“';*/
-            font-size: 20px;
+/*            font-size: 20px;
             font-weight: bold;
             margin-left: -30px;
             margin-top: -5px;
-            position: absolute;
+            position: absolute;*/
         }
     }
     .top-3-cat{
@@ -3801,6 +3802,17 @@ nav{
 .btn-cnt:hover{
     color: #fff;
 }
+.footer-holder-new.f-en{
+    margin-top: 20px;
+}
+.footer-holder-new.f-vi{
+    margin-top: 40px !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.footer-holder-new.f-vi{
+    margin-top: 60px !important;    /* This works only in Safari and Google Chrome */
+}
+}
 .footer-holder-new {
     height:210px;
     width: 100%;
@@ -3868,10 +3880,22 @@ nav{
 
 .newest-quote{
     .quote-item{
-        height: 545px !important;
+        height: 380px !important;
     }
     .item{
-        div{
+        .hslug-mu{
+            overflow: hidden;
+            height: 325px;
+            a {
+                img{
+                    margin: 0 auto;
+                    width: 654px;
+                }
+            }
+        }
+        .hslug-qo{
+            overflow: hidden;
+            height: 290px;
             a {
                 img{
                     margin: 0 auto;
@@ -3880,9 +3904,10 @@ nav{
             }
         }
         .m-a-quote{
+            margin-top: -62px !important;
             .quote {
                 height: 114px;
-                width: 85.002% !important;
+                /*width: 85% !important;*/
             }
         }
     }

@@ -1,6 +1,6 @@
 <?php $image_entry = ($row->image != '') ? $row->image : '0.jpg'; ?>
 <?php $image_author = ($row->feature_image != '') ? $row->feature_image : '0.jpg'; ?>
-<div>
+<div class="hslug-mu">
     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
         <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
         <!--<div class="quote-video-holder">-->

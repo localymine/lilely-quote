@@ -12,7 +12,7 @@ return array(
     'Topics' => 'Chủ đề',
     'All Topics' => 'Tất cả chủ đề',
     'Search...' => 'Tìm kiếm...',
-    'Join Us On' => 'Tham gia',
+    'Join Us On' => 'Kết nối',
     
     'About Us' => 'Giới thiệu',
     'Contact Us' => 'Liên hệ',

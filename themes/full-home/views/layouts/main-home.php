@@ -42,7 +42,7 @@
             <!-- /#page-content-wrapper -->
         </div>
         
-        <div class="container clearfix footer-holder-new">
+        <div class="container clearfix footer-holder-new <?php echo 'f-' . $this->lang ?>">
             <!-- Footer -->
             <?php $this->widget('FooterNew') ?>
             <!-- // Footer -->
