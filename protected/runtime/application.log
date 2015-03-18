@@ -12161,3 +12161,117 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/03/17 18:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "productinfo/x-video-converter-ultimate7.htm".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('productinfo/x-v...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=http://online.xilisoft.com/productinfo/x-video-converter-ultimate7.htm?pi=aW0wPTEuMC4wLjYmaW0xPVdpbmRvd3MgNyZpbTI9NGNhYTRkOTRlNzk4MDY1Nzg2ODdjY2JjNDEyODY3ODAmaW0zPTcuOC4wLjIwMTQwNDAxJmltND02JmltNT0yMDE1LTAzLTEzJmltNj0xMDMzJmltNz02NUM4LTNFQUUtMTY3QS1CMkQ4LTRFNjAtOTI5Mi0wNUUxLTk2MzAmaW04PTAmaW05PTAmaW0xMD0wJmltMTE9MCZpbTEyPTAmaW0xMz0wJmltMTQ9MCZpbTE1PTEmaW0xNj0wJmltMTc9MCZpbTE4PSZpbTE5PTEmaW0yMD0maW0yMT0zJmltMjI9JmltMjM9MyZpbTI0PVVTQSZFQz0mRVc9JkVTPSZFRT0mQ1BXPSZDUD0mQ1BTPSZNUD0mQVA9OSZKVD0mQ0M9MTEmRENDPTImQkM9JklGPSZJRD0mSVA9JkRQPSZDWlA9JkNEUD05JkRESUQ9JkREUFA9JkRESUU9JkRESUFEPSZBQz0mQVBFPSZGTEFDPSZDTE89JkNMRT0mUE09JkpBPSZKUk09JkpVPSZKRD0mSlRfVD0mSlJTVD0mSlJTUj0mSlBGPSZKQUE9JlBTRz0mREw9JkNMPSZDVV9VPSZDVV9TPSZDVV9GPSZER19JRj01JkpUX1A9JkVBPSZDVV9GX0NBX1Q9JlBGX0M9b2dndDo1OzE4X181OjI7dnA4OjQ7
+---
+2015/03/17 18:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ad.php".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('ad.php')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ad.php
+---
+2015/03/17 18:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vdc/win/devicesurport.ini".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('vdc/win/devices...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vdc/win/devicesurport.ini
+---
+2015/03/17 19:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence02.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence02.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/18 16:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence01.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence01.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/18 16:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence01.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence01.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/18 16:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/quote
+---
+2015/03/18 16:23:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/quote
+---
+2015/03/18 16:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence01.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence01.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/18 16:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence01.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence01.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/03/18 16:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence01.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence01.ogv
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/18 16:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence02.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence02.ogv
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/18 16:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "media/home/Sequence04.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence04.ogv
+HTTP_REFERER=http://lilely-quote.localhost/home
+---

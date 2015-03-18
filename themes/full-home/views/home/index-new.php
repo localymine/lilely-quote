@@ -11,10 +11,10 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
         </div>
         <div class="home-buttons">
             <div class="groups">
-                <a href="#">
-                    <buton class="btn btn-home-st1"><?php echo Common::t('Browser Lilely', 'translate', NULL, $lang) ?></buton>
+                <a href="<?php echo Yii::app()->createUrl('quote') ?>">
+                    <buton class="btn btn-home-st1"><?php echo Common::t('Browse Lilely', 'translate', NULL, $lang) ?></buton>
                 </a>
-                <a href="#">
+                <a class="mv2video" href="#">
                     <buton class="btn btn-home-st2"><?php echo Common::t('View Video', 'translate', NULL, $lang) ?><i class="fa fa-long-arrow-right"></i></buton>
                 </a>
             </div>
@@ -25,8 +25,8 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
                     <li>Video by</li>
                     <li>
                         <a>
-                            <span id="author">John Lewis</span>
-                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/quote_2_video-2889251853.png"/>
+                            <span id="author">Jim Rohn</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/author/jim-rohn-(quote)-4249464501.png"/>
                         </a>
                     </li>
                 </ul>
@@ -36,8 +36,8 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
                     <li>Video by</li>
                     <li>
                         <a>
-                            <span id="author">Steve Jobs</span>
-                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/steve-jobs-(quote)-1105295959.png"/>
+                            <span id="author">Richard Branson</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/author/richard-branson-(quote-1)-3243042496.png"/>
                         </a>
                     </li>
                 </ul>
@@ -47,8 +47,19 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
                     <li>Video by</li>
                     <li>
                         <a>
-                            <span id="author">Richard St. John</span>
-                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/quote/richard-st.-john-(8)-5668748896.png"/>
+                            <span id="author">Antonio Lucio Vivaldi</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/author/music_40_author-9322910038.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="g" style="display: none;">
+                <ul class="home-author">
+                    <li>Video by</li>
+                    <li>
+                        <a>
+                            <span id="author">Louis Schwartzberg</span>
+                            <img id="author-img" class="" width="77" src="<?php echo Yii::app()->baseurl ?>/images/author/louie-schwartzberg--1938634356.png"/>
                         </a>
                     </li>
                 </ul>
@@ -127,19 +138,29 @@ $url_check = Yii::app()->createUrl('subcribe/exists');
 $url_regist = Yii::app()->createUrl('subcribe/regist');
 
 $media_path = Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_media_home_path'];
-$video_sources = array('trailer1.webm', 'trailer2.webm', 'trailer3.webm');
+$video_sources = array('Sequence01.webm', 'Sequence02.webm', 'Sequence03.webm', 'Sequence04.webm');
+$quote_urls = array('either-you-run-the-day-or-the-day-runs-you', 'screw-it-let-s-do-it', 'the-four-seasons-winter', 'beauty-and-seduction-i-believe-is-nature-s-tool-for-survival-because-we-will-protect-what-we-fall-in-love-with');
 foreach ($video_sources as $value) {
     $video_source[] = $media_path . $value;
 }
+foreach ($quote_urls as $value) {
+    $quote_url[] = Yii::app()->createUrl('quote', array('slug' => $value));
+}
 $video_source = json_encode($video_source);
+$quote_url = json_encode($quote_url);
 
 $script = <<< EOD
+
+var quote_url = $quote_url;
+        
+$('.mv2video').attr('href', quote_url[0]);
         
 $('#bgvid').autoPlayVideo({
     source: $video_source,
     after: function (e) {
         $('.home-author-group li.g').fadeOut(1000).removeClass('active');
         $('.home-author-group li.g:nth-child(' + e.index + ')').fadeIn(1000);
+        $('.mv2video').attr('href', quote_url[e.index]);
     }
 });
 

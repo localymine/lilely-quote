@@ -480,7 +480,7 @@ blockquote:after {
 }
 .quote-item{
     /*height: 425px !important;*/
-    height: 350px !important;
+    height: 380px !important;
     border: 1px solid #eee;
     overflow: hidden;
     border-radius: 5px;
@@ -948,7 +948,9 @@ body{
 .background-white{
     background: @bg-color !important;
 }
-
+.background-white.home{
+    background: transparent !important;
+}
 .subscribe-text{
     position: absolute;
     font-size: 10px;
@@ -3515,7 +3517,8 @@ nav{
     color: #fff;
 }
 .home-video{
-    margin-top: 105px;
+    /*margin-top: 105px;*/
+    margin-top: -10px;
     min-height: 665px;
     video#bgvid {
         /*position: fixed;*/
