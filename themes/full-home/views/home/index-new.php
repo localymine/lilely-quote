@@ -139,16 +139,22 @@ $url_regist = Yii::app()->createUrl('subcribe/regist');
 
 $media_path = Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_media_home_path'];
 $video_sources = array('Sequence01.webm', 'Sequence02.webm', 'Sequence03.webm', 'Sequence04.webm');
-$quote_urls = array('either-you-run-the-day-or-the-day-runs-you', 'screw-it-let-s-do-it', 'the-four-seasons-winter', 'beauty-and-seduction-i-believe-is-nature-s-tool-for-survival-because-we-will-protect-what-we-fall-in-love-with');
+$quote_urls = array(
+    array('quote' => 'either-you-run-the-day-or-the-day-runs-you'),
+    array('quote' => 'screw-it-let-s-do-it'),
+    array('music' => 'the-four-seasons-winter'),
+    array('quote' => 'beauty-and-seduction-i-believe-is-nature-s-tool-for-survival-because-we-will-protect-what-we-fall-in-love-with'),
+);
 foreach ($video_sources as $value) {
     $video_source[] = $media_path . $value;
 }
 foreach ($quote_urls as $value) {
-    $quote_url[] = Yii::app()->createUrl('quote', array('slug' => $value));
+    foreach ($value as $k => $v) {
+        $quote_url[] = Yii::app()->createUrl($k . '/show', array('slug' => $v));
+    }
 }
 $video_source = json_encode($video_source);
 $quote_url = json_encode($quote_url);
-
 $script = <<< EOD
 
 var quote_url = $quote_url;
@@ -160,7 +166,7 @@ $('#bgvid').autoPlayVideo({
     after: function (e) {
         $('.home-author-group li.g').fadeOut(1000).removeClass('active');
         $('.home-author-group li.g:nth-child(' + e.index + ')').fadeIn(1000);
-        $('.mv2video').attr('href', quote_url[e.index]);
+        $('a.mv2video').attr('href', quote_url[e.index - 1]);
     }
 });
 

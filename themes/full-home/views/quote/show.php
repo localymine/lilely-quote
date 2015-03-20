@@ -271,6 +271,7 @@ $script = <<< EOD
 $(function(){
     $('.trans-show-btn').on('click', function(){
         $('.music-text').toggleClass('hidden');
+        $('.s-quote').toggleClass('hidden');
         $('.s-quote-top').toggleClass('hidden');
         $('.by-author').toggleClass('hidden');
         $('.info-detail').toggleClass('hidden');

@@ -12275,3 +12275,85 @@ Stack trace:
 REQUEST_URI=/media/home/Sequence04.ogv
 HTTP_REFERER=http://lilely-quote.localhost/home
 ---
+2015/03/19 06:54:08 [error] [php] Undefined variable: key (D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php:153)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CController.php(869): HomeController->renderFile()
+#1 D:\xampp\htdocs\yii\web\CController.php(782): HomeController->renderPartial()
+#2 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#3 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#4 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#6 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#7 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#8 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php (153)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php (26)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/03/19 06:54:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/19 06:54:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/19 06:54:28 [error] [php] Undefined variable: quote_url (D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php:156)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CController.php(869): HomeController->renderFile()
+#1 D:\xampp\htdocs\yii\web\CController.php(782): HomeController->renderPartial()
+#2 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#3 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#4 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#6 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#7 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#8 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\home\index-new.php (156)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php (26)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/03/19 16:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "productinfo/x-video-converter-ultimate7.htm".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('productinfo/x-v...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=http://online.xilisoft.com/productinfo/x-video-converter-ultimate7.htm?pi=aW0wPTEuMC4wLjYmaW0xPVdpbmRvd3MgNyZpbTI9YTg0ZTU0MDYyZmI2MDgyYTZiMDI3M2U3M2FkNmNhNTImaW0zPTcuOC4wLjIwMTQwNDAxJmltND03JmltNT0yMDE1LTAzLTEzJmltNj0xMDMzJmltNz02NUM4LTNFQUUtMTY3QS1CMkQ4LTRFNjAtOTI5Mi0wNUUxLTk2MzAmaW04PTAmaW05PTAmaW0xMD0wJmltMTE9MCZpbTEyPTAmaW0xMz0wJmltMTQ9MCZpbTE1PTEmaW0xNj0wJmltMTc9MCZpbTE4PSZpbTE5PTEmaW0yMD0maW0yMT0zJmltMjI9JmltMjM9NCZpbTI0PVVTQSZFQz0mRVc9JkVTPSZFRT0mQ1BXPSZDUD0mQ1BTPSZNUD0mQVA9MTEmSlQ9JkNDPTEzJkRDQz0yJkJDPSZJRj0mSUQ9JklQPSZEUD0mQ1pQPSZDRFA9MTEmRERJRD0mRERQUD0mRERJRT0mRERJQUQ9JkFDPSZBUEU9JkZMQUM9JkNMTz0mQ0xFPSZQTT0mSkE9JkpSTT0mSlU9JkpEPSZKVF9UPSZKUlNUPSZKUlNSPSZKUEY9JkpBQT0mUFNHPSZETD0mQ0w9JkNVX1U9JkNVX1M9JkNVX0Y9JkRHX0lGPTYmSlRfUD0mRUE9JkNVX0ZfQ0FfVD0mUEZfQz1vZ2d0OjY7MThfXzU6Mjt2cDg6NTs=
+---
+2015/03/19 16:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ad.php".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('ad.php')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ad.php
+---
+2015/03/19 16:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vdc/win/devicesurport.ini".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('vdc/win/devices...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/vdc/win/devicesurport.ini
+---
+2015/03/19 19:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "onlinestore/mixplayM.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('onlinestore/mix...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/onlinestore/mixplayM.png
+---

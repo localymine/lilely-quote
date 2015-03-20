@@ -6,7 +6,7 @@ $back_url = Yii::app()->createUrl('home');
 ?>
 
 
-<nav class="navbar navbar-fixed-top background-white <?php echo $controller ?> new-top-home">
+<nav class="navbar navbar-fixed-top background-white new-top-home">
     <div class="top-holder">
         <ul class="nav nav-pills logo-padding navbar-left">
             <li>
