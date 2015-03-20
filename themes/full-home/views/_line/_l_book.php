@@ -2,7 +2,7 @@
 <?php $image_author = ($row->feature_image != '') ? $row->feature_image : '0.jpg'; ?>
 <div>
     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
-        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive center-block" width="203">
+        <img alt="<?php echo $row->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive center-block" width="203">
     </a>
 </div>
 <div class="m-a-quote">

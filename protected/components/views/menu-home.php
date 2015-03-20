@@ -16,7 +16,7 @@ $summary = Common::t('We create a single place to discover, listen and share all
         <ul class="nav nav-pills logo-padding navbar-left">
             <li>
                 <a href="<?php echo $back_url ?>">
-                    <img class="img-responsive" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
+                    <img class="img-responsive" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
                 </a>
             </li>
         </ul>
@@ -45,7 +45,7 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('quote') ?>" title="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" />
+                                <img alt="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
@@ -57,7 +57,7 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('book') ?>" title="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" />
+                                <img alt="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
@@ -69,7 +69,7 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('music') ?>" title="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" />
+                                <img alt="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
@@ -96,7 +96,7 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <div class="inner-addon right-addon">
                         <?php echo CHtml::textField('kw', (isset($_GET['kw']) ? $_GET['kw'] : ''), array('placeholder' => Common::t('Search...', 'translate', NULL, $lang), 'class' => 'form-control top-search')) ?>
                         <span>
-                            <i type="submit" class="glyphicon glyphicon-search search" onclick="$('#top-search-form').submit();"></i>
+                            <i class="glyphicon glyphicon-search search" onclick="$('#top-search-form').submit();"></i>
                         </span>
                     </div>
                 </div>
@@ -107,18 +107,18 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <li><div class="join-us"><?php echo Common::t('Join Us On', 'translate', NULL, $lang) ?></div></li>
                     <li>
                         <a onClick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php echo $title;?>&amp;p[summary]=<?php echo $summary;?>&amp;p[url]=<?php echo $share_url; ?>&amp;p[images][0]=<?php echo $share_img;?>','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)">
-                            <img src="<?php echo Yii::app()->theme->baseurl ?>/img/facebook.png" />
+                            <img alt="facebook" src="<?php echo Yii::app()->theme->baseurl ?>/img/facebook.png" />
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="<?php echo Yii::app()->theme->baseurl ?>/img/twitter.png" />
+                            <img alt="twitter" src="<?php echo Yii::app()->theme->baseurl ?>/img/twitter.png" />
                         </a>
                     </li>
                     <li>
                         <a href="https://plus.google.com/share?url=<?php echo $share_url ?>" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                            <img src="<?php echo Yii::app()->theme->baseurl ?>/img/google.png" />
+                            <img alt="google+" src="<?php echo Yii::app()->theme->baseurl ?>/img/google.png" />
                         </a>
                     </li>
                 </ul>

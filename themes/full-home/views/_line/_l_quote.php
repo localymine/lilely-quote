@@ -12,7 +12,7 @@ foreach ($this->languages as $key => $value){
 
 <div class="hslug-qo">
     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
-        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
+        <img alt="<?php echo $row->post_content ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
         <!--<div class="quote-video-holder">-->
             <!--<div class="quote-video-play-btn"><i class="fa fa-play fa-3x"></i></div>-->
         <!--</div>-->
@@ -59,7 +59,7 @@ foreach ($this->languages as $key => $value){
 
             <div id="main-lang-id-<?php echo $row->id ?>" class="box-quote">
                 <div class="q">
-                    <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
+                    <img alt="q16" src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
                     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
                         <?php echo $row->post_content ?>
                     </a>
@@ -87,7 +87,7 @@ foreach ($this->languages as $key => $value){
             
             <div id="trans-id-<?php echo $row->id ?>" class="box-trans-quote">
                 <div class="q">
-                    <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
+                    <img alt="q16" src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-r-16.png"/>
                     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $model_line->slug, 'language' => $lang)) ?>">
                         <?php echo $model_line->post_content ?>
                     </a>

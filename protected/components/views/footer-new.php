@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-md-12 footer-contanter-2">
             <div class="col-md-6">
-                <h1 class="site-name">Lilely.com</h1>
+                <h2 class="site-name">Lilely.com</h2>
                 <p>&copy; Copyright 2015 <span class="ctn">Lilely</span>. All Rights Reserved</p>
             </div>
             <div class="col-md-6">

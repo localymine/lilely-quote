@@ -17,7 +17,7 @@ foreach ($this->languages as $key => $value){
             <div class="bk-front">
                 <div class="bk-cover bk-bookview" data-trans-id="<?php echo $row->id ?>">
                     <?php if($row->cover != ''): ?>
-                        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
+                        <img alt="<?php echo $row->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
                     <?php else: ?>
                         <h2>
                             <span><?php echo $row->quote_author ?></span>
@@ -60,7 +60,7 @@ foreach ($this->languages as $key => $value){
             <div class="bk-front">
                 <div class="bk-cover bk-bookview" data-trans-id="<?php echo $row->id ?>">
                     <?php if($row->cover != ''): ?>
-                        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
+                        <img alt="<?php echo $model_line->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
                     <?php else: ?>
                         <h2>
                             <span><?php echo $row->quote_author ?></span>

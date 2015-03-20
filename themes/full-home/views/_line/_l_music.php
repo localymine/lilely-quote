@@ -2,7 +2,7 @@
 <?php $image_author = ($row->feature_image != '') ? $row->feature_image : '0.jpg'; ?>
 <div class="hslug-mu">
     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
-        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
+        <img alt="<?php echo $row->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
         <!--<div class="quote-video-holder">-->
             <!--<div class="quote-video-play-btn"><i class="fa fa-play fa-3x"></i></div>-->
         <!--</div>-->
@@ -33,7 +33,7 @@
         </div>
         <div class="quote">
             <div class="m">
-                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/music-r-16.png"/>
+                <img alt="m16" src="<?php echo Yii::app()->theme->baseUrl ?>/img/music-r-16.png"/>
                 <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
                     <?php echo $row->post_title ?>
                 </a>

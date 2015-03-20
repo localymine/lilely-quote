@@ -72,7 +72,7 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
 <div class="container clearfix home-content">
     <div class="welcome-home">
         <h1 class="h-hi-1"><?php echo Common::t('Welcome!', 'translate', NULL, $lang) ?></h1>
-        <h1 class="h-hi-2"><?php echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h1>
+        <h2 class="h-hi-2"><?php echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h2>
         <p class="h-ct"><?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $lang) ?></p>
     </div>
 
