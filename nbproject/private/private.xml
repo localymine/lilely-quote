@@ -90,9 +90,11 @@
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Post.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/social-top-facebook-share.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/index.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/AuthorsController.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_music.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/SubcribeController.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_quote.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>

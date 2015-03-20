@@ -40,6 +40,7 @@ class Terms extends CActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'termtaxonomy' => array(self::HAS_MANY, 'TermTaxonomy', 'term_id'),
+            'termrelationships' => array(self::HAS_MANY, 'TermRelationships', 'term_id'),
         );
     }
 
@@ -166,6 +167,17 @@ class Terms extends CActiveRecord {
             'join' => "LEFT JOIN term_taxonomy ON id = term_taxonomy_id",
         ));
         
+        return $this;
+    }
+    
+    public function get_topic_by_post_type($post_type = 'quote'){
+        $this->getDbCriteria()->mergeWith(array(
+            'join' => " LEFT JOIN term_relationships ON (t.id = term_taxonomy_id) "
+                    . " LEFT JOIN post ON (post.id = object_id and post_type LIKE '$post_type') "
+                    . " LEFT JOIN term_taxonomy ON (term_relationships.term_taxonomy_id = term_taxonomy.term_taxonomy_id and parent = 0) ",
+            'group' => 't.id',
+            'order' => 'name',
+        ));
         return $this;
     }
 }

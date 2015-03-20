@@ -198,6 +198,10 @@ $(function() {
     $('.close-yt-rel').on('click', function(){
         $('.yt-rel-holder').hide();
     });
+    
+    $('.btn-cate-st').on('click', function(){
+       location.href = $(this).data('href');
+    });
 });
 
 $(document).ready(function() {

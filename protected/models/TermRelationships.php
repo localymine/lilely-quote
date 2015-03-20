@@ -40,6 +40,7 @@ class TermRelationships extends CActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'termtaxonomy' => array(self::BELONGS_TO, 'TermTaxonomy', 'term_taxonomy_id'),
+            'terms' => array(self::BELONGS_TO, 'Terms', 'term_taxonomy_id'),
         );
     }
 
