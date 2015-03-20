@@ -3,6 +3,11 @@ $controller = Yii::app()->controller->id;
 $action = Yii::app()->controller->action->id;
 $banner = Slide::model()->load_banner()->find();
 $back_url = Yii::app()->createUrl('home');
+
+$share_url = Yii::app()->params['siteUrl'];
+$share_img = Yii::app()->params['siteUrl'] . '/images/logo.png';
+$title = Yii::app()->name;
+$summary = Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $lang);
 ?>
 
 
@@ -86,7 +91,7 @@ $back_url = Yii::app()->createUrl('home');
                 <ul class="nav navbar-nav">
                     <li><div class="join-us"><?php echo Common::t('Join Us On', 'translate', NULL, $lang) ?></div></li>
                     <li>
-                        <a href="#">
+                        <a onClick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php echo $title;?>&amp;p[summary]=<?php echo $summary;?>&amp;p[url]=<?php echo $share_url; ?>&amp;p[images][0]=<?php echo $share_img;?>','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)">
                             <img src="<?php echo Yii::app()->theme->baseurl ?>/img/facebook.png" />
                         </a>
                     </li>
@@ -96,7 +101,8 @@ $back_url = Yii::app()->createUrl('home');
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://plus.google.com/share?url=<?php echo $share_url ?>" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
                             <img src="<?php echo Yii::app()->theme->baseurl ?>/img/google.png" />
                         </a>
                     </li>

@@ -8,6 +8,27 @@
         <meta name="description" content="quote, book, music">
         <meta name="keywords" content="quote, book, music">
         <meta name="author" content="Lilely">
+        
+        <!-- for Google -->
+        <meta name="description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta name="keywords" content="quote, music, book" />
+        <meta name="author" content="Live Lilely" />
+        <meta name="copyright" content="2015" />
+        <meta name="application-name" content="<?php echo $this->pageTitle ?>" />
+
+        <!-- for Facebook -->          
+        <meta property="og:title" content="<?php echo $this->pageTitle ?>" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="<?php echo Yii::app()->params['siteUrl'] . '/images/logo.png' ?>" />
+        <meta property="og:url" content="<?php echo Yii::app()->params['siteUrl'] ?>" />
+        <meta property="og:description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="<?php echo $this->pageTitle ?>" />
+        <meta name="twitter:description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta name="twitter:image" content="<?php echo Yii::app()->params['siteUrl'] . '/images/logo.png' ?>" />
+        
         <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
 
         <!-- Bootstrap core CSS -->
