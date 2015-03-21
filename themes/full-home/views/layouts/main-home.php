@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- for Google -->
-        <meta name="description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta name="description" content="<?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $this->lang) ?>" />
         <meta name="keywords" content="quote, book, music" />
         <meta name="author" content="Live Lilely" />
         <meta name="copyright" content="Lilely Company" />
@@ -17,12 +17,12 @@
         <meta property="og:type" content="article" />
         <meta property="og:image" content="<?php echo Yii::app()->params['siteUrl'] . '/images/logo.png' ?>" />
         <meta property="og:url" content="<?php echo Yii::app()->params['siteUrl'] ?>" />
-        <meta property="og:description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta property="og:description" content="<?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $this->lang) ?>" />
 
         <!-- for Twitter -->          
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="<?php echo $this->pageTitle ?>" />
-        <meta name="twitter:description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta name="twitter:description" content="<?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $this->lang) ?>" />
         <meta name="twitter:image" content="<?php echo Yii::app()->params['siteUrl'] . '/images/logo.png' ?>" />
         
         <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
@@ -69,7 +69,7 @@
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/bootstrap.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/jQuery.jPlayer.2.7.0/jquery.jplayer.min.js"></script>-->
-<!--        <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-media/jvplay.min.js"></script>-->
+        <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-media/jvplay.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootbox/bootbox.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/fancybox/jquery.fancybox.pack.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-slimScroll/jquery.slimscroll.min.js"></script>-->

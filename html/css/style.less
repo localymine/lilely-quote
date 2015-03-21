@@ -31,7 +31,8 @@ and open the template in the editor.
 @width-sidebar: 0px;
 @font-size: 12px;
 @hashtag-color: #4F9000;
-@font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+/*@font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+@font-default: "Open Sans";
 @top-home-border: #0F0F0F;
 @bottom-home-border: #7b8a95;
 @font-new-home: "Open Sans";
@@ -444,7 +445,8 @@ blockquote:after {
 }
 
 /*@quote-font: "Segoe UI","Gill Sans","Droid Sans","Trebuchet MS",sans-serif;*/
-@quote-font: "Verdana", "Verdana", "Geneva", sans-serif;
+/*@quote-font: "Verdana", "Verdana", "Geneva", sans-serif;*/
+@quote-font: "Open Sans";
 .gallery > .row > div > .item .m-a-quote{
     width: 100%;
     margin-top: -55px;
@@ -480,7 +482,7 @@ blockquote:after {
 }
 .quote-item{
     /*height: 425px !important;*/
-    height: 380px !important;
+    height: 400px !important;
     border: 1px solid #eee;
     overflow: hidden;
     border-radius: 5px;
@@ -566,11 +568,13 @@ blockquote:after {
     /*padding-right: 5px;*/
     background: #fff;
     min-height: 82px;
-    font-size: 16px;
+    font-size: 18px;
+    /*font-weight: bold;*/
     font-family: @quote-font;
 }
 .gallery > .row > div > .item .m-a-quote .quote .q {
-    font-size: 16px;
+    font-size: 18px;
+    /*font-weight: bold;*/
     line-height: 178%;
     padding-right: 5px;
     /*text-align: justify;*/
@@ -609,10 +613,10 @@ blockquote:after {
     }
     .by-mp{
         color: #b19a4e;
-        font-size: @font-size;
+        font-size: @font-size + 2 !important;
         .c1:first-child{
             text-transform: uppercase;
-            font-size: 10px;
+            font-size: @font-size + 2;
         }
         .c1{
             vertical-align: top;
@@ -641,10 +645,10 @@ blockquote:after {
     }
     .by-mp{
         color: #b19a4e;
-        font-size: @font-size;
+        font-size: @font-size + 2;
         .c1:first-child{
             text-transform: uppercase;
-            font-size: 10px;
+            font-size: @font-size + 2;
         }
         .c1{
             vertical-align: top;
@@ -1049,29 +1053,42 @@ nav{
 .fa-m-side-nav-p{
     margin-top:3px;
 }
+/*margin menu top*/
+.mmt{
+    margin-top: -8px;
+}
 .fa-m-quote{
     background: url('../img/quote-w.png');
     width: 32px;
     height: 32px;
+    &:hover{
+        background: url('../img/quote-b.png');
+    }
 }
 .fa-m-classical-music{
     background: url('../img/music-w.png');
     width: 32px;
     height: 32px;
+    &:hover{
+        background: url('../img/music-b.png');
+    }
 }
 .fa-m-book{
     background: url('../img/book-w.png');
     width: 32px;
     height: 32px;
+    &:hover{
+        background: url('../img/book-b.png');
+    }
 }
 .active .fa-m-quote{
-    background: url('../img/quote-r.png');
+    background: url('../img/quote-b.png');
 }
 .active .fa-m-classical-music{
-    background: url('../img/music-r.png');
+    background: url('../img/music-b.png');
 }
 .active .fa-m-book{
-    background: url('../img/book-r.png');
+    background: url('../img/book-b.png');
 }
 
 @link-hover-bg-color: lightten(@text-color);
@@ -1079,7 +1096,8 @@ nav{
 @link-hover-gra-2: #fff;
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
-    background-color: @background-color !important;
+    /*background-color: @background-color !important;*/
+    background-color: @new-main-color !important;
 }
 .dropdown-menu > .active > a > i, .dropdown-menu > .active > a:hover > i, .dropdown-menu > .active > a:focus > i{
     color: #fff;
@@ -1133,6 +1151,15 @@ nav{
             white-space: nowrap;
             font-weight: bold;
         }
+        span.li-all-type{
+            clear: both;
+            color: #333;
+            display: block;
+            font-weight: bold;
+            line-height: 1.42857;
+            white-space: nowrap;
+            font-weight: bold;
+        }
     }
 }
 li.dropdown{
@@ -1171,6 +1198,17 @@ li.dropdown{
                 -moz-transition: all 0.3s ease-in;
                 -o-transition: all 0.3s ease-in;
             }
+            /*.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{*/
+                /*background-color: @background-color !important;*/
+                /*background-color: @new-main-color !important;*/
+            /*}*/
+        }
+        /*li.active{*/
+            /*background-color: @new-main-color !important;*/
+            /*color: #fff;*/
+        /*}*/
+        li:hover{
+            background: #fff !important;
         }
     }
 }
@@ -2906,10 +2944,12 @@ li.dropdown{
 .show-content {
     .by-author{
         margin-bottom: 20px;
+        font-weight: normal;
+        font-size: @font-size + 2 !important;
         span{
             color: #B19A4E;
-            font-size: @font-size;
             padding: 1px;
+            font-size: @font-size + 2;
         }
         a.jp-play{
             font-size: 13.5px !important;
@@ -3562,7 +3602,7 @@ li.dropdown{
     padding-top: 42px;
 }
 .btn-lilely {
-    background-color: #ffda39;
+    background-color: @new-main-color;
     border-color: #ffda39;
     color: #fff;
     height: 32px;
@@ -3663,7 +3703,7 @@ li.dropdown{
     color: #333;
 }
 .btn-home-st2{
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.5);
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -3739,7 +3779,7 @@ li.dropdown{
 }
 
 .home-content{
-    height: 599px;
+    /*height: 599px;*/
     width: 100%;
     background: #fff;
     .welcome-home{
@@ -3756,22 +3796,25 @@ li.dropdown{
             text-transform: uppercase;
         }
         .h-ct{
-            padding-top: 40px;
-            font-size: 26px;
+            padding-top: 30px;
+            font-size: 30px;
             width: 60%;
             margin: 0 auto;
             line-height: 1.72em;
+            font-weight: bold;
         }
         .h-ct:before{
-            font-family: FontAwesome;
+            font-family: "Times New Roman";
+            content: '“';
+/*            font-family: FontAwesome;
             content: '\f10d';
-            /*font-family: "Times New Roman";*/
-            /*content: '“';*/
-            font-size: 20px;
+            font-size: 20px;*/
+            font-size: 60px;
             font-weight: bold;
-            margin-left: -30px;
-            margin-top: -5px;
+            margin-left: -35px;
+            margin-top: 0px;
             position: absolute;
+            
         }
     }
     .top-3-cat{
@@ -3789,15 +3832,22 @@ li.dropdown{
             }
             .t1{
                 width: 67px;
-                background: @new-main-color;
+                /*background: @new-main-color;*/
+                background: rgba(255, 218, 57, 0.75);
                 text-align: center;
             }
             .t2{
-                a{color: #fff;}
+                a{
+                    color: #fff;
+                    display: block;
+                    &:hover{
+                        color: @new-main-color;
+                    }
+                }
                 font-size: 24px;
                 font-weight: bold;
                 width: calc(369px - 67px);
-                background: rgba(0 ,0 , 0, 0.8);
+                background: rgba(0 ,0 , 0, 0.5);
                 padding-left: 25px;
             }
         }

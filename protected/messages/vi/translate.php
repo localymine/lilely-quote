@@ -25,9 +25,10 @@ return array(
     
     'Welcome!' => 'Chào mừng',
     'We are Lilely' => 'Các bạn đến với Lilely !',
-    'We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.' => 'Chúng tôi tạo ra một nơi để khám phá, lắng nghe và chia sẻ tất cả thông điệp có thể dìu dắt bạn. Công việc mà chúng tôi làm sẽ tiếp thêm sức mạnh cho thế giới.',
+    'Lilely is a single place to discover, listen and share all the messages uplifting you.' => 'Chúng tôi tạo ra một nơi để khám phá, lắng nghe và chia sẻ tất cả thông điệp có thể dìu dắt bạn.',
     
-    'Browser Lilely' => 'Trình duyệt Lilely',
+    'To Begin Anew' => 'Con Đường Mới',
+    'Browser Lilely' => 'Trình duyệt',
     'View Video' => 'Xem clip',
     'Subscribe for Newsletter' => 'Nhận thông điệp từ Lilely',
     'Enter your Email Address' => 'Nhập email của bạn',

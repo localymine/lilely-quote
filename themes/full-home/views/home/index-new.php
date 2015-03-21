@@ -6,19 +6,20 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
     <div class="home-mid-content">
         <div class="lets-live-lilely">
             <div class="text">
-                To Begin Anew
+                <?php echo Common::t('To Begin Anew', 'translate', NULL, $lang) ?>
             </div>
         </div>
         <div class="home-buttons">
             <div class="groups">
                 <a href="<?php echo Yii::app()->createUrl('quote') ?>">
-                    <buton class="btn btn-home-st1"><?php echo Common::t('Browse Lilely', 'translate', NULL, $lang) ?></buton>
+                    <buton class="btn btn-home-st1"><?php echo Common::t('Browser Lilely', 'translate', NULL, $lang) ?></buton>
                 </a>
                 <a class="mv2video" href="#">
                     <buton class="btn btn-home-st2"><?php echo Common::t('View Video', 'translate', NULL, $lang) ?><i class="fa fa-long-arrow-right"></i></buton>
                 </a>
             </div>
         </div>
+        <!--
         <ul class="home-author-group">
             <li class="g">
                 <ul class="home-author">
@@ -65,15 +66,16 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
                 </ul>
             </li>
         </ul>
+        -->
     </div>
     <video id="bgvid" poster="" autoplay="" muted></video>
 </div>
 
 <div class="container clearfix home-content">
     <div class="welcome-home">
-        <h1 class="h-hi-1"><?php echo Common::t('Welcome!', 'translate', NULL, $lang) ?></h1>
-        <h2 class="h-hi-2"><?php echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h2>
-        <p class="h-ct"><?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $lang) ?></p>
+        <!--<h1 class="h-hi-1"><?php // echo Common::t('Welcome!', 'translate', NULL, $lang) ?></h1>-->
+        <!--<h2 class="h-hi-2"><?php // echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h2>-->
+        <h1 class="h-ct"><?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $lang) ?></h1>
     </div>
 
     <div class="container top-3-cat">
@@ -138,9 +140,8 @@ $url_check = Yii::app()->createUrl('subcribe/exists');
 $url_regist = Yii::app()->createUrl('subcribe/regist');
 
 $media_path = Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_media_home_path'];
-$video_sources = array('Sequence01.webm', 'Sequence02.webm', 'Sequence03.webm', 'Sequence04.webm');
+$video_sources = array('Sequence02.webm', 'Sequence03.webm', 'Sequence04.webm');
 $quote_urls = array(
-    array('quote' => 'either-you-run-the-day-or-the-day-runs-you'),
     array('quote' => 'screw-it-let-s-do-it'),
     array('music' => 'the-four-seasons-winter'),
     array('quote' => 'beauty-and-seduction-i-believe-is-nature-s-tool-for-survival-because-we-will-protect-what-we-fall-in-love-with'),

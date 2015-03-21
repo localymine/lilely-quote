@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- for Google -->
-        <meta name="description" content="<?php echo Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $this->lang) ?>" />
+        <meta name="description" content="<?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $this->lang) ?>" />
         <meta name="keywords" content="quote, book, music" />
         <meta name="author" content="Live Lilely" />
         <meta name="copyright" content="Lilely Company" />

@@ -7,7 +7,7 @@ $back_url = Yii::app()->createUrl('home');
 $share_url = Yii::app()->params['siteUrl'];
 $share_img = Yii::app()->params['siteUrl'] . '/images/logo.png';
 $title = Yii::app()->name;
-$summary = Common::t('We create a single place to discover, listen and share all the messages uplifting you. We do work that powers the world.', 'translate', NULL, $lang);
+$summary = Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $lang);
 ?>
 
 
@@ -45,36 +45,45 @@ $summary = Common::t('We create a single place to discover, listen and share all
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('quote') ?>" title="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img alt="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" />
+                                <img class="hov-top-men" alt="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" data-img-d="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png" data-img-h="<?php echo Yii::app()->theme->baseurl ?>/img/quote-b.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <?php foreach ($quote_topics as $q_row):?>
-                            <li><a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug)) ?>"><?php echo $q_row->name ?></a></li>
+                            <li><span class="li-all-type"><?php echo Common::t('Quote', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($model as $row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $row->terms->localized($this->lang)->slug)) ?>"><?php echo $row->terms->localized($this->lang)->name ?></a>
+                            </li>
                             <?php endforeach; ?>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('book') ?>" title="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img alt="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" />
+                                <img class="hov-top-men" alt="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" data-img-d="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png" data-img-h="<?php echo Yii::app()->theme->baseurl ?>/img/book-b.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <?php foreach ($book_topics as $b_row):?>
-                            <li><a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug)) ?>"><?php echo $b_row->name ?></a></li>
+                            <li><span class="li-all-type"><?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($model as $row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $row->terms->localized($this->lang)->slug)) ?>"><?php echo $row->terms->localized($this->lang)->name ?></a>
+                            </li>
                             <?php endforeach; ?>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('music') ?>" title="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>">
                             <span>
-                                <img alt="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" />
+                                <img class="hov-top-men" alt="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>" src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" data-img-d="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png" data-img-h="<?php echo Yii::app()->theme->baseurl ?>/img/music-b.png" />
                             </span>
                         </button>
                         <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <?php foreach ($music_topics as $m_row):?>
-                            <li><a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug)) ?>"><?php echo $m_row->name ?></a></li>
+                            <li><span class="li-all-type"><?php echo Common::t('Music', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($model as $row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $row->terms->localized($this->lang)->slug)) ?>"><?php echo $row->terms->localized($this->lang)->name ?></a>
+                            </li>
                             <?php endforeach; ?>
                         </ul>
                     </li>
