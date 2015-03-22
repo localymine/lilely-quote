@@ -67,6 +67,8 @@
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-swipe/jquery.touchSwipe.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-validate/jquery.validate.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js-validate/jquery.validate.bootstrap.popover.min.js"></script>-->
+        <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/jquery.pietimer.js"></script>-->
+        <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/jquery.countdown360.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/common.js"></script>-->
         
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/all.js"></script>

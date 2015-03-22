@@ -12,8 +12,8 @@ $title = Common::t('Classical Music') . ' | ' . Yii::app()->name;
 
 $filename = $post->post_type . '-' . $image_entry;
 $filename_path = Yii::app()->params['set_image_path'] . 'thumb/' . $filename;
-if (file_exists($filename_path) === FALSE){
-   Yii::app()->curl->get(Yii::app()->params['siteUrl'] . '/thumb', array('im' => $image_entry, 'tp' => $post->post_type));
+if (file_exists($filename_path) === FALSE) {
+    Yii::app()->curl->get(Yii::app()->params['siteUrl'] . '/thumb', array('im' => $image_entry, 'tp' => $post->post_type));
 }
 $image_url = Yii::app()->params['siteUrl'] . '/images/thumb/' . $filename;
 
@@ -85,8 +85,8 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                 <div class="s-book-title center-block hidden"><?php echo $model_line->post_title ?></div>
             </div>
             <div class="col-md-12">
-                    <div class="by-author center-block"><span><?php echo Common::t('By', 'translate') ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a></div>
-                    <div class="by-author center-block hidden"><span><?php echo Common::t('By', 'translate', NULL, $lang) ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a></div>
+                <div class="by-author center-block"><span><?php echo Common::t('By', 'translate') ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a></div>
+                <div class="by-author center-block hidden"><span><?php echo Common::t('By', 'translate', NULL, $lang) ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a></div>
             </div>
             <div class="col-md-12">
                 <div class="music-content"><?php echo $post->post_content ?></div>
@@ -116,6 +116,7 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                         </div>
                         <div id="yt-player"></div>
                     </div>
+                    <div id="timer"></div>
                     <?php
                     $this->widget('SocialNetwork', array(
                         'type' => 'social-youtube',
@@ -217,6 +218,7 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
     </div>
 </div>
 
+<?php $next_video = array(); ?>
 <?php if ($tags != NULL): ?>
     <?php $relation_post = Post::model()->localized($this->lang)->get_relation_post_by_term($tags[0]->term_taxonomy_id, $post->id, $post->post_type, 3)->findAll(); ?>
     <div class="row dashed"></div>
@@ -249,6 +251,7 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                 <div class="col-md-4">
                     <div class="rel-entry">
                         <?php $re_image_entry = ($re->image != '') ? $re->image : '0.jpg'; ?>
+                        <?php $next_video[] = Yii::app()->createUrl($re->post_type . '/show', array('slug' => $re->slug)); ?>
                         <a href="<?php echo Yii::app()->createUrl($re->post_type . '/show', array('slug' => $re->slug)) ?>">
                             <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $re->post_type ?>/<?php echo $re_image_entry ?>" class="img-responsive">
                             <div class="rel-title-holder">
@@ -283,8 +286,9 @@ $(function(){
 EOD;
 Yii::app()->clientScript->registerScript('trans-music-' . rand(), $script, CClientScript::POS_END);
 ?>
-    
+
 <script>
+    var next_vid = <?php echo json_encode($next_video) ?>;
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
 
@@ -298,7 +302,7 @@ Yii::app()->clientScript->registerScript('trans-music-' . rand(), $script, CClie
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('yt-player', {
             videoId: '<?php echo isset($yt_video_ids['v']) ? $yt_video_ids['v'] : '' ?>',
-            playerVars: {'autoplay': 1, 'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0  ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0  ?>'},
+            playerVars: {'autoplay': 1, 'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0 ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0 ?>'},
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -321,6 +325,20 @@ Yii::app()->clientScript->registerScript('trans-music-' . rand(), $script, CClie
         //
         if (event.data == YT.PlayerState.ENDED) {
             $('.yt-rel-holder').show();
+            $("#timer").countdown360({
+                radius: 60,
+                seconds: 10,
+                fontColor: '#333',
+                strokeStyle: '#ffda39',
+//                fillStyle: "#ffdf53",
+                fillStyle: "transparent",
+                label: '',
+                autostart: false,
+                onComplete: function () {
+                    var next = next_vid[Math.floor(Math.random() * next_vid.length)];
+                    location.href = next;
+                }
+            }).start()
         }
     }
     //
@@ -330,7 +348,7 @@ Yii::app()->clientScript->registerScript('trans-music-' . rand(), $script, CClie
             url: "<?php echo Yii::app()->createUrl('loadMore') ?>",
             type: 'post',
             data: data,
-            success: function(html) {
+            success: function (html) {
                 $('.yt-rel-holder').html(html);
             }
         });

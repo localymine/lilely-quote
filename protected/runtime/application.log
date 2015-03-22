@@ -14680,3 +14680,84 @@ Stack trace:
 REQUEST_URI=/vi/home
 HTTP_REFERER=http://lilely-quote.localhost/home
 ---
+2015/03/22 15:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 15:35:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 15:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 15:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 15:53:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 16:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 16:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 16:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/symphony-no-1-in-c-minor-op-68
+---
+2015/03/22 17:04:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/music/per-olov-kindgren-3742724973.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/music/pe...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/music/per-olov-kindgren-3742724973.png
+HTTP_REFERER=http://lilely-quote.localhost/music/somebody-that-i-used-to-know
+---
