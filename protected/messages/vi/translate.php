@@ -41,4 +41,8 @@ return array(
     'Quote to live by' => 'Trích dẫn sống',
     'Knowledge is power' => 'Tri thức là sức mạnh',
     'Learn English with songs' => 'Học tiếng Anh<br>qua bài hát',
+    
+    'Translate' => 'Dịch',
+    'Listen' => 'Nghe',
+    
 );

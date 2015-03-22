@@ -13914,3 +13914,769 @@ Stack trace:
 REQUEST_URI=/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
 HTTP_REFERER=http://lilely-quote.localhost/quote
 ---
+2015/03/21 17:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/giết-con-chim-nhại-8856651191.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/gi\xE1...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/gi%E1%BA%BFt-con-chim-nh%E1%BA%A1i-8856651191.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0021-20141208-2265084255.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0021-20141208-2265084255.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0035-20141208-3109757206.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0035-20141208-3109757206.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-sticking-point-solution-8738421765.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/the-sticking-point-solution-8738421765.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/9-giải-pháp-đột-phá-cho-thời-buổi-kinh-tế-khó-khăn-6357154892.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/9-g...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/9-gi%E1%BA%A3i-ph%C3%A1p-%C4%91%E1%BB%99t-ph%C3%A1-cho-th%E1%BB%9Di-bu%E1%BB%95i-kinh-t%E1%BA%BF-kh%C3%B3-kh%C4%83n-6357154892.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/secrets-of-closing-the-sale-3687673755.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/sec...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/secrets-of-closing-the-sale-3687673755.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-48-6341533507.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-48-6341533507.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/cỗ-máy-bán-hàng-tối-ưu-208662441.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/c\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/c%E1%BB%97-m%C3%A1y-b%C3%A1n-h%C3%A0ng-t%E1%BB%91i-%C6%B0u-208662441.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sức-mạnh-lòng-kiên-nhẫn-9106484861.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/s%E1%BB%A9c-m%E1%BA%A1nh-l%C3%B2ng-ki%C3%AAn-nh%E1%BA%ABn-9106484861.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/nghệ-thuật-bán-hàng-bậc-cao-1-5971959340.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/ngh...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/ngh%E1%BB%87-thu%E1%BA%ADt-b%C3%A1n-h%C3%A0ng-b%E1%BA%ADc-cao-1-5971959340.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sự-kỳ-diệu-của-tư-duy-lớn-5633142399.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/s%E1%BB%B1-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-t%C6%B0-duy-l%E1%BB%9Bn-5633142399.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/giết-con-chim-nhại-8856651191.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/gi\xE1...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/gi%E1%BA%BFt-con-chim-nh%E1%BA%A1i-8856651191.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-sticking-point-solution-8738421765.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/the-sticking-point-solution-8738421765.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0035-20141208-3109757206.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0035-20141208-3109757206.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0021-20141208-2265084255.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0021-20141208-2265084255.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/9-giải-pháp-đột-phá-cho-thời-buổi-kinh-tế-khó-khăn-6357154892.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/9-g...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/9-gi%E1%BA%A3i-ph%C3%A1p-%C4%91%E1%BB%99t-ph%C3%A1-cho-th%E1%BB%9Di-bu%E1%BB%95i-kinh-t%E1%BA%BF-kh%C3%B3-kh%C4%83n-6357154892.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/secrets-of-closing-the-sale-3687673755.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/sec...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/secrets-of-closing-the-sale-3687673755.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-48-6341533507.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-48-6341533507.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/cỗ-máy-bán-hàng-tối-ưu-208662441.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/c\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/c%E1%BB%97-m%C3%A1y-b%C3%A1n-h%C3%A0ng-t%E1%BB%91i-%C6%B0u-208662441.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sức-mạnh-lòng-kiên-nhẫn-9106484861.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/s%E1%BB%A9c-m%E1%BA%A1nh-l%C3%B2ng-ki%C3%AAn-nh%E1%BA%ABn-9106484861.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/nghệ-thuật-bán-hàng-bậc-cao-1-5971959340.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/ngh...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/ngh%E1%BB%87-thu%E1%BA%ADt-b%C3%A1n-h%C3%A0ng-b%E1%BA%ADc-cao-1-5971959340.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sự-kỳ-diệu-của-tư-duy-lớn-5633142399.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/s%E1%BB%B1-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-t%C6%B0-duy-l%E1%BB%9Bn-5633142399.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/bí-quyết-tay-trắng-thành-triệu-phú-2229148754.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/b\xC3\xAD...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/b%C3%AD-quy%E1%BA%BFt-tay-tr%E1%BA%AFng-th%C3%A0nh-tri%E1%BB%87u-ph%C3%BA-2229148754.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/bảy-quy-luật-tinh-thần-của-thành-công-3169794999.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/b\xE1\xBA...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/b%E1%BA%A3y-quy-lu%E1%BA%ADt-tinh-th%E1%BA%A7n-c%E1%BB%A7a-th%C3%A0nh-c%C3%B4ng-3169794999.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/5-ngôn-ngữ-tình-yêu-6680030161.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/5-n...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/5-ng%C3%B4n-ng%E1%BB%AF-t%C3%ACnh-y%C3%AAu-6680030161.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0043-20141208-6987487217.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0043-20141208-6987487217.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0027-20141208-1844114884.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/book-0027-20141208-1844114884.jpg
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 17:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/Ông-già-và-biển-cả-2972733490.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/\xC3\x94n...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/book/%C3%94ng-gi%C3%A0-v%C3%A0-bi%E1%BB%83n-c%E1%BA%A3-2972733490.png
+HTTP_REFERER=http://lilely-quote.localhost/book
+---
+2015/03/21 18:17:41 [error] [php] Undefined offset: 0 (D:\xampp\htdocs\lilely-quote\protected\models\Terms.php:186)
+Stack trace:
+#0 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): HomeController->widget()
+#1 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#2 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#3 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#4 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(206): CContentDecorator->run()
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(300): HomeController->endWidget()
+#8 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): HomeController->endContent()
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#11 D:\xampp\htdocs\yii\web\CController.php(784): HomeController->renderFile()
+#12 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#13 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#14 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#16 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#17 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#18 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#20 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in D:\xampp\htdocs\lilely-quote\protected\models\Terms.php (186)
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (30)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+2015/03/21 18:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/21 18:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/21 18:17:53 [error] [php] Array to string conversion (D:\xampp\htdocs\lilely-quote\protected\models\Terms.php:186)
+Stack trace:
+#0 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): HomeController->widget()
+#1 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#2 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#3 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#4 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(206): CContentDecorator->run()
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(300): HomeController->endWidget()
+#8 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): HomeController->endContent()
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(126): require()
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(95): HomeController->renderInternal()
+#11 D:\xampp\htdocs\yii\web\CController.php(784): HomeController->renderFile()
+#12 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): HomeController->render()
+#13 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#14 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\xampp\htdocs\yii\web\CController.php(286): HomeController->runAction()
+#16 D:\xampp\htdocs\yii\web\CController.php(265): HomeController->runActionWithFilters()
+#17 D:\xampp\htdocs\yii\web\CWebApplication.php(282): HomeController->run()
+#18 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#20 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in D:\xampp\htdocs\lilely-quote\protected\models\Terms.php (186)
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (30)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+2015/03/21 18:22:24 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.where" is not defined.' in D:\xampp\htdocs\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\schema\CDbCriteria.php(160): CComponent->__set('where', 'id IN (1,4,7,8,...')
+#1 D:\xampp\htdocs\yii\db\schema\CDbCriteria.php(499): CDbCriteria->__construct(Array)
+#2 D:\xampp\htdocs\lilely-quote\protected\models\Terms.php(195): CDbCriteria->mergeWith(Array)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(30): Terms->get_topic_by_post_type('quote')
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/
+---
+2015/03/21 18:25:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) ORDER BY name' at line 1. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`slug` AS `t0_c2`, `i18nPost`.`l_id` AS `t1_c0`, `i18nPost`.`term_id` AS `t1_c1`, `i18nPost`.`lang_id` AS `t1_c2`, `i18nPost`.`l_name` AS `t1_c3`, `i18nPost`.`l_slug` AS `t1_c4` FROM `terms` `t`  LEFT OUTER JOIN `terms_lang` `i18nPost` ON (`i18nPost`.`term_id`=`t`.`id`) AND (i18nPost.lang_id='en')  WHERE (id IN ()) ORDER BY name.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (32)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:25:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) ORDER BY name' at line 1. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`slug` AS `t0_c2`, `i18nPost`.`l_id` AS `t1_c0`, `i18nPost`.`term_id` AS `t1_c1`, `i18nPost`.`lang_id` AS `t1_c2`, `i18nPost`.`l_name` AS `t1_c3`, `i18nPost`.`l_slug` AS `t1_c4` FROM `terms` `t`  LEFT OUTER JOIN `terms_lang` `i18nPost` ON (`i18nPost`.`term_id`=`t`.`id`) AND (i18nPost.lang_id='en')  WHERE (id IN ()) ORDER BY name' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(32): CActiveRecord->findAll()
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#8 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#13 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#16 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#17 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#18 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#19 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#20 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#21 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#22 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#24 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#26 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#27 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#28 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#29 {main}
+REQUEST_URI=/home
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/21 18:26:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'namex' in 'order clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`slug` AS `t0_c2`, `i18nPost`.`l_id` AS `t1_c0`, `i18nPost`.`term_id` AS `t1_c1`, `i18nPost`.`lang_id` AS `t1_c2`, `i18nPost`.`l_name` AS `t1_c3`, `i18nPost`.`l_slug` AS `t1_c4` FROM `terms` `t`  LEFT OUTER JOIN `terms_lang` `i18nPost` ON (`i18nPost`.`term_id`=`t`.`id`) AND (i18nPost.lang_id='en')  WHERE (id IN (1,4,7,8,9)) ORDER BY namex.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (30)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:26:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'namex' in 'order clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`slug` AS `t0_c2`, `i18nPost`.`l_id` AS `t1_c0`, `i18nPost`.`term_id` AS `t1_c1`, `i18nPost`.`lang_id` AS `t1_c2`, `i18nPost`.`l_name` AS `t1_c3`, `i18nPost`.`l_slug` AS `t1_c4` FROM `terms` `t`  LEFT OUTER JOIN `terms_lang` `i18nPost` ON (`i18nPost`.`term_id`=`t`.`id`) AND (i18nPost.lang_id='en')  WHERE (id IN (1,4,7,8,9)) ORDER BY namex' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\xampp\htdocs\yii\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(30): CActiveRecord->findAll()
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#8 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#13 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#16 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#17 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#18 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#19 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#20 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#21 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#22 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#24 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#26 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#27 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#28 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#29 {main}
+REQUEST_URI=/home
+HTTP_REFERER=http://lilely-quote.localhost/vi/home
+---
+2015/03/21 18:46:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms.l_name' in 'order clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms.l_name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:46:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms.l_name' in 'order clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms.l_name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:47:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms_lang ON terms_lang.term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:47:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms_lang ON terms_lang.term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:47:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms.term_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON terms.term_id = id LEFT JOIN terms_lang ON terms_lang.term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:47:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms.term_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON terms.term_id = id LEFT JOIN terms_lang ON terms_lang.term_id = id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:48:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'term_id' in on clause is ambiguous. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON term_id= terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:48:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'term_id' in on clause is ambiguous. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON term_id= terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:49:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'term_taxonomy.term_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON term_taxonomy.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:49:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'term_taxonomy.term_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON term_taxonomy.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:49:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms_lang.name' in 'order clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON t.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:49:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms_lang.name' in 'order clause'. The SQL statement executed was: SELECT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms ON term_id = id LEFT JOIN terms_lang ON t.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.name ASC' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 18:54:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms_lang.l_namex' in 'order clause'. The SQL statement executed was: SELECT DISTINCT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms_lang ON t.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.l_namex.
+in D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php (28)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php (53)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php (6)
+2015/03/21 18:54:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terms_lang.l_namex' in 'order clause'. The SQL statement executed was: SELECT DISTINCT `t`.`term_taxonomy_id`, `t`.`term_id`, `t`.`taxonomy`, `t`.`show_in`, `t`.`description`, `t`.`parent`, `t`.`count` FROM `term_taxonomy` `t` LEFT JOIN terms_lang ON t.term_id = terms_lang.term_id WHERE taxonomy = "category"  AND parent = 0 ORDER BY terms_lang.l_namex' in D:\xampp\htdocs\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->findAll()
+#4 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#5 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#12 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#18 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#19 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#24 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 19:02:37 [error] [exception.CException] exception 'CException' with message 'TermTaxonomy and its behaviors do not have a method or closure named "get_all_topic".' in D:\xampp\htdocs\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(227): CComponent->__call('get_all_topic', Array)
+#1 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): CActiveRecord->__call('get_all_topic', Array)
+#2 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(28): TermTaxonomy->get_all_topic()
+#3 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#4 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#5 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#11 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#13 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#17 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#18 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#22 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#23 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#25 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---
+2015/03/21 19:02:45 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Terms.terms" chưa được định nghĩa.' in D:\xampp\htdocs\yii\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(145): CComponent->__get('terms')
+#1 D:\xampp\htdocs\lilely-quote\protected\components\views\menu-home.php(38): CActiveRecord->__get('terms')
+#2 D:\xampp\htdocs\yii\web\CBaseController.php(130): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, false)
+#4 D:\xampp\htdocs\yii\web\widgets\CWidget.php(244): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, false)
+#5 D:\xampp\htdocs\lilely-quote\protected\components\MenuHome.php(42): CWidget->render('menu-home', Array)
+#6 D:\xampp\htdocs\yii\web\CBaseController.php(173): MenuHome->run()
+#7 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\main-home.php(53): CBaseController->widget('MenuHome')
+#8 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#9 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 D:\xampp\htdocs\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 D:\xampp\htdocs\yii\web\CBaseController.php(206): COutputProcessor->run()
+#14 D:\xampp\htdocs\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#15 D:\xampp\htdocs\lilely-quote\themes\full-home\views\layouts\column-home.php(6): CBaseController->endContent()
+#16 D:\xampp\htdocs\yii\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#17 D:\xampp\htdocs\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#18 D:\xampp\htdocs\yii\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#19 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(26): CController->render('index-new', Array)
+#20 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#21 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 D:\xampp\htdocs\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 D:\xampp\htdocs\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\xampp\htdocs\yii\web\CWebApplication.php(282): CController->run('index')
+#25 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('home/index')
+#26 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#28 {main}
+REQUEST_URI=/vi/home
+HTTP_REFERER=http://lilely-quote.localhost/home
+---

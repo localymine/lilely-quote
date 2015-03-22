@@ -170,13 +170,39 @@ class Terms extends CActiveRecord {
         return $this;
     }
     
-    public function get_topic_by_post_type($post_type = 'quote'){
+    public function get_all_topic($taxonomy = 'category', $parent = 0){
         $this->getDbCriteria()->mergeWith(array(
-            'join' => " LEFT JOIN term_relationships ON (t.id = term_taxonomy_id) "
-                    . " LEFT JOIN post ON (post.id = object_id and post_type LIKE '$post_type') "
-                    . " LEFT JOIN term_taxonomy ON (term_relationships.term_taxonomy_id = term_taxonomy.term_taxonomy_id and parent = 0) ",
-            'group' => 't.id',
-            'order' => 'name',
+            'condition' => "taxonomy LIKE '$taxonomy' AND parent = $parent",
+            'join' => "LEFT JOIN term_taxonomy ON id = term_taxonomy_id",
+            'order' => 'l_name',
+        ));
+        
+        return $this;
+    }
+    
+    public function get_topic_by_post_type($post_type = 'quote'){
+        
+        // Preparing Query Builder
+        $command = Yii::app()->db->createCommand();
+        //
+        $post = $command
+                ->selectDistinct('term_taxonomy_id')
+                ->from('post')
+                ->join('term_relationships t', 'object_id = id')
+                ->where('post_type LIKE :post_type', array(':post_type' => $post_type))
+                ->queryAll();
+
+        $arr_terms = array();
+        foreach($post as $v){
+            $arr_terms[] = $v['term_taxonomy_id'];
+        }
+
+        $arr_terms = implode(',', $arr_terms);
+        $arr_terms = ($arr_terms != '') ? $arr_terms :0;
+
+        $this->getDbCriteria()->mergeWith(array(
+            'condition' => "id IN ($arr_terms)",
+            'order' => 'l_name',
         ));
         return $this;
     }

@@ -116,7 +116,7 @@ return array(
                 'famous-quotes' => 'famousQuotes',
                 'best-book-in-month' => 'bestBookInMonth',
                 
-                '<_c:(home|quote|book|music)>' => '<_c>/index',
+                '<_c:(home|quote|book|music|topic|category)>' => '<_c>/index',
                 
                 // default controller url setup     
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

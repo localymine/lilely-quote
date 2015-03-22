@@ -203,18 +203,18 @@ $(function() {
        location.href = $(this).data('href');
     });
     
-    $('.btn-cate-st').each(function(){
-       $(this).mouseover(function(){
-           var img = $('.hov-top-men', this);
-           var src = $(img).data('img-h');
-           $(img).attr('src', src);
-       }),
-       $(this).mouseout(function(){
-           var img = $('.hov-top-men', this);
-           var src = $(img).data('img-d');
-           $(img).attr('src', src);
-       });
-    });
+//    $('.btn-cate-st').each(function(){
+//       $(this).mouseover(function(){
+//           var img = $('.hov-top-men', this);
+//           var src = $(img).data('img-h');
+//           $(img).attr('src', src);
+//       }),
+//       $(this).mouseout(function(){
+//           var img = $('.hov-top-men', this);
+//           var src = $(img).data('img-d');
+//           $(img).attr('src', src);
+//       });
+//    });
 });
 
 $(document).ready(function() {
