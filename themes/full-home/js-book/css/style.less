@@ -23,7 +23,7 @@
             /*left: -21px;*/
         }
     }
-} 
+}
 .bk-book{
     .bk-front{
         div{
@@ -40,6 +40,20 @@
         }
     }
     .bk-cover{
+        .pl-icon-cover{
+            position: absolute;
+            top: 43%;
+            left: 43%;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: block;
+            text-align: center;
+            padding-top: 12px;
+            &:hover{
+                color: #CB1C17;
+            }
+        }
         h2{
             background: none;
             color: @text-color !important;
@@ -193,6 +207,9 @@
     button{
         background: transparent !important;
         box-shadow: none;
+        &:hover{
+            color: #ffda39;
+        }
     }
     button:active{
         box-shadow: none;

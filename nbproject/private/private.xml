@@ -25,37 +25,37 @@
             </bookmark>
             <bookmark id="12">
                 <name/>
-                <line>648</line>
+                <line>649</line>
                 <key/>
             </bookmark>
             <bookmark id="20">
                 <name/>
-                <line>1071</line>
+                <line>1072</line>
                 <key/>
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1177</line>
+                <line>1178</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1300</line>
+                <line>1301</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2144</line>
+                <line>2145</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>2942</line>
+                <line>2943</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3445</line>
+                <line>3446</line>
                 <key/>
             </bookmark>
         </file>
@@ -91,19 +91,8 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/common.js</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/MenuHome.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/show.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Post.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Terms.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/TermTaxonomy.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_quote.php</file>
         </group>
     </open-files>
 </project-private>

@@ -73,7 +73,7 @@ foreach ($this->languages as $key => $value){
                     <a href="javascript:void(0)" class="trans-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate') ?>"><i class="fa fa-globe"></i></a>
                     <?php $soundtrack = Yii::app()->params['set_quote_sound_path'] . $row->soundtrack; ?>
                     <?php if ($row->soundtrack != '' && file_exists($soundtrack)): ?>
-                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $row->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate') ?>"><i class="fa fa-headphones"></i></a>
+                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $row->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate') ?>"><i class="fa fa-m-audio"></i></a>
                         <!--<a href="javascript:void(0)" class="jp-pause"><i class="fa fa-stop"></i></a>-->
                     <?php endif; ?>
                 </div>
@@ -101,7 +101,7 @@ foreach ($this->languages as $key => $value){
                     <a href="javascript:void(0)" class="trans-back-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate', NULL, $lang) ?>"><i class="fa fa-globe"></i></a>
                     <?php $soundtrack_file = Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack; ?>
                     <?php if ($model_line->soundtrack != '' && file_exists($soundtrack_file)): ?>
-                    <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate', NULL, $lang) ?>"><i class="fa fa-headphones"></i></a>
+                    <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate', NULL, $lang) ?>"><i class="fa fa-m-audio"></i></a>
                         <!--<a href="javascript:void(0)" class="jp-pause"><i class="fa fa-stop"></i></a>-->
                     <?php endif; ?>
                 </div>

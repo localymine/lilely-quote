@@ -87,13 +87,13 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                 <div class="by-author center-block"><span><?php echo Common::t('By', 'translate') ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a>&nbsp;
                     <?php $soundtrack = Yii::app()->params['set_quote_sound_path'] . $post->soundtrack; ?>
                     <?php if ($post->soundtrack != '' && file_exists($soundtrack)): ?>
-                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $post->soundtrack ?>"><i class="fa fa-headphones"></i></a>
+                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $post->soundtrack ?>"><i class="fa fa-m-audio-14"></i></a>
                     <?php endif; ?></div>
 
                 <div class="by-author center-block hidden"><span><?php echo Common::t('By', 'translate', NULL, $lang) ?> <?php echo $post->quote_author ?></span> &nbsp;<a href="javascript:void(0)" class="trans-show-btn"><i class="glyphicon glyphicon-globe"></i></a>&nbsp;
                     <?php $soundtrack = Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack; ?>
                     <?php if ($model_line->soundtrack != '' && file_exists($soundtrack)): ?>
-                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>"><i class="fa fa-headphones"></i></a>
+                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>"><i class="fa fa-m-audio-14"></i></a>
                     <?php endif; ?></div>
             </div>
         </div>

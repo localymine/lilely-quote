@@ -16,6 +16,7 @@ foreach ($this->languages as $key => $value){
         <div class="bk-book book-1 bk-bookdefault">
             <div class="bk-front">
                 <div class="bk-cover bk-bookview" data-trans-id="<?php echo $row->id ?>">
+                    <a class="pl-icon-cover" href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>"><i class="fa fa-play fa-2x"></i></a>
                     <?php if($row->cover != ''): ?>
                         <img alt="<?php echo $row->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
                     <?php else: ?>
@@ -59,6 +60,7 @@ foreach ($this->languages as $key => $value){
         <div class="bk-book book-1 bk-bookdefault">
             <div class="bk-front">
                 <div class="bk-cover bk-bookview" data-trans-id="<?php echo $row->id ?>">
+                    <a class="pl-icon-cover" href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>"><i class="fa fa-play fa-2x"></i></a>
                     <?php if($row->cover != ''): ?>
                         <img alt="<?php echo $model_line->post_title ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_cover ?>" class="img-responsive">
                     <?php else: ?>

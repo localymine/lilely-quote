@@ -568,9 +568,13 @@ blockquote:after {
         text-decoration: none;
         padding-left: 5px;
         padding-right: 5px;
+        color: #999999;
         &:hover{
-            /*color: @new-main-color;*/
+            color: @brand-primary;
         }
+    }
+    a.jp-play{
+        vertical-align: middle;
     }
 }
 .gallery > .row > div > .item .m-a-quote .quote{
@@ -592,7 +596,7 @@ blockquote:after {
     /*text-align: justify;*/
     a:hover, a:focus{
         /*color: @brand-primary;*/
-        color: @new-main-color;
+        /*color: @new-main-color;*/
         text-decoration: none;
     }
 } 
@@ -3240,6 +3244,9 @@ nav{
             /*transform: scaleY(1);*/
             /*transition: all 0.7s ease-in-out 0s;*/
         }
+        img, div{
+            margin: 0 auto;
+        }
         .title{
             background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
             bottom: 0;
@@ -3443,6 +3450,17 @@ nav{
         li:nth-child(n+2){
             margin-left: -6px;
         }
+        a{
+            img{
+                filter: invert(0%);
+                transition: -webkit-filter 1s ease 0s, filter 1s ease 0s;
+            }
+            &:hover{
+                img{
+                    filter: invert(100%);
+                }
+            }
+        }
     }
 }
 
@@ -3639,6 +3657,10 @@ nav{
         }
         .lang-btn{
             display: table;
+            img{
+                filter: invert(0%);
+                transition: -webkit-filter 1s ease 0s, filter 1s ease 0s;
+            }
             span{
                 display: table-cell;
                 vertical-align: middle;
@@ -3646,10 +3668,13 @@ nav{
                 font-family: @font-new-home;
                 font-size: 14px;
             }
-        }
-        .lang-btn:hover{
-            span{
-                color: @new-main-color;
+            &:hover{
+                img{
+                filter: invert(100%);
+                }
+                span{
+                    color: @new-main-color;
+                }
             }
         }
     }
@@ -4081,3 +4106,33 @@ nav{
     z-index: 1000;
 }
 /* END - Countdown360 CSS*/
+.fa-m-audio{
+    background: url('../img/audio-icon-12-gr.png');
+    width: 12px;
+    height: 12px;
+    &:hover{
+        background: url('../img/audio-icon-12.png');
+    }
+}
+.fa-m-audio-14{
+    background: url('../img/audio-icon-14-gr.png');
+    width: 14px;
+    height: 14px;
+    &:hover{
+        background: url('../img/audio-icon-14.png');
+    }
+}
+.fa-m-audio-16{
+    background: url('../img/audio-icon-16-gr.png');
+    width: 16px;
+    height: 16px;
+    &:hover{
+        background: url('../img/audio-icon-16.png');
+    }
+}
+.trans-show-btn{
+    color: #999;
+    &:hover{
+        color: #0d0d0d;
+    }
+}
