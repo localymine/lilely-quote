@@ -218,7 +218,8 @@ class Post extends CActiveRecord {
 
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'quote' ",
-            'order' => 'post_date DESC',
+//            'order' => 'post_date DESC',
+            'order' => 'menu_order',
             'limit' => $limit,
             'offset' => $offset,
         ));
@@ -231,7 +232,8 @@ class Post extends CActiveRecord {
 
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'book' ",
-            'order' => 'post_date DESC',
+//            'order' => 'post_date DESC',
+            'order' => 'menu_order',
             'limit' => $limit,
             'offset' => $offset,
         ));
@@ -245,7 +247,8 @@ class Post extends CActiveRecord {
 
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_flag = " . self::STATUS_SHOW . " AND post_type = 'music' ",
-            'order' => 'post_date DESC',
+//            'order' => 'post_date DESC',
+            'order' => 'menu_order',
             'limit' => $limit,
             'offset' => $offset,
         ));
@@ -568,6 +571,72 @@ class Post extends CActiveRecord {
         $post = Post::model()->findByPk((int) $id);
         $post->last_visited = new CDbExpression("NOW()");
         $post->update(array('last_visited'));
+    }
+
+    public function refresh_menu_order($post_type = 'quote') {
+
+        $sql = "SELECT count(*) as cnt, max(menu_order) as max, min(menu_order) as min FROM post WHERE post_type = '$post_type'";
+
+        $sql2 = "SELECT id FROM post WHERE post_type = '$post_type' ORDER BY menu_order ASC";
+
+        $connection = Yii::app()->db;
+        $result = $connection->createCommand($sql)->queryAll();
+
+        if (count($result[0]) > 0 && $result[0]['cnt'] == $result[0]['max'] && $result[0]['min'] != 0) {
+            return;
+        }
+
+        $result = $connection->createCommand($sql2)->queryAll();
+        foreach ($result as $key => $value) {
+            $key = $key + 1;
+            $ID = $value['id'];
+            $sql3 = "UPDATE post SET menu_order = $key WHERE id = $ID";
+            $connection->createCommand($sql3)->execute();
+        }
+    }
+
+    public function rearrange_menu_order($post_type = 'quote') {
+
+        $sql = "SELECT count(*) AS cnt, max(menu_order) AS max, min(menu_order) AS min FROM post WHERE post_type = '$post_type'";
+        $sql2 = "SELECT id FROM post WHERE post_type = '$post_type' ORDER BY post_date DESC";
+
+        $connection = Yii::app()->db;
+        $result = $connection->createCommand($sql)->queryAll();
+
+        if ($result[0]['cnt'] > 0 && $result[0]['max'] == 0) {
+            $result = $connection->createCommand($sql2)->queryAll();
+            foreach ($result as $key => $value) {
+                $key = $key + 1;
+                $ID = $value['id'];
+                $sql3 = "UPDATE post SET menu_order = $key WHERE id = $ID";
+                $connection->createCommand($sql3)->execute();
+            }
+        }
+    }
+
+    public function get_menu_order_by_id($id) {
+
+        $criteria = new CDbCriteria(array(
+            'select' => 'menu_order',
+            'condition' => "id = $id"
+        ));
+        $model = Post::model()->findAll($criteria);
+
+        return $model;
+    }
+
+    public function update_menu_order($position, $id) {
+        $connection = Yii::app()->db;
+        $sql = "UPDATE post SET menu_order = $position WHERE id = $id";
+        $connection->createCommand($sql)->execute();
+    }
+    
+    public function order_top($id, $post_type){
+        $connection = Yii::app()->db;
+        $sql = "UPDATE post SET menu_order = 0 WHERE post_type = '$post_type' AND id = $id";
+        $connection->createCommand($sql)->execute();
+        
+        $this->refresh_menu_order($post_type);
     }
 
 }

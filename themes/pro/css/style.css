@@ -140,3 +140,7 @@ input[type="checkbox"]:checked + label.c-checked{color: #e74c3c; font-weight: bo
 .bk-hidden{
     background: #ccc;
 }
+
+.table thead > tr > th{
+    font-size: 14px;
+}

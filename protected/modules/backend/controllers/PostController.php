@@ -83,6 +83,32 @@ class PostController extends Controller {
 
     /* Quote - Begin */
 
+    public function actionSortQuote() {
+        parse_str($_POST['order'], $data);
+
+        if (is_array($data)) {
+            $id_arr = array();
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    $id_arr[] = $id;
+                }
+            }
+            $menu_order_arr = array();
+            foreach ($id_arr as $key => $id) {
+                $results = Post::model()->get_menu_order_by_id($id);
+                foreach ($results as $result) {
+                    $menu_order_arr[] = $result->menu_order;
+                }
+            }
+            sort($menu_order_arr);
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    Post::model()->update_menu_order($menu_order_arr[$position], $id);
+                }
+            }
+        }
+    }
+
     public function actionStatusQuote() {
 
         $id = $_POST['id'];
@@ -116,6 +142,8 @@ class PostController extends Controller {
         $post_type = 'quote';
         $keyword = '';
 
+        $model->refresh_menu_order($post_type);
+
         if (isset($_REQUEST['keyword'])) {
             $keyword = $_REQUEST['keyword'];
         }
@@ -147,7 +175,7 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -175,7 +203,8 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+//                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -457,6 +486,8 @@ class PostController extends Controller {
 
                     $model_term_relationships->object_id = $model->id;
 
+                    $model->refresh_menu_order('quote');
+//                    $model->rearrange_menu_order('quote');
                     //relations with category
                     if (isset($_POST['Post']['category'])) {
                         $categories_id = $_POST['Post']['category'];
@@ -502,6 +533,32 @@ class PostController extends Controller {
 
     /* Book - Begin */
 
+    public function actionSortBook() {
+        parse_str($_POST['order'], $data);
+
+        if (is_array($data)) {
+            $id_arr = array();
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    $id_arr[] = $id;
+                }
+            }
+            $menu_order_arr = array();
+            foreach ($id_arr as $key => $id) {
+                $results = Post::model()->get_menu_order_by_id($id);
+                foreach ($results as $result) {
+                    $menu_order_arr[] = $result->menu_order;
+                }
+            }
+            sort($menu_order_arr);
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    Post::model()->update_menu_order($menu_order_arr[$position], $id);
+                }
+            }
+        }
+    }
+
     public function actionStatusBook() {
 
         $id = $_POST['id'];
@@ -535,6 +592,8 @@ class PostController extends Controller {
         $post_type = 'book';
         $keyword = '';
 
+        $model->refresh_menu_order($post_type);
+
         if (isset($_REQUEST['keyword'])) {
             $keyword = $_REQUEST['keyword'];
         }
@@ -566,7 +625,7 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -594,7 +653,7 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -660,7 +719,7 @@ class PostController extends Controller {
             $model->attributes = $_POST['Post'];
 
             if ($model->validate()) {
-                
+
                 // upload image - update
                 if (CUploadedFile::getInstance($model, 'image') != NULL) {
                     $upload->old_file = $model->image;
@@ -676,7 +735,7 @@ class PostController extends Controller {
                 }
 
                 $upload->folder = $upload_path;
-                
+
                 foreach (Yii::app()->params['translatedLanguages'] as $l => $lang) {
                     if ($l === Yii::app()->params['defaultLanguage']) {
                         // upload book cover - update
@@ -814,9 +873,9 @@ class PostController extends Controller {
                     $upload->post = $model->feature_image = CUploadedFile::getInstance($model, 'feature_image');
                     $model->feature_image = $upload->normal();
                 }
-                
+
                 $upload->folder = $upload_path;
-                
+
                 foreach (Yii::app()->params['translatedLanguages'] as $l => $lang) {
                     if ($l === Yii::app()->params['defaultLanguage']) {
                         // upload book cover
@@ -869,6 +928,8 @@ class PostController extends Controller {
 
                     $model_term_relationships->object_id = $model->id;
 
+                    $model->refresh_menu_order('book');
+//                    $model->rearrange_menu_order('book');
                     //relations with category
                     if (isset($_POST['Post']['category'])) {
                         $categories_id = $_POST['Post']['category'];
@@ -909,14 +970,40 @@ class PostController extends Controller {
             'select_categories' => $select_categories,
         ));
     }
-    
-    public function actionRemoveMedia(){
+
+    public function actionRemoveMedia() {
         
     }
 
     /* Book - End */
 
     /* Music - Begin */
+
+    public function actionSortMusic() {
+        parse_str($_POST['order'], $data);
+
+        if (is_array($data)) {
+            $id_arr = array();
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    $id_arr[] = $id;
+                }
+            }
+            $menu_order_arr = array();
+            foreach ($id_arr as $key => $id) {
+                $results = Post::model()->get_menu_order_by_id($id);
+                foreach ($results as $result) {
+                    $menu_order_arr[] = $result->menu_order;
+                }
+            }
+            sort($menu_order_arr);
+            foreach ($data as $key => $values) {
+                foreach ($values as $position => $id) {
+                    Post::model()->update_menu_order($menu_order_arr[$position], $id);
+                }
+            }
+        }
+    }
 
     public function actionStatusMusic() {
 
@@ -951,6 +1038,8 @@ class PostController extends Controller {
         $post_type = 'music';
         $keyword = '';
 
+        $model->refresh_menu_order($post_type);
+
         if (isset($_REQUEST['keyword'])) {
             $keyword = $_REQUEST['keyword'];
         }
@@ -982,7 +1071,7 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -1010,7 +1099,7 @@ class PostController extends Controller {
 
             $criteria = new CDbCriteria(array(
                 'condition' => $condition,
-                'order' => 'post_date DESC',
+                'order' => 'menu_order',
                 'limit' => $pages->limit,
                 'offset' => $pages->offset,
             ));
@@ -1090,7 +1179,7 @@ class PostController extends Controller {
                     $upload->post = $model->feature_image = CUploadedFile::getInstance($model, 'feature_image');
                     $model->feature_image = $upload->normal();
                 }
-                
+
                 foreach (Yii::app()->params['translatedLanguages'] as $l => $lang) {
                     if ($l === Yii::app()->params['defaultLanguage']) {
                         // title, slug
@@ -1203,7 +1292,7 @@ class PostController extends Controller {
             $select_categories = isset($_POST['Post']['category']) ? $_POST['Post']['category'] : NULL;
 
             if ($model->validate()) {
-                
+
                 // upload image
                 if (CUploadedFile::getInstance($model, 'image') != NULL) {
                     $upload->post = $model->image = CUploadedFile::getInstance($model, 'image');
@@ -1257,6 +1346,8 @@ class PostController extends Controller {
 
                     $model_term_relationships->object_id = $model->id;
 
+                    $model->refresh_menu_order('music');
+//                    $model->rearrange_menu_order('music');
                     //relations with category
                     if (isset($_POST['Post']['category'])) {
                         $categories_id = $_POST['Post']['category'];
@@ -1299,6 +1390,13 @@ class PostController extends Controller {
     }
 
     /* Music - End */
+
+    public function actionOrderTop() {
+        $id = $_POST['id'];
+        $post_type = $_POST['post_type'];
+        Post::model()->order_top($id, $post_type);
+        echo 1;
+    }
 
     /**
      * Returns the data model based on the primary key given in the GET variable.
