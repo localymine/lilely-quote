@@ -70,10 +70,10 @@ foreach ($this->languages as $key => $value){
                 <?php endif; ?>
                     
                 <div class="gr-btn-func">
-                    <a href="javascript:void(0)" class="trans-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate') ?>"><i class="fa fa-globe"></i></a>
+                    <a href="javascript:void(0)" class="trans-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate') ?>"><i class="fa fa-m-global-16"></i></a>
                     <?php $soundtrack = Yii::app()->params['set_quote_sound_path'] . $row->soundtrack; ?>
                     <?php if ($row->soundtrack != '' && file_exists($soundtrack)): ?>
-                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $row->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate') ?>"><i class="fa fa-m-audio"></i></a>
+                        <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $row->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate') ?>"><i class="fa fa-m-audio-16"></i></a>
                         <!--<a href="javascript:void(0)" class="jp-pause"><i class="fa fa-stop"></i></a>-->
                     <?php endif; ?>
                 </div>
@@ -97,11 +97,11 @@ foreach ($this->languages as $key => $value){
                 <div class="by-author"><?php echo Common::t('By', 'translate', NULL, $lang) ?> <span><?php echo $row->quote_author ?></span></div>
                 <?php endif; ?>
 
-                <div class="gr-btn-func">
-                    <a href="javascript:void(0)" class="trans-back-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate', NULL, $lang) ?>"><i class="fa fa-globe"></i></a>
+                <div class="gr-btn-func transgroup">
+                    <a href="javascript:void(0)" class="trans-back-btn" data-trans-id="<?php echo $row->id ?>" title="<?php echo Common::t('Translate', 'translate', NULL, $lang) ?>"><i class="fa fa-m-global-16-r"></i></a>
                     <?php $soundtrack_file = Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack; ?>
                     <?php if ($model_line->soundtrack != '' && file_exists($soundtrack_file)): ?>
-                    <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate', NULL, $lang) ?>"><i class="fa fa-m-audio"></i></a>
+                    <a href="javascript:void(0)" class="jp-play" data-url="<?php echo Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_quote_sound_path'] . $model_line->soundtrack ?>" title="<?php echo Common::t('Listen', 'translate', NULL, $lang) ?>"><i class="fa fa-m-audio-16-r"></i></a>
                         <!--<a href="javascript:void(0)" class="jp-pause"><i class="fa fa-stop"></i></a>-->
                     <?php endif; ?>
                 </div>

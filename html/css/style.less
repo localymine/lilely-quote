@@ -529,6 +529,9 @@ blockquote:after {
     display: none;
     .q{
         font-family: @font-default;
+        a{
+            color: @main-color !important;
+        }
     }
     .balloon-holder{
         display: table;
@@ -563,11 +566,12 @@ blockquote:after {
 .gallery > .row > div > .item .m-a-quote .gr-btn-func{
     display: inline-block;
     margin-left: 5px;
-    font-size: 14px;
+    /*font-size: 18.5px;*/
     a{
+        vertical-align: middle;
         text-decoration: none;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
         color: #999999;
         &:hover{
             color: @brand-primary;
@@ -575,6 +579,11 @@ blockquote:after {
     }
     a.jp-play{
         vertical-align: middle;
+    }
+}
+.gallery > .row > div > .item .m-a-quote .transgroup{
+    a{
+        color: @main-color !important;
     }
 }
 .gallery > .row > div > .item .m-a-quote .quote{
@@ -4130,6 +4139,48 @@ nav{
         background: url('../img/audio-icon-16.png');
     }
 }
+.fa-m-audio-r{
+    background: url('../img/audio-icon-12-r.png');
+    width: 12px;
+    height: 12px;
+    &:hover{
+        background: url('../img/audio-icon-12.png');
+    }
+}
+.fa-m-audio-14-r{
+    background: url('../img/audio-icon-14-r.png');
+    width: 14px;
+    height: 14px;
+    &:hover{
+        background: url('../img/audio-icon-14.png');
+    }
+}
+.fa-m-audio-16-r{
+    background: url('../img/audio-icon-16-r.png');
+    width: 16px;
+    height: 16px;
+    &:hover{
+        background: url('../img/audio-icon-16.png');
+    }
+}
+/**/
+.fa-m-global-16{
+    background: url('../img/global-16-gr.png');
+    width: 16px;
+    height: 16px;
+    &:hover{
+        background: url('../img/global-16.png');
+    }
+}
+.fa-m-global-16-r{
+    background: url('../img/global-16-r.png');
+    width: 16px;
+    height: 16px;
+    &:hover{
+        background: url('../img/global-16.png');
+    }
+}
+/**/
 .trans-show-btn{
     color: #999;
     &:hover{
