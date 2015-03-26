@@ -106,18 +106,18 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                     <li><div class="join-us"><?php echo Common::t('Join Us On', 'translate', NULL, $lang) ?></div></li>
                     <li>
                         <a onClick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php echo $title;?>&amp;p[summary]=<?php echo $summary;?>&amp;p[url]=<?php echo $share_url; ?>&amp;p[images][0]=<?php echo $share_img;?>','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)">
-                            <img alt="facebook" src="<?php echo Yii::app()->theme->baseurl ?>/img/facebook.png" />
+                            <i class="fa fa-m-facebook"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img alt="twitter" src="<?php echo Yii::app()->theme->baseurl ?>/img/twitter.png" />
+                            <i class="fa fa-m-twitter"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://plus.google.com/share?url=<?php echo $share_url ?>" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                            <img alt="google+" src="<?php echo Yii::app()->theme->baseurl ?>/img/google.png" />
+                            <i class="fa fa-m-google"></i>
                         </a>
                     </li>
                 </ul>

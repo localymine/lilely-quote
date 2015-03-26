@@ -3648,7 +3648,7 @@ nav{
                 margin-left: 20px;
                 margin-top: -3px;
                 border-right: 1px solid #959595;
-                padding-right: 11px;
+                padding-right: 18px;
                 .join-us{
                     font-family: @font-new-home;
                     font-size: 14px;
@@ -3666,10 +3666,10 @@ nav{
         }
         .lang-btn{
             display: table;
-            img{
+/*            img{
                 filter: invert(0%);
                 transition: -webkit-filter 1s ease 0s, filter 1s ease 0s;
-            }
+            }*/
             span{
                 display: table-cell;
                 vertical-align: middle;
@@ -3677,12 +3677,22 @@ nav{
                 font-family: @font-new-home;
                 font-size: 14px;
             }
-            &:hover{
+/*            &:hover{
                 img{
                 filter: invert(100%);
                 }
                 span{
                     color: @new-main-color;
+                }
+            }*/
+            .fa-m-global{
+                background: url('../img/global.png');
+                width: 32px;
+                height: 32px;
+            }
+            &:hover{
+                .fa-m-global{
+                    background: url('../img/global-bl.png');
                 }
             }
         }
@@ -4185,5 +4195,37 @@ nav{
     color: #999;
     &:hover{
         color: #0d0d0d;
+    }
+}
+.fa-m-facebook{
+    background: url('../img/facebook.png');
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background: url('../img/facebook-bl.png');
+    }
+}
+.fa-m-twitter{
+    background: url('../img/twitter.png');
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background: url('../img/twitter-bl.png');
+    }
+}
+.fa-m-google{
+    background: url('../img/google.png');
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background: url('../img/google-bl.png');
+    }
+}
+.fa-m-global{
+    background: url('../img/global.png');
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background: url('../img/global-bl.png');
     }
 }

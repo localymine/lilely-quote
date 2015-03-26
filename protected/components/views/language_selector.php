@@ -2,7 +2,8 @@
     <?php foreach ($languages as $l => $lang): ?>
         <?php
         $params['language'] = $l;
-        $icon_global = CHtml::image(Yii::app()->theme->baseurl . '/img/global.png');
+//        $icon_global = CHtml::image(Yii::app()->theme->baseurl . '/img/global.png');
+        $icon_global = '<i class="fa fa-m-global"></i>';
         if ($l === $language) {
             continue;
             echo CHtml::link($icon_global . '<span>' . Common::t($lang, 'translate') . '</span>', $params, array('class' => "lang-btn $l-lang active"));
