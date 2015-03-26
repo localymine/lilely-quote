@@ -7,7 +7,6 @@ class SlideController extends MyController {
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
     public $layout = '//layouts/column2';
-    public $list_post = array();
 
     /**
      * @return array action filters
@@ -44,15 +43,6 @@ class SlideController extends MyController {
         );
     }
     
-    public function init(){
-        
-        $model_post = Post::model()->findAll(array('select' => 'id, concat(LPAD(id, 3, " "), " | " , post_title) as post_title', 'order' => 'menu_order'));
-        $this->list_post = CHtml::listData($model_post, 'id', 'post_title');
-        
-        parent::init();
-    }
-
-
     public function actionSort() {
         
         $sort_ids = json_decode($_POST['data']);
@@ -81,15 +71,33 @@ class SlideController extends MyController {
         //
         $upload = Yii::app()->upload;
         $upload->folder = $upload_path;
-        
+
         if (isset($_POST['Slide'])) {
             
             $model->attributes = $_POST['Slide'];
             
             if ($model->validate()){
                 
+                // upload image - update
+                foreach (Yii::app()->params['translatedLanguages'] as $l => $lang) {
+                    if ($l === Yii::app()->params['defaultLanguage']) {
+                        if (CUploadedFile::getInstance($model, 'image') != NULL) {
+                            $upload->old_file = $model->image;
+                            $upload->post = $model->image = CUploadedFile::getInstance($model, 'image');
+                            $model->image = $upload->normal();
+                        }
+                    } else {
+                        $l_image = 'image_' . $l;
+                        if (CUploadedFile::getInstance($model, $l_image) != NULL) {
+                            $upload->old_file = $model->{$l_image};
+                            $upload->post = $model->{$l_image} = CUploadedFile::getInstance($model, $l_image);
+                            $model->{$l_image} = $upload->normal();
+                        }
+                    }
+                }
+                
                 if ($model->save()) {
-                    $this->redirect(array('update', 'id' => $model->id));
+                    $this->redirect(Yii::app()->createUrl('backend/slide'));
                 }
             }
         }
@@ -133,6 +141,22 @@ class SlideController extends MyController {
             $model->attributes = $_POST['Slide'];
             
             if ($model->validate()){
+                
+                // upload image -- add new
+                foreach (Yii::app()->params['translatedLanguages'] as $l => $lang) {
+                    if ($l === Yii::app()->params['defaultLanguage']) {
+                        if (CUploadedFile::getInstance($model, 'image') != NULL) {
+                            $upload->post = $model->image = CUploadedFile::getInstance($model, 'image');
+                            $model->image = $upload->normal();
+                        }
+                    } else {
+                        $l_image = 'image_' . $l;
+                        if (CUploadedFile::getInstance($model, $l_image) != NULL) {
+                            $upload->post = $model->{$l_image} = CUploadedFile::getInstance($model, $l_image);
+                            $model->{$l_image} = $upload->normal();
+                        }
+                    }
+                }
                 
                 $rs = Slide::model()->get_max();
                 $model->sorting = $rs['max'] + 1;

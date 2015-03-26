@@ -3,7 +3,7 @@ $avatar = (isset(Yii::app()->user->image)) ? (Yii::app()->user->image) : 'avatar
 ?>
 <div class="sidebar-scroll">
     <div class="sidebar-content">
-        <a href="<?php echo Yii::app()->createUrl('/backend/dashboard') ?>" class="sidebar-brand">
+        <a href="<?php echo Yii::app()->createUrl('/home') ?>" target="_blank" class="sidebar-brand">
             <i class="gi gi-wifi_alt"></i><strong>Lilely</strong>Quotes
         </a>
         <div class="sidebar-section sidebar-user clearfix">

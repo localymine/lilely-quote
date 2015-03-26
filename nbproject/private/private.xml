@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="21">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="22">
         <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
@@ -18,44 +18,49 @@
                 <line>527</line>
                 <key/>
             </bookmark>
+            <bookmark id="22">
+                <name/>
+                <line>534</line>
+                <key/>
+            </bookmark>
             <bookmark id="18">
                 <name/>
-                <line>579</line>
+                <line>588</line>
                 <key/>
             </bookmark>
             <bookmark id="12">
                 <name/>
-                <line>653</line>
+                <line>662</line>
                 <key/>
             </bookmark>
             <bookmark id="20">
                 <name/>
-                <line>1076</line>
+                <line>1085</line>
                 <key/>
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1182</line>
+                <line>1191</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1305</line>
+                <line>1314</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2149</line>
+                <line>2158</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>2947</line>
+                <line>2956</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3464</line>
+                <line>3473</line>
                 <key/>
             </bookmark>
         </file>
@@ -96,12 +101,13 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/post/quote/index.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/QuoteController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/controllers/PostController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/post/music/index.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/post/book/index.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/TestController.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/controllers/SlideController.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Slide.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/slide/index.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/pro/css/style.css</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Post.php</file>
         </group>

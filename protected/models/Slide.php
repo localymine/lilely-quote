@@ -16,6 +16,7 @@
  * @property string $sorting
  * @property string $start
  * @property string $end
+ * @property string $post_id
  */
 class Slide extends CActiveRecord {
 
@@ -37,7 +38,8 @@ class Slide extends CActiveRecord {
             array('image', 'file', 'types' => 'jpg, gif, png', 'maxSize' => 1024 * 1024 * 10, 'allowEmpty' => true, 'on' => 'update'),
             array('title, image', 'length', 'max' => 256),
             array('sorting', 'length', 'max' => 10),
-            array('post_author, css, html, script, description, create_date, disp_type, start, end', 'safe'),
+            array('post_id', 'numerical'),
+            array('post_author, css, html, script, description, create_date, disp_type, start, end, post_id', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, post_author, title, description, image, create_date, sorting', 'safe', 'on' => 'search'),
@@ -51,6 +53,7 @@ class Slide extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'post_ref' => array(self::BELONGS_TO, 'Post', 'id'),
         );
     }
 
@@ -131,8 +134,9 @@ class Slide extends CActiveRecord {
         $_items = array(
             'DISPLAY' => array(
                 '0' => 'Hide',
-                '1' => 'Image',
-                '2' => 'Canvas'
+                '1' => 'Video',
+//                '2' => 'Image',
+//                '3' => 'Canvas',
             )
         );
 
@@ -168,7 +172,7 @@ class Slide extends CActiveRecord {
         return parent::model($className);
     }
 
-    public function get_slide($limit = 5, $current_page = 1) {
+    public function get_slide($limit = 100, $current_page = 1) {
         $offset = $limit * ($current_page - 1);
 
         $this->getDbCriteria()->mergeWith(array(
@@ -199,7 +203,7 @@ class Slide extends CActiveRecord {
 
 
             try {
-                $count = 0;
+                $count = 1;
                 foreach ($ids as $id) {
                     $sql = "UPDATE slide SET sorting = $count  WHERE id= " . (int) $id;
                     $connection->createCommand($sql)->execute();
@@ -218,10 +222,11 @@ class Slide extends CActiveRecord {
 
     public function load_banner() {
         $curdate = date('Y-m-d H:i:s');
+        echo $curdate . '<br>';
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_type != 0 AND ('$curdate' BETWEEN start AND end)",
 //            'condition' => "disp_type != 0 AND (start < '$curdate'  < end)",
-            'order' => 'id DESC'
+            'order' => 'sorting'
         ));
         return $this;
     }

@@ -25,6 +25,7 @@
  * @property integer $disp_flag
  * @property integer $visits
  * @property integer $last_visited
+ * @property integer $menu_order
  */
 class Post extends CActiveRecord {
 
@@ -54,7 +55,7 @@ class Post extends CActiveRecord {
             array('soundtrack', 'file', 'types' => 'mp3', 'maxSize' => 1024 * 1024 * 10, 'allowEmpty' => true, 'on' => 'insert'), // 10MB
             array('soundtrack', 'file', 'types' => 'mp3', 'maxSize' => 1024 * 1024 * 10, 'allowEmpty' => true, 'on' => 'update'),
             array('quote_author, performer', 'length', 'max' => 128),
-            array('visits', 'numerical'),
+            array('visits, menu_order', 'numerical'),
             array('post_content, post_group, post_date, post_excerpt, post_modified, last_visited', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -74,6 +75,7 @@ class Post extends CActiveRecord {
             'pick_relate' => array(self::HAS_MANY, 'PickRelationships', 'term_id'),
             'read_later' => array(self::HAS_MANY, 'ReadLater', 'object_id', 'condition' => 'user_id = ' . Yii::app()->user->id),
             'read_later_user' => array(self::HAS_MANY, 'ReadLater', 'user_id'),
+            'slide_ref' => array(self::HAS_MANY, 'Slide', 'post_id'),
         );
     }
 

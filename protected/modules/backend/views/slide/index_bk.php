@@ -66,9 +66,16 @@ Common::register('jquery-ui-1.10.4.custom.min.js', 'pro', CClientScript::POS_END
                         }
                         ?>
                         <div class="tab-pane fade in <?php echo $active ?>" id="<?php echo $lang; ?>">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Image</label>
+                                <div class="col-xs-10">
+                                    <?php echo $form->fileField($model, 'image' . $suffix) ?>
+                                    <?php echo $form->error($model, 'image' . $suffix, array('class' => 'text-danger')); ?>
+                                </div>
+                            </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label">Filename (*)</label>
+                                <label class="col-md-2 control-label">Title</label>
                                 <div class="col-md-10">
                                     <div class="input-group">
                                         <span class="input-group-addon"><img width="24" src="<?php echo Yii::app()->baseUrl ?>/images/flags/<?php echo $l ?>.png"/></span>
@@ -90,16 +97,29 @@ Common::register('jquery-ui-1.10.4.custom.min.js', 'pro', CClientScript::POS_END
             </div>
             
             <div class="form-group">
-                <label class="col-md-2 control-label">Video List</label>
+                <label class="col-md-2 control-label">CSS or Height of Image (Canvas)</label>
                 <div class="col-md-10">
-                    <?php echo $form->dropDownList($model, 'post_id', $this->list_post, array('class' => 'form-control select-chosen', 'empty' => '---Choose relation post---')) ?>
+                    <?php echo $form->textArea($model, 'css', array('class' => 'form-control basic_editor', 'style' => 'height:100px')) ?>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-2 control-label">Source, If use HTML</label>
+                <div class="col-md-10">
+                    <?php echo $form->textArea($model, 'html', array('class' => 'form-control basic_editor', 'style' => 'height:100px')) ?>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-2 control-label">Source JS, If use Canvas, Please input Source and choose 'Canvas' underneath</label>
+                <div class="col-md-10">
+                    <?php echo $form->textArea($model, 'script', array('class' => 'form-control basic_editor', 'style' => 'height:200px')) ?>
                 </div>
             </div>
 
             <div class="form-group">
-                <div class="col-md-12 center-block text-center">
-                    <?php echo $form->radioButtonList($model, 'disp_type', Slide::item_alias('DISPLAY'), array('class' => 'form-control', 'template' => '<div class="cus_radio_lst">{label}{input}</div>', 'separator' => '')) ?>
-                    <?php // echo $form->dropDownList($model, 'disp_type', Slide::item_alias('DISPLAY'), array('class' => 'form-control')) ?>
+                <div class="col-md-12">
+                    <?php echo $form->dropDownList($model, 'disp_type', Slide::item_alias('DISPLAY'), array('class' => 'form-control')) ?>
                 </div>
             </div>
 
@@ -152,18 +172,15 @@ Common::register('jquery-ui-1.10.4.custom.min.js', 'pro', CClientScript::POS_END
                                 <table class="table table-vcenter table-condensed table-striped dataTable">
                                     <tr role="row">
                                         <th width="30"><?php echo $row->id ?></th>
-                                        <td width="250" align="left">
+                                        <td width="70" align="left">
                                             <?php if ($row->image != ''): ?>
                                             <img class="img-responsive" width="64" alt="avatar" src="<?php echo Yii::app()->baseUrl ?>/images/slide/<?php echo $row->image ?>" />
                                             <?php else: ?>
-                                            <?php echo $row->title . '<br>' . $row->post_id?>
-                                            <span class="text-muted small"><?php echo $row->post_ref->post_title ?></span>
+                                            <?php echo $row->title ?>
                                             <?php endif; ?>
                                         </td>
-                                        <td align="right">
-                                            <span style="font-size: 10px">
-                                                <?php echo $row->start ?><br/> ~ <?php echo $row->end ?>
-                                            </span>
+                                        <td align="center">
+                                            <span style="font-size: 10px"><?php echo $row->start ?> ~ <?php echo $row->end ?></span>
                                         </td>
                                         <td width="30">
                                             <a href="<?php echo Yii::app()->createUrl('backend/slide/update', array('id' => $row->id)) ?>" style="padding: 0 5px;" title="" data-toggle="tooltip" rel="tooltip" data-original-title="Update"><i class="fa fa-pencil"></i></a>
