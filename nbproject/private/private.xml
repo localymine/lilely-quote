@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="22">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="23">
+        <file>
+            <url>protected/modules/backend/controllers/PostController.php</url>
+            <bookmark id="5">
+                <name/>
+                <line>360</line>
+                <key/>
+            </bookmark>
+            <bookmark id="21">
+                <name/>
+                <line>514</line>
+                <key/>
+            </bookmark>
+        </file>
         <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
@@ -63,17 +76,9 @@
                 <line>3473</line>
                 <key/>
             </bookmark>
-        </file>
-        <file>
-            <url>protected/modules/backend/controllers/PostController.php</url>
-            <bookmark id="5">
+            <bookmark id="23">
                 <name/>
-                <line>360</line>
-                <key/>
-            </bookmark>
-            <bookmark id="21">
-                <name/>
-                <line>514</line>
+                <line>3666</line>
                 <key/>
             </bookmark>
         </file>
@@ -101,15 +106,10 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/TestController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/controllers/SlideController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Slide.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/slide/index.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/pro/css/style.css</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Post.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/book/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js-book/css/style.less</file>
         </group>
     </open-files>
 </project-private>
