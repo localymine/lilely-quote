@@ -215,7 +215,7 @@ return array(
         /* ------------------------------------------------------------------ */
         'translatedLanguages' => array('en' => 'English', 'vi' => 'Vietnamese'),
         'defaultLanguage' => 'en',
-        'pageSize' => 20,
+        'pageSize' => 100,
         /* ------------------------------------------------------------------ */
         'show_in' => array(
             'original' => 'Original',
