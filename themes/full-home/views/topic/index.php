@@ -2,7 +2,8 @@
 $this->pageTitle = 'Topic ' . $_REQUEST['slug'] . ' | ' . Yii::app()->name;
 
 $bk_class = '';
-$post_type = Yii::app()->user->getState('select_topic');
+//$post_type = Yii::app()->user->getState('select_topic');
+$post_type = isset($_GET['type']) ? $_GET['type'] : 'quote'; 
 if (in_array($post_type, array('book'))){
     $bk_class = ' bk-block book-gallery ';
     Common::register_css(Yii::app()->theme->baseUrl . '/js-book/css/component.css');
