@@ -19,7 +19,7 @@ class BookController extends FrontController {
 
     public function actionIndex() {
         
-        Yii::app()->user->setState('select_topic', $this->post_type);
+//        Yii::app()->user->setState('select_topic', $this->post_type);
 
         $page = 1;
 

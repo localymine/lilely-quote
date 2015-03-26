@@ -20,9 +20,13 @@ class TopicController extends FrontController {
         $page = 1;
         $term = $this->loadModelSlug($slug);
         //
-        $post_type = Yii::app()->user->getState('select_topic');
-        $post_type = isset($post_type) ? $post_type : 'quote';
-
+//        $post_type = Yii::app()->user->getState('select_topic');
+//        $post_type = isset($post_type) ? $post_type : 'quote';
+        
+        $m_topic = array('quote', 'book', 'music');
+        $requ_type = isset($_GET['type']) ? $_GET['type'] : 'quote'; 
+        $post_type = in_array($requ_type, $m_topic) ? $requ_type : 'quote';
+        
         if (Yii::app()->request->isAjaxRequest) {
             $page = Yii::app()->user->getState('front_page_more_by_category');
             $page += 1;
