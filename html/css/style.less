@@ -1090,6 +1090,9 @@ nav{
     &:hover{
         background: url('../img/quote-b.png');
     }
+    &.active{
+        background: url('../img/quote-b.png') !important;
+    }
 }
 .fa-m-classical-music{
     background: url('../img/music-w.png');
@@ -1098,6 +1101,9 @@ nav{
     &:hover{
         background: url('../img/music-b.png');
     }
+    &.active{
+        background: url('../img/music-b.png') !important;
+    }
 }
 .fa-m-book{
     background: url('../img/book-w.png');
@@ -1105,6 +1111,9 @@ nav{
     height: 32px;
     &:hover{
         background: url('../img/book-b.png');
+    }
+    &.active{
+        background: url('../img/book-b.png') !important;
     }
 }
 .active .fa-m-quote{
@@ -1176,6 +1185,13 @@ nav{
             padding: 3px 20px;
             white-space: nowrap;
             font-weight: bold;
+            &:hover{
+                color: @new-main-color;
+            }
+            &.active{
+                color: @new-main-color;
+                font-weight: bold;
+            }
         }
         span.li-all-type{
             clear: both;
@@ -3715,10 +3731,10 @@ nav{
         /*position: fixed;*/
         right: 0;
         bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        /*width: auto;*/
+        /*height: auto;*/
         z-index: -100;
         background-size: cover;
         padding: 5px;
@@ -4237,7 +4253,7 @@ nav{
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    width: 24%;
+    width: 30%;
 }
 .dropdown-menu.all-topics-me{
     
@@ -4247,9 +4263,27 @@ nav{
     li {
         padding: 3px;
     }
+    a.aall{
+        display: block;
+        &:hover{
+            &::before{
+                content: "";
+                padding-right: 0;
+            }
+        }
+    }
     a {
         display: block;
         &:hover{
+            color: @new-main-color;
+            &::before{
+                font-family: FontAwesome;
+                content: "\f04b";
+                color: #333;
+                padding-right: 5px;
+            }
+        }
+        &.active{
             color: @new-main-color;
             &::before{
                 font-family: FontAwesome;

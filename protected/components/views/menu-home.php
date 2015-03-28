@@ -3,6 +3,8 @@ $controller = Yii::app()->controller->id;
 $action = Yii::app()->controller->action->id;
 $banner = Slide::model()->load_banner()->find();
 $back_url = Yii::app()->createUrl('home');
+$r_type = isset($_REQUEST['type']) ? $_REQUEST['type'] : '';
+$r_slug = isset($_REQUEST['slug']) ? $_REQUEST['slug'] : '';
 
 $share_url = Yii::app()->params['siteUrl'];
 $share_img = Yii::app()->params['siteUrl'] . '/images/logo.png';
@@ -30,44 +32,42 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                 <ul class="dropdown-menu all-topics-me" role="menu" aria-labelledby="dropdown-topmenu">
                     <li>
                         <ul>
-                            <li><span class="li-all"><?php echo Common::t('All Topics', 'translate', NULL, $lang) ?></span></li>
-                            <?php foreach ($model as $row): ?>
-                                <?php $active_topic_class = ''; ?>
-                                <?php if (isset($_REQUEST['slug'])): ?>
-                                    <?php $active_topic_class = $_REQUEST['slug'] == $row->slug ? 'active' : ''; ?>
-                                <?php endif; ?>
-                                <li class="<?php echo $active_topic_class ?>" role="presentation">
-                                    <a tabindex="-1" href="<?php echo Yii::app()->createUrl('topic/', array('slug' => $row->slug)) ?>" role="menuitem"><?php echo $row->name ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li><span class="li-all"><?php echo Common::t('Quote', 'translate', NULL, $lang) ?></span></li>
+                            <li>
+                                <a class="aall" href="<?php echo Yii::app()->createUrl('quote') ?>">
+                                    <span class="li-all <?php echo ($controller == 'quote' || $r_type == 'quote') ? 'active' : '' ?>"><?php echo Common::t('Quote', 'translate', NULL, $lang) ?></span>
+                                </a>
+                            </li>
                             <?php foreach ($quote_topics as $q_row):?>
                             <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug, 'type' => 'quote')) ?>"><?php echo $q_row->name ?></a>
+                                <a class="cat-submenu <?php echo ($r_slug == $q_row->slug && $r_type == 'quote') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug, 'type' => 'quote')) ?>"><?php echo $q_row->name ?></a>
                             </li>
                             <?php endforeach; ?>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li><span class="li-all"><?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?></span></li>
+                            <li>
+                                <a class="aall" href="<?php echo Yii::app()->createUrl('book') ?>">
+                                    <span class="li-all <?php echo ($controller == 'book' || $r_type == 'book') ? 'active' : '' ?>"><?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?></span>
+                                </a>
+                            </li>
                             <?php foreach ($book_topics as $b_row):?>
                             <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug, 'type' => 'book')) ?>"><?php echo $b_row->name ?></a>
+                                <a class="cat-submenu <?php echo ($r_slug == $b_row->slug && $r_type == 'book') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug, 'type' => 'book')) ?>"><?php echo $b_row->name ?></a>
                             </li>
                             <?php endforeach; ?>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li><span class="li-all"><?php echo Common::t('Music', 'translate', NULL, $lang) ?></span></li>
+                            <li>
+                                <a class="aall" href="<?php echo Yii::app()->createUrl('music') ?>">
+                                    <span class="li-all <?php echo ($controller == 'music' || $r_type == 'music') ? 'active' : '' ?>"><?php echo Common::t('Music', 'translate', NULL, $lang) ?></span>
+                                </a>
+                            </li>
                             <?php foreach ($music_topics as $m_row):?>
                             <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug, 'type' => 'music')) ?>"><?php echo $m_row->name ?></a>
+                                <a class="cat-submenu <?php echo ($r_slug == $m_row->slug && $r_type == 'music') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug, 'type' => 'music')) ?>"><?php echo $m_row->name ?></a>
                             </li>
                             <?php endforeach; ?>
                         </ul>
@@ -79,47 +79,23 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('quote') ?>" title="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>">
                             <span>
-                                <i class="fa fa-m-quote"></i>
+                                <i class="fa fa-m-quote <?php echo ($controller == 'quote' || $r_type == 'quote') ? 'active' : '' ?>"></i>
                             </span>
                         </button>
-                        <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <li><span class="li-all-type"><?php echo Common::t('Quote', 'translate', NULL, $lang) ?></span></li>
-                            <?php foreach ($quote_topics as $q_row):?>
-                            <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug, 'type' => 'quote')) ?>"><?php echo $q_row->name ?></a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
                     </li>
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('book') ?>" title="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>">
                             <span>
-                                 <i class="fa fa-m-book"></i>
+                                 <i class="fa fa-m-book <?php echo ($controller == 'book' || $r_type == 'book') ? 'active' : '' ?>"></i>
                             </span>
                         </button>
-                        <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <li><span class="li-all-type"><?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?></span></li>
-                            <?php foreach ($book_topics as $b_row):?>
-                            <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug, 'type' => 'book')) ?>"><?php echo $b_row->name ?></a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
                     </li>
                     <li class="dropdown">
                         <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('music') ?>" title="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>">
                             <span>
-                                 <i class="fa fa-m-classical-music"></i>
+                                 <i class="fa fa-m-classical-music <?php echo ($controller == 'music' || $r_type == 'music') ? 'active' : '' ?>"></i>
                             </span>
                         </button>
-                        <ul class="dropdown-menu cat-group-sub" role="menu">
-                            <li><span class="li-all-type"><?php echo Common::t('Music', 'translate', NULL, $lang) ?></span></li>
-                            <?php foreach ($music_topics as $m_row):?>
-                            <li role="presentation">
-                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug, 'type' => 'music')) ?>"><?php echo $m_row->name ?></a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
                     </li>
                 </ul>
             </div>

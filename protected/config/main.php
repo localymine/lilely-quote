@@ -10,7 +10,7 @@ return array(
     'charset' => 'UTF-8',
     'defaultController' => 'home',
     'sourceLanguage' => 'en',
-    'language' => 'en',
+    'language' => 'vi',
     'theme' => 'classic',
     // preloading 'log' component
     'preload' => array('log'),
