@@ -111,6 +111,7 @@ return array(
                 'music/<slug:[a-zA-Z0-9-]+>/' => 'music/show',
                 'authors/<alphabet:[a-zA-Z0-9-]+>/' => 'authors',
                 '<type:[a-zA-Z0-9-]+>/topic/<slug:[a-zA-Z0-9-]+>/' => 'topic',
+                'topic/<slug:[a-zA-Z0-9-]+>/' => 'topic',
                 'category/<slug:[a-zA-Z0-9-]+>/' => 'category',
                 'quote-of-day' => 'quoteOfDay',
                 'famous-quotes' => 'famousQuotes',

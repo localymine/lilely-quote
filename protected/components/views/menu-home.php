@@ -23,9 +23,56 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 
         <div class="hold-fnc navbar-left">
             <div class="dropdown drop-topics navbar-left">
-                <button class="btn btn-lilely dropdown-toggle btn-topics-st" type="button" id="dropdown-topmenu" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false">
+                <button class="btn btn-lilely dropdown-toggle btn-topics-st" type="button" id="dropdown-topmenu" data-toggle="dropdown" data-delay="500" data-close-others="true" aria-expanded="false">
                     <span><?php echo Common::t('Topics', 'translate', NULL, $lang) ?></span>
+                    <span class="caret"></span>
                 </button>
+                <ul class="dropdown-menu all-topics-me" role="menu" aria-labelledby="dropdown-topmenu">
+                    <li>
+                        <ul>
+                            <li><span class="li-all"><?php echo Common::t('All Topics', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($model as $row): ?>
+                                <?php $active_topic_class = ''; ?>
+                                <?php if (isset($_REQUEST['slug'])): ?>
+                                    <?php $active_topic_class = $_REQUEST['slug'] == $row->slug ? 'active' : ''; ?>
+                                <?php endif; ?>
+                                <li class="<?php echo $active_topic_class ?>" role="presentation">
+                                    <a tabindex="-1" href="<?php echo Yii::app()->createUrl('topic/', array('slug' => $row->slug)) ?>" role="menuitem"><?php echo $row->name ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="li-all"><?php echo Common::t('Quote', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($quote_topics as $q_row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug, 'type' => 'quote')) ?>"><?php echo $q_row->name ?></a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="li-all"><?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($book_topics as $b_row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug, 'type' => 'book')) ?>"><?php echo $b_row->name ?></a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="li-all"><?php echo Common::t('Music', 'translate', NULL, $lang) ?></span></li>
+                            <?php foreach ($music_topics as $m_row):?>
+                            <li role="presentation">
+                                <a class="cat-submenu" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug, 'type' => 'music')) ?>"><?php echo $m_row->name ?></a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="categories navbar-left">
                 <ul class="nav navbar-nav">

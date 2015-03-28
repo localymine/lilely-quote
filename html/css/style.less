@@ -4229,3 +4229,34 @@ nav{
         background: url('../img/global-bl.png');
     }
 }
+
+.all-topics-me{
+    min-width: 638px !important;
+}
+.dropdown-menu.all-topics-me > li {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 24%;
+}
+.dropdown-menu.all-topics-me{
+    
+    ul {
+        padding-left: 15px !important;
+    }
+    li {
+        padding: 3px;
+    }
+    a {
+        display: block;
+        &:hover{
+            color: @new-main-color;
+            &::before{
+                font-family: FontAwesome;
+                content: "\f04b";
+                color: #333;
+                padding-right: 5px;
+            }
+        }
+    }
+}
