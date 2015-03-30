@@ -1,5 +1,7 @@
 <?php
 $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
+
+$banner = Slide::model()->load_banner()->findAll();
 ?>
 
 <div class="home-video">
@@ -73,8 +75,8 @@ $this->pageTitle = 'Home' . ' | ' . Yii::app()->name;
 
 <div class="container clearfix home-content">
     <div class="welcome-home">
-        <!--<h1 class="h-hi-1"><?php // echo Common::t('Welcome!', 'translate', NULL, $lang) ?></h1>-->
-        <!--<h2 class="h-hi-2"><?php // echo Common::t('We are Lilely', 'translate', NULL, $lang) ?></h2>-->
+        <!--<h1 class="h-hi-1"><?php // echo Common::t('Welcome!', 'translate', NULL, $lang)  ?></h1>-->
+        <!--<h2 class="h-hi-2"><?php // echo Common::t('We are Lilely', 'translate', NULL, $lang)  ?></h2>-->
         <h1 class="h-ct"><?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $lang) ?></h1>
     </div>
 
@@ -140,20 +142,24 @@ $url_check = Yii::app()->createUrl('subcribe/exists');
 $url_regist = Yii::app()->createUrl('subcribe/regist');
 
 $media_path = Yii::app()->params['siteUrl'] . '/' . Yii::app()->params['set_media_home_path'];
-$video_sources = array('Sequence02.webm', 'Sequence03.webm', 'Sequence04.webm');
-$quote_urls = array(
-    array('quote' => 'screw-it-let-s-do-it'),
-    array('music' => 'the-four-seasons-winter'),
-    array('quote' => 'beauty-and-seduction-i-believe-is-nature-s-tool-for-survival-because-we-will-protect-what-we-fall-in-love-with'),
-);
-foreach ($video_sources as $value) {
-    $video_source[] = $media_path . $value;
-}
-foreach ($quote_urls as $value) {
-    foreach ($value as $k => $v) {
-        $quote_url[] = Yii::app()->createUrl($k . '/show', array('slug' => $v));
+
+
+if (count($banner) == 0) {
+    $video_source[] = $media_path . 'Sequence00.webm';
+    $quote_url[] = Yii::app()->createUrl('#');
+} else {
+    foreach ($banner as $row) {
+        $ext = strrchr($row->title, '.');
+        if($ext == FALSE){
+            $media = $row->title . '.xxx';
+        } else {
+            $media = array_shift(explode('.', $row->title)) . '.xxx';
+        }
+        $video_source[] = $media_path . $media;
+        $quote_url[] = Yii::app()->createUrl($row->post_ref->post_type . '/show', array('slug' => $row->post_ref->slug));
     }
 }
+
 $video_source = json_encode($video_source);
 $quote_url = json_encode($quote_url);
 $script = <<< EOD

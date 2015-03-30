@@ -159,3 +159,10 @@ input[type="checkbox"]:checked + label.c-checked{color: #e74c3c; font-weight: bo
     vertical-align: middle;
     width: 60%;
 }
+
+.expired td, .expired th{
+    background: #001 !important;
+}
+.hide-st td, .hide-st th{
+    background: #555 !important;
+}

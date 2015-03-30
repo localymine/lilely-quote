@@ -147,10 +147,21 @@ Common::register('jquery-ui-1.10.4.custom.min.js', 'pro', CClientScript::POS_END
                 <?php $slides = $model->get_slide()->findAll(); ?>
                 <ul id="slide-sortable">
                     <?php foreach ($slides as $row): ?>
+                        <?php 
+                            $class_status = ''; 
+                            if ($row->disp_type == 0){
+                                $class_status = 'hide-st';
+                            } else{
+                                $cur_date = date('Y-m-d H:i:s');
+                                if (strtotime($row->end) < strtotime($cur_date)){
+                                    $class_status = 'expired';
+                                }
+                            }
+                        ?>
                         <li data-slideid="<?php echo $row->id ?>" title="<?php echo $row->description ?>">
                             <div class="table-responsive" role="grid">
                                 <table class="table table-vcenter table-condensed table-striped dataTable">
-                                    <tr role="row">
+                                    <tr role="row" class="<?php echo $class_status ?>">
                                         <th width="30"><?php echo $row->id ?></th>
                                         <td width="250" align="left">
                                             <?php if ($row->image != ''): ?>

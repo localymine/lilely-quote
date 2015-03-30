@@ -1,7 +1,6 @@
 <?php
 $controller = Yii::app()->controller->id;
 $action = Yii::app()->controller->action->id;
-$banner = Slide::model()->load_banner()->find();
 $back_url = Yii::app()->createUrl('home');
 $r_type = isset($_REQUEST['type']) ? $_REQUEST['type'] : '';
 $r_slug = isset($_REQUEST['slug']) ? $_REQUEST['slug'] : '';

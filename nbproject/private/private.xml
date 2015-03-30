@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="23">
-        <file>
-            <url>protected/modules/backend/controllers/PostController.php</url>
-            <bookmark id="5">
-                <name/>
-                <line>360</line>
-                <key/>
-            </bookmark>
-            <bookmark id="21">
-                <name/>
-                <line>514</line>
-                <key/>
-            </bookmark>
-        </file>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="25">
         <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
@@ -53,32 +40,53 @@
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1191</line>
+                <line>1207</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1314</line>
+                <line>1330</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2158</line>
+                <line>2174</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>2956</line>
+                <line>2972</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3473</line>
+                <line>3489</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>3666</line>
+                <line>3682</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>protected/components/views/menu-home.php</url>
+            <bookmark id="25">
+                <name/>
+                <line>80</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>protected/modules/backend/controllers/PostController.php</url>
+            <bookmark id="5">
+                <name/>
+                <line>360</line>
+                <key/>
+            </bookmark>
+            <bookmark id="21">
+                <name/>
+                <line>514</line>
                 <key/>
             </bookmark>
         </file>
@@ -106,10 +114,12 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/controllers/TestController.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/book/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Slide.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/slide/index.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js-book/css/style.less</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/pro/css/style.css</file>
         </group>
     </open-files>
 </project-private>

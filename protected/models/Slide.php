@@ -53,7 +53,7 @@ class Slide extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'post_ref' => array(self::BELONGS_TO, 'Post', 'id'),
+            'post_ref' => array(self::BELONGS_TO, 'Post', 'post_id'),
         );
     }
 
@@ -176,7 +176,7 @@ class Slide extends CActiveRecord {
         $offset = $limit * ($current_page - 1);
 
         $this->getDbCriteria()->mergeWith(array(
-            'order' => 'sorting ASC, create_date DESC',
+            'order' => 'sorting',
             'limit' => $limit,
             'offset' => $offset,
         ));
@@ -222,7 +222,6 @@ class Slide extends CActiveRecord {
 
     public function load_banner() {
         $curdate = date('Y-m-d H:i:s');
-        echo $curdate . '<br>';
         $this->getDbCriteria()->mergeWith(array(
             'condition' => "disp_type != 0 AND ('$curdate' BETWEEN start AND end)",
 //            'condition' => "disp_type != 0 AND (start < '$curdate'  < end)",
