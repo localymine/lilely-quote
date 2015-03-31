@@ -1126,9 +1126,12 @@ nav{
     background: url('../img/book-b.png');
 }
 
-@link-hover-bg-color: lightten(@text-color);
-@link-hover-gra-1: #fff;
-@link-hover-gra-2: #fff;
+/*@link-hover-bg-color: lightten(@text-color);*/
+/*@link-hover-gra-1: #fff;*/
+/*@link-hover-gra-2: #fff;*/
+@link-hover-bg-color: transparent;
+@link-hover-gra-1: transparent;
+@link-hover-gra-2: transparent;
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
     /*background-color: @background-color !important;*/
@@ -1181,7 +1184,7 @@ nav{
             color: #333;
             display: block;
             font-weight: normal;
-            line-height: 1.42857;
+            line-height: 1.42857em;
             padding: 3px 0px;
             white-space: nowrap;
             font-weight: bold;
@@ -1198,7 +1201,7 @@ nav{
             color: #333;
             display: block;
             font-weight: bold;
-            line-height: 1.42857;
+            line-height: 1.42857em;
             white-space: nowrap;
             font-weight: bold;
         }
@@ -3539,27 +3542,36 @@ nav{
                         text-align: left !important;
                         min-width: 160px !important;
                         display: block !important;
-                        padding: 3px 10px !important;
+                        padding: 4px 10px !important;
                         height: auto !important;
-                        line-height: 1.42857 !important;
+                        line-height: 1.42857em !important;
                         a.cat-submenu{
                             clear: both;
                             color: #333 !important;
                             display: block;
                             font-weight: normal;
                             white-space: nowrap;
+                            &.active{
+                                color: @new-main-color !important;
+                                &::before{
+                                    font-family: FontAwesome;
+                                    content: "\f04b";
+                                    color: #333;
+                                    padding-right: 5px;
+                                }
+                            }
                         }
                         a.cat-submenu:hover{
                             color: @new-main-color !important;
                             text-decoration: none;
-                            background-color: @link-hover-bg-color !important;
+/*                            background-color: @link-hover-bg-color !important;
                             background-image: -moz-linear-gradient(top, @link-hover-gra-1, @link-hover-gra-2);
                             background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@link-hover-gra-1), to(@link-hover-gra-2));
                             background-image: -webkit-linear-gradient(top, @link-hover-gra-1, @link-hover-gra-2);
                             background-image: -o-linear-gradient(top, @link-hover-gra-1, @link-hover-gra-2);
                             background-image: linear-gradient(to bottom, @link-hover-gra-1, @link-hover-gra-2);
                             background-repeat: repeat-x;
-                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@link-hover-gra-1', endColorstr='@link-hover-gra-2', GradientType=0);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@link-hover-gra-1', endColorstr='@link-hover-gra-2', GradientType=0);*/
                             transition: 0.3s ease color;
                             -webkit-transition: all 0.3s ease-in;
                             -moz-transition: all 0.3s ease-in;
@@ -3578,7 +3590,7 @@ nav{
                         background: none !important;
                     }
                     li:hover{
-                        background: #fff !important;
+                        /*background: #fff !important;*/
                     }
                 }
                 ul, ol{
@@ -3726,18 +3738,21 @@ nav{
 .home-video{
     margin-top: 105px;
     /*margin-top: -10px;*/
-    min-height: 665px;
+    /*min-height: 665px;*/
+    .bgvid{
+        text-align: center;
+    }
     video#bgvid {
         /*position: fixed;*/
         right: 0;
         bottom: 0;
-        width: 100%;
-        height: 100%;
+        width: 73%;
+        /*height: 100%;*/
         /*width: auto;*/
         /*height: auto;*/
         z-index: -100;
         background-size: cover;
-        padding: 5px;
+        /*padding: 5px;*/
     }
     .home-mid-content{
         width: 1170px;

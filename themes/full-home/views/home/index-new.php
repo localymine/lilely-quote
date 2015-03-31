@@ -70,7 +70,9 @@ $banner = Slide::model()->load_banner()->findAll();
         </ul>
         -->
     </div>
-    <video id="bgvid" poster="" autoplay="" muted></video>
+    <div class="bgvid">
+        <video id="bgvid" poster="" autoplay="" muted></video>
+    </div>
 </div>
 
 <div class="container clearfix home-content">
