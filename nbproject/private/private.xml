@@ -121,6 +121,7 @@
         <group>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_bookshelf.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/models/Slide.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/modules/backend/views/slide/index.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
