@@ -2,6 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="27">
         <file>
+            <url>protected/components/views/menu-home.php</url>
+            <bookmark id="25">
+                <name/>
+                <line>196</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>html/css/component.less</url>
+            <bookmark id="2">
+                <name/>
+                <line>387</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
                 <name/>
@@ -65,20 +81,12 @@
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>3546</line>
+                <line>3550</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>3694</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
-            <url>protected/components/views/menu-home.php</url>
-            <bookmark id="25">
-                <name/>
-                <line>80</line>
+                <line>3698</line>
                 <key/>
             </bookmark>
         </file>
@@ -92,14 +100,6 @@
             <bookmark id="21">
                 <name/>
                 <line>514</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
-            <url>html/css/component.less</url>
-            <bookmark id="2">
-                <name/>
-                <line>387</line>
                 <key/>
             </bookmark>
         </file>
@@ -128,6 +128,13 @@
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/pro/css/style.css</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
+        </group>
+        <group name="MINE">
+            <file>file:/var/www/html/lilely.localhost/html/css/style.less</file>
+            <file>file:/var/www/html/lilely.localhost/themes/full-home/views/home/index.php</file>
+            <file>file:/var/www/html/lilely.localhost/protected/components/views/menu-home.php</file>
+            <file>file:/var/www/html/lilely.localhost/themes/full-home/views/home/index-new.php</file>
+            <file>file:/var/www/html/lilely.localhost/protected/components/views/menu.php</file>
         </group>
     </open-files>
 </project-private>

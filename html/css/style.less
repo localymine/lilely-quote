@@ -3501,12 +3501,16 @@ nav{
     float: right!important;
 }
 @menu-height: 105px;
-.new-top-home{
-    height: @menu-height;
+.border-top{
     border-top: 8px solid @top-home-border ;
+}
+.new-top-home{
+    width: 1170px;
+    margin: 0 auto;
+    height: @menu-height;
     .top-holder{
-        width: 1170px;
-        margin: 0 auto;
+        /*width: 1170px;*/
+        /*margin: 0 auto;*/
         .logo-padding{
             margin-top: -7px;
         }
@@ -4309,3 +4313,22 @@ nav{
         }
     }
 }
+
+@media (max-width: 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        margin: 0;
+    }
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
