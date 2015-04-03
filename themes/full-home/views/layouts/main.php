@@ -16,6 +16,8 @@
 
         <!-- Bootstrap core CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- smartmenu CSS -->
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
         <!-- font awesome CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- fancybox CSS -->
@@ -60,6 +62,8 @@
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/jquery-1.11.0.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/bootstrap.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>-->
+        <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/jquery.smartmenus.min.js"></script>-->
+        <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/js/jquery.smartmenus.bootstrap.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/jQuery.jPlayer.2.7.0/jquery.jplayer.min.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/bootbox/bootbox.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/fancybox/jquery.fancybox.pack.js"></script>-->

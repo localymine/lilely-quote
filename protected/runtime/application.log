@@ -106,3 +106,45 @@ Stack trace:
 #13 {main}
 REQUEST_URI=/
 ---
+2015/04/02 18:18:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\xampp\htdocs\yii\db\CDbConnection.php:382
+Stack trace:
+#0 D:\xampp\htdocs\yii\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\xampp\htdocs\yii\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\xampp\htdocs\yii\base\CModule.php(387): CDbConnection->init()
+#3 D:\xampp\htdocs\yii\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 D:\xampp\htdocs\yii\db\ar\CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 D:\xampp\htdocs\lilely-quote\protected\components\WebSetting.php(17): CActiveRecord->findByAttributes(Array)
+#8 D:\xampp\htdocs\lilely-quote\protected\controllers\HomeController.php(13): WebSetting->getValue('SIZE_OF_STORY')
+#9 D:\xampp\htdocs\yii\web\CWebApplication.php(281): HomeController->init()
+#10 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController(false)
+#11 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/en/
+---
+2015/04/02 18:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/favicon.ico
+---
+2015/04/02 18:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/favicon.ico
+---
+2015/04/02 18:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/favicon.ico
+---
