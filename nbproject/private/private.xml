@@ -70,32 +70,32 @@
             </bookmark>
             <bookmark id="32">
                 <name/>
-                <line>3637</line>
+                <line>3642</line>
                 <key/>
             </bookmark>
             <bookmark id="33">
                 <name/>
-                <line>3947</line>
+                <line>3955</line>
                 <key/>
             </bookmark>
             <bookmark id="34">
                 <name/>
-                <line>4551</line>
+                <line>4565</line>
                 <key/>
             </bookmark>
             <bookmark id="29">
                 <name/>
-                <line>4551</line>
+                <line>4565</line>
                 <key/>
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>4551</line>
+                <line>4565</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>4551</line>
+                <line>4565</line>
                 <key/>
             </bookmark>
         </file>
@@ -152,16 +152,11 @@
         </group>
         <group>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/bootstrap/js/jquery.smartmenus.bootstrap.min.js</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/all.js</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/bootstrap/css/bootstrap.css</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/bootstrap/js/jquery.smartmenus.min.js</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
         </group>
     </open-files>
