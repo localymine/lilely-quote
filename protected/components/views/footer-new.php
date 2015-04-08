@@ -1,6 +1,6 @@
 <footer>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12">
             <ul class="footer link">
                 <li><a class="<?php echo ($action == 'about') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('site/about') ?>"><?php echo Common::t('About Us', 'translate', NULL, $lang) ?></a></li>
                 <li><a class="<?php echo ($action == 'contact') ? 'active' : '' ?>" href="<?php echo Yii::app()->createUrl('#') ?>"><?php echo Common::t('Jobs', 'translate', NULL, $lang) ?></a></li>
@@ -14,12 +14,12 @@
     </div>
     <hr/>
     <div class="row">
-        <div class="col-md-12 footer-contanter-2">
-            <div class="col-md-6">
+        <div class="col-md-12 col-xs-12 footer-contanter-2">
+            <div class="col-md-6 col-xs-12">
                 <h2 class="site-name">Lilely.com</h2>
                 <p>&copy; Copyright 2015 <span class="ctn">Lilely</span>. All Rights Reserved</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <div class="addr">
                     <h1>25 Nguyen Thi Minh Khai St., Ben Nghe Ward</h1>
                     <h1>Ho Chi Minh City, Vietnam</h1>

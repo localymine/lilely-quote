@@ -12,37 +12,25 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 ?>
 
 
-<nav class="navbar navbar-fixed-top background-white border-top navbar-inverse">
+<nav class="navbar navbar-fixed-top background-white border-top" role="navigation">
     <div class="container new-top-home">
         
         <div class="navbar-header">
-            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand logo-padding" href="<?php echo $back_url ?>">
-                <img class="img-responsive" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
+                <img class="img-responsive sm" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
             </a>
         </div>
 
 
         <div id="navbar" class="top-holder navbar-collapse collapse">
 
-            
-            <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <button class="btn btn-success" type="submit">Sign in</button>
-          </form>
-            
-
-<!--                <div class="hold-fnc navbar-left">
+                <div class="hold-fnc navbar-left">
                     <div class="dropdown drop-topics navbar-left">
                         <button class="btn btn-lilely dropdown-toggle btn-topics-st" type="button" id="dropdown-topmenu" data-toggle="dropdown" data-delay="500" data-close-others="true" aria-expanded="false">
                             <span><?php echo Common::t('Topics', 'translate', NULL, $lang) ?></span>
@@ -188,7 +176,7 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                     </div>
                 </div>
 
-                <div class="lang-link"><?php $this->widget('LanguageSelector') ?></div>-->
+                <div class="lang-link"><?php $this->widget('LanguageSelector') ?></div>
 
         </div>
 

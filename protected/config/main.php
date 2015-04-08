@@ -141,7 +141,7 @@ return array(
             'schemaCachingDuration' => 3600,
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'root',
+            'password' => '',
             'charset' => 'utf8',
             'tablePrefix' => '',
         ),
