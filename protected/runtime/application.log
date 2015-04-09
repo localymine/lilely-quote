@@ -499,3 +499,30 @@ Stack trace:
 REQUEST_URI=/en/images/book/%C3%94ng-gi%C3%A0-v%C3%A0-bi%E1%BB%83n-c%E1%BA%A3-2972733490.png
 HTTP_REFERER=http://lilely-quote.localhost/en/book
 ---
+2015/04/10 01:47:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/en/quote
+---
+2015/04/10 01:48:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/en/quote
+---
+2015/04/10 01:50:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/en/quote
+---
