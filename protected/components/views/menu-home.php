@@ -181,17 +181,14 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 
         </div>
 
-
-        <div id="sidr">
-            <!-- Your content -->
-            <ul>
-                <li><a href="#">List 1</a></li>
-                <li class="active"><a href="#">List 2</a></li>
-                <li><a href="#">List 3</a></li>
-            </ul>
-        </div>
-
     </div>
-
-
 </nav>
+
+<div id="sidr">
+    <!-- Your content -->
+    <ul>
+        <li><a href="#">List 1</a></li>
+        <li class="active"><a href="#">List 2</a></li>
+        <li><a href="#">List 3</a></li>
+    </ul>
+</div>
