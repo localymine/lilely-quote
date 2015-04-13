@@ -16,7 +16,7 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
     <div class="container new-top-home">
 
         <div class="navbar-header">
-            <a href="#sidr">
+            <a id="sp-menu" href="sidr">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -168,8 +168,8 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                         </li>
                         <li>
                             <a href="https://plus.google.com/share?url=<?php echo $share_url ?>" onclick="javascript:window.open(this.href,
-                                                '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
-                                        return false;">
+                                            '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+                                    return false;">
                                 <i class="fa fa-m-google"></i>
                             </a>
                         </li>
@@ -185,10 +185,48 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 </nav>
 
 <div id="sidr">
-    <!-- Your content -->
-    <ul>
-        <li><a href="#">List 1</a></li>
-        <li class="active"><a href="#">List 2</a></li>
-        <li><a href="#">List 3</a></li>
+    <ul class="sidebar">
+        <li>
+            <a class="sidebar-menu" href="#">
+                <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-b.png"/>
+                <?php echo Common::t('Quote', 'translate', NULL, $lang) ?>
+            </a>
+            <ul>
+                <?php foreach ($quote_topics as $q_row): ?>
+                    <li>
+                        <a class="<?php echo ($r_slug == $q_row->slug && $r_type == 'quote') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $q_row->slug, 'type' => 'quote')) ?>"><?php echo $q_row->name ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </li>
+        <li>
+            <a class="sidebar-menu" href="#">
+                <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/book-b.png"/>
+                <?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>
+            </a>
+            <ul>
+                <?php foreach ($book_topics as $b_row): ?>
+                    <li>
+                        <a class="<?php echo ($r_slug == $b_row->slug && $r_type == 'book') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $b_row->slug, 'type' => 'book')) ?>"><?php echo $b_row->name ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </li>
+        <li>
+            <a class="sidebar-menu" href="#">
+                <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/music-b.png"/>
+                <?php echo Common::t('Music', 'translate', NULL, $lang) ?>
+            </a>
+            <ul>
+                <?php foreach ($music_topics as $m_row): ?>
+                    <li>
+                        <a class="cat-submenu <?php echo ($r_slug == $m_row->slug && $r_type == 'music') ? 'active' : '' ?>" tabindex="-1" href="<?php echo Yii::app()->createUrl('topic', array('slug' => $m_row->slug, 'type' => 'music')) ?>"><?php echo $m_row->name ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </li>
     </ul>
 </div>
