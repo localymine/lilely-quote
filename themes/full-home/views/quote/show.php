@@ -343,6 +343,9 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
 
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
+        if(typeof window.orientation == 'undefined'){
+            alert(1)
+        } else { alert(2) }
         event.target.playVideo();
     }
 

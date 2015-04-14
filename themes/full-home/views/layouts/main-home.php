@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
         
         <!-- for Google -->
         <meta name="description" content="<?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $this->lang) ?>" />
@@ -34,7 +35,7 @@
         <!-- fancybox CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/fancybox/jquery.fancybox.css" rel="stylesheet">
         <!-- sidr CSS -->
-        <link href="<?php echo Yii::app()->theme->baseUrl ?>/sidr/stylesheets/jquery.sidr.light.css" rel="stylesheet">
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/sidr/stylesheets/jquery.sidr.light.min.css" rel="stylesheet">
         <!-- slim scroll CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/js-slimScroll/style.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -84,18 +85,7 @@
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/all.js"></script>-->
         <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/js/common.min.js"></script>-->
         <script>
-            var ar = new Array(37, 39);
-            $(document).keydown(function (e) {
-                var key = e.which;
-                //console.log(key);
-                //if(key==35 || key == 36 || key == 37 || key == 39)
-                if ($.inArray(key, ar) > -1) {
-                    e.preventDefault();
-                    return false;
-                }
-                return true;
-            });
-
+            var ar=new Array(37,39);$(document).keydown(function(b){var a=b.which;if($.inArray(a,ar)>-1){b.preventDefault();return false}return true});
         </script>
     </body>
 </html>

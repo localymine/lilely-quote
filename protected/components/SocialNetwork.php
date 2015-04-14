@@ -34,24 +34,24 @@ class SocialNetwork extends CWidget {
             case 'social-youtube':
                 $this->render('social-youtube', array(
                     'share_url' => $this->data_href,
-                    'title' => Common::clean_text($this->title),
-                    'description' => Common::clean_text($this->description),
+                    'title' => $this->title,
+                    'description' => $this->description,
                     'image_url' => $this->image_url,
                 ));
                 break;
             case 'social-block-item':
                 $this->render('social-block-item', array(
                     'share_url' => $this->data_href,
-                    'title' => Common::clean_text($this->title),
-                    'description' => Common::clean_text($this->description),
+                    'title' => $this->title,
+                    'description' => $this->description,
                     'image_url' => $this->image_url,
                 ));
                 break;
             case 'social-top-facebook-share':
                 $this->render('social-top-facebook-share', array(
                     'share_url' => $this->data_href,
-                    'title' => Common::clean_text($this->title),
-                    'description' => Common::clean_text($this->description),
+                    'title' => $this->title,
+                    'description' => $this->description,
                     'image_url' => $this->image_url,
                 ));
                 break;

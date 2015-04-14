@@ -312,6 +312,12 @@
 })( jQuery );
 
 /*----- my collapse -----*/
+$(window).bind('resize', function () {
+    if($('body').hasClass('sidr-open') && $(window).width() >= 768) {
+        $.sidr('close');
+    }
+
+});
 $(document).ready(function() {
     $('#sp-menu').sidr();
     //
@@ -319,9 +325,8 @@ $(document).ready(function() {
         var $this = $(this);
         //
         if ($this.hasClass('open')){
-            return;
-//            $this.removeClass('open');
-//            $this.next().slideUp(100);
+            $this.removeClass('open');
+            $this.next().slideUp(100);
         }else {
             $('.sidebar').each(function(i){
                 var $li_a = $('a', this);

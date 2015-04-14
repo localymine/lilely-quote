@@ -185,15 +185,34 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 </nav>
 
 <div id="sidr">
-    
     <a class="logo-padding" href="<?php echo $back_url ?>">
         <img class="img-responsive" width="62" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
     </a>
     <ul class="sidebar">
         <li>
-            <a class="sidebar-menu" href="#">
+        <?php
+        $form_high_school = $this->beginWidget('CActiveForm', array(
+            'id' => 'top-search-form',
+            'method' => 'get',
+            'action' => Yii::app()->createUrl('search'),
+            'htmlOptions' => array(
+                'class' => 'inner',
+                'role' => 'search',
+            )
+        ));
+        ?>
+            <div class="inner-addon right-addon">
+                <?php echo CHtml::textField('kw', (isset($_GET['kw']) ? $_GET['kw'] : ''), array('placeholder' => Common::t('Search...', 'translate', NULL, $lang), 'class' => 'form-control top-search')) ?>
+                <span>
+                    <i class="glyphicon glyphicon-search search" onclick="$('#top-search-form').submit();"></i>
+                </span>
+            </div>
+        <?php $this->endWidget(); ?>
+        </li>
+        <li>
+            <a class="s1" href="<?php echo Yii::app()->createUrl('quote') ?>"><i class="fa fa-m-quote-b <?php echo ($controller == 'quote' || $r_type == 'quote') ? 'active' : '' ?>"></i></a>
+            <a class="s2 sidebar-menu" href="javascript:void(0)">
                 <i class="fa fa-angle-left sidebar-nav-indicator"></i>
-                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/quote-b.png"/>
                 <?php echo Common::t('Quote', 'translate', NULL, $lang) ?>
             </a>
             <ul>
@@ -205,9 +224,9 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
             </ul>
         </li>
         <li>
-            <a class="sidebar-menu" href="#">
+            <a class="s1" href="<?php echo Yii::app()->createUrl('book') ?>"><i class="fa fa-m-book-b <?php echo ($controller == 'book' || $r_type == 'book') ? 'active' : '' ?>"></i></a>
+            <a class="s2 sidebar-menu" href="javascript:void(0)">
                 <i class="fa fa-angle-left sidebar-nav-indicator"></i>
-                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/book-b.png"/>
                 <?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>
             </a>
             <ul>
@@ -219,9 +238,9 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
             </ul>
         </li>
         <li>
-            <a class="sidebar-menu" href="#">
+            <a class="s1" href="<?php echo Yii::app()->createUrl('music') ?>"><i class="fa fa-m-classical-music-b <?php echo ($controller == 'music' || $r_type == 'music') ? 'active' : '' ?>"></i></a>
+            <a class="s2 sidebar-menu" href="javascript:void(0)">
                 <i class="fa fa-angle-left sidebar-nav-indicator"></i>
-                <img src="<?php echo Yii::app()->theme->baseUrl ?>/img/music-b.png"/>
                 <?php echo Common::t('Music', 'translate', NULL, $lang) ?>
             </a>
             <ul>
