@@ -185,6 +185,10 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
 </nav>
 
 <div id="sidr">
+    
+    <a class="logo-padding" href="<?php echo $back_url ?>">
+        <img class="img-responsive" width="62" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
+    </a>
     <ul class="sidebar">
         <li>
             <a class="sidebar-menu" href="#">
