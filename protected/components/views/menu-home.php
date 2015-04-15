@@ -16,6 +16,8 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
     <div class="container new-top-home">
 
         <div class="navbar-header">
+            
+            
             <a id="sp-menu" href="sidr">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
@@ -27,6 +29,7 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
             <a class="navbar-brand logo-padding" href="<?php echo $back_url ?>">
                 <img class="img-responsive sm" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
             </a>
+            <div class="sp-lang"><?php $this->widget('LanguageSelector') ?></div>
         </div>
 
         <div id="navbar" class="top-holder navbar-collapse collapse">
