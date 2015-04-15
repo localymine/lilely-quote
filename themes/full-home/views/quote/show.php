@@ -333,7 +333,7 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('yt-player', {
             videoId: '<?php echo isset($yt_video_ids['v']) ? $yt_video_ids['v'] : '' ?>',
-            playerVars: {'autoplay': 1, 'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0  ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0  ?>'},
+            playerVars: {'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0  ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0  ?>'},
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -344,9 +344,12 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
         if(typeof window.orientation == 'undefined'){
-            alert(1)
-        } else { alert(2) }
-        event.target.playVideo();
+            event.target.playVideo();
+	} else { 
+            player.addEventListener('onStateChange', function(e) {
+                console.log('State is:', e.data);
+            });
+        }
     }
 
     // 5. The API calls this function when the player's state changes.

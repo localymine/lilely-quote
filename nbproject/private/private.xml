@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="34">
         <file>
-            <url>protected/components/views/menu-home.php</url>
-            <bookmark id="25">
-                <name/>
-                <line>184</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
                 <name/>
@@ -78,40 +70,40 @@
             </bookmark>
             <bookmark id="32">
                 <name/>
-                <line>3642</line>
+                <line>3645</line>
                 <key/>
             </bookmark>
             <bookmark id="33">
                 <name/>
-                <line>3955</line>
+                <line>3961</line>
                 <key/>
             </bookmark>
             <bookmark id="34">
                 <name/>
-                <line>4573</line>
+                <line>4585</line>
                 <key/>
             </bookmark>
             <bookmark id="29">
                 <name/>
-                <line>4573</line>
+                <line>4585</line>
                 <key/>
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>4573</line>
+                <line>4585</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>4573</line>
+                <line>4585</line>
                 <key/>
             </bookmark>
         </file>
         <file>
-            <url>html/css/component.less</url>
-            <bookmark id="2">
+            <url>protected/components/views/menu-home.php</url>
+            <bookmark id="25">
                 <name/>
-                <line>387</line>
+                <line>184</line>
                 <key/>
             </bookmark>
         </file>
@@ -125,6 +117,14 @@
             <bookmark id="21">
                 <name/>
                 <line>514</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>html/css/component.less</url>
+            <bookmark id="2">
+                <name/>
+                <line>387</line>
                 <key/>
             </bookmark>
         </file>
@@ -143,15 +143,6 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/all.js</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
-        </group>
         <group name="MINE">
             <file>file:/var/www/html/lilely.localhost/themes/full-home/sidr/jquery.sidr.js</file>
             <file>file:/var/www/html/lilely.localhost/html/css/style.less</file>
@@ -163,6 +154,19 @@
             <file>file:/var/www/html/lilely.localhost/themes/full-home/sidr/stylesheets/jquery.sidr.light.css</file>
             <file>file:/var/www/html/lilely.localhost/themes/full-home/views/layouts/main-home.php</file>
             <file>file:/var/www/html/lilely.localhost/protected/components/views/menu.php</file>
+        </group>
+        <group>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/book/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/all.js</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/sidr/jquery.sidr.min.js</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
         </group>
     </open-files>
 </project-private>
