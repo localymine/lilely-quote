@@ -92,7 +92,7 @@ return array(
         ),
         'request' => array(
             'class' => 'ext.localeurls.LocaleHttpRequest',
-            'languages' => array('vi' => 'Vietnamese', 'en' => 'English'),
+            'languages' => array('vi' => 'Vietnamese', 'en' => 'English', 'es' => 'Español'),
             // advance
             'detectLanguage' => true,
             'languageCookieLifetime' => 31536000,
@@ -141,7 +141,7 @@ return array(
             'schemaCachingDuration' => 3600,
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'root',
+            'password' => '',
             'charset' => 'utf8',
             'tablePrefix' => '',
         ),
@@ -214,7 +214,7 @@ return array(
         'adminEmail' => 'webmaster@example.com',
         'siteUrl' => 'http://lilely-quote.localhost',
         /* ------------------------------------------------------------------ */
-        'translatedLanguages' => array('en' => 'English', 'vi' => 'Vietnamese'),
+        'translatedLanguages' => array('en' => 'English', 'vi' => 'Vietnamese', 'es' => 'Español'),
         'defaultLanguage' => 'en',
         'pageSize' => 100,
         /* ------------------------------------------------------------------ */

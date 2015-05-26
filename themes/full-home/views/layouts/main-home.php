@@ -40,6 +40,7 @@
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/js-slimScroll/style.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <!--<link href="<?php // echo Yii::app()->theme->baseUrl  ?>/css/style.css" rel="stylesheet">-->
+        <!--<link href="<?php echo Yii::app()->theme->baseUrl  ?>/css/style.min.css" rel="stylesheet">-->
         <link href="<?php echo Yii::app()->baseUrl ?>/html/css/style.css" rel="stylesheet">
 
         <script>

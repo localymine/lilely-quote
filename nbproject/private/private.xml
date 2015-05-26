@@ -15,87 +15,87 @@
             </bookmark>
             <bookmark id="11">
                 <name/>
-                <line>527</line>
+                <line>528</line>
                 <key/>
             </bookmark>
             <bookmark id="22">
                 <name/>
-                <line>534</line>
+                <line>535</line>
                 <key/>
             </bookmark>
             <bookmark id="18">
                 <name/>
-                <line>588</line>
+                <line>589</line>
                 <key/>
             </bookmark>
             <bookmark id="12">
                 <name/>
-                <line>662</line>
+                <line>663</line>
                 <key/>
             </bookmark>
             <bookmark id="20">
                 <name/>
-                <line>1085</line>
+                <line>1086</line>
                 <key/>
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1210</line>
+                <line>1211</line>
                 <key/>
             </bookmark>
             <bookmark id="28">
                 <name/>
-                <line>1298</line>
+                <line>1299</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1358</line>
+                <line>1359</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2202</line>
+                <line>2203</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>3000</line>
+                <line>3001</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3513</line>
+                <line>3514</line>
                 <key/>
             </bookmark>
             <bookmark id="32">
                 <name/>
-                <line>3645</line>
+                <line>3646</line>
                 <key/>
             </bookmark>
             <bookmark id="33">
                 <name/>
-                <line>3961</line>
+                <line>3963</line>
                 <key/>
             </bookmark>
             <bookmark id="34">
                 <name/>
-                <line>4585</line>
+                <line>4588</line>
                 <key/>
             </bookmark>
             <bookmark id="29">
                 <name/>
-                <line>4585</line>
+                <line>4588</line>
                 <key/>
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>4585</line>
+                <line>4588</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>4585</line>
+                <line>4588</line>
                 <key/>
             </bookmark>
         </file>
@@ -159,14 +159,20 @@
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/book/show.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/layouts/main-home.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/all.js</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/sidr/jquery.sidr.min.js</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/config/main.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/menu-home.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/show.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/css/style.min.css</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/music/index.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_music.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.css</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/js/all.js</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/sidr/jquery.sidr.min.js</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/css/style.css</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/footer-new.php</file>
         </group>
     </open-files>
 </project-private>

@@ -5,8 +5,8 @@ return array(
     'Vietnamese' => 'Tiếng Việt',
     
     'By' => 'Bởi',
-    'Composer' => 'Sáng tác bởi',
-    'Performer' => 'Biểu diễn bởi',
+    'Composer' => 'Sáng tác',
+    'Performer' => 'Biểu diễn',
     'Name' => 'Tên',
     'Biography' => 'Tiểu sử',
     'About' => 'Nguồn gốc',
