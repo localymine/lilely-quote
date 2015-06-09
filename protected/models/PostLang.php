@@ -14,6 +14,7 @@
  * @property string $l_post_content
  * @property string $l_post_excerpt
  * @property string $l_post_youtube
+ * @property string $l_post_mv_type
  * @property string $l_slug
  */
 class PostLang extends CActiveRecord {
@@ -38,6 +39,7 @@ class PostLang extends CActiveRecord {
             array('l_post_title, l_post_title_clean, l_about, l_from, l_post_youtube, l_slug', 'length', 'max' => 512),
             array('l_soundtrack', 'max' => 256),
             array('l_post_excerpt', 'safe'),
+            array('l_post_mv_type', 'numerical'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('l_id, post_id, lang_id, l_post_title, l_post_title_clean, l_about, l_post_content, l_post_excerpt, l_post_youtube, l_slug', 'safe', 'on' => 'search'),

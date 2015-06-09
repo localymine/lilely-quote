@@ -813,3 +813,650 @@ Stack trace:
 REQUEST_URI=/es/media/home/Sequence00.ogv
 HTTP_REFERER=http://lilely-quote.localhost/es/home
 ---
+2015/06/09 01:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "media/home/Sequence00.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence00.ogv
+HTTP_REFERER=http://localhost/lilely-quote/
+---
+2015/06/09 01:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/user/profile
+---
+2015/06/09 01:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/flags/es.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/flags/es...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/flags/es.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms
+---
+2015/06/09 01:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms
+---
+2015/06/09 01:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/flags/es.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/flags/es...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/flags/es.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms/update/9
+---
+2015/06/09 01:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms/update/9
+---
+2015/06/09 01:04:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms/update/9
+---
+2015/06/09 01:04:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms
+---
+2015/06/09 01:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms
+---
+2015/06/09 01:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms/update/10
+---
+2015/06/09 01:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/terms/update/10
+---
+2015/06/09 06:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/user/profile
+---
+2015/06/09 06:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:42:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/addQuote
+---
+2015/06/09 06:48:19 [warning] [application] Failed to set unsafe attribute "soundtrack" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (417)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 06:48:19 [warning] [application] Failed to set unsafe attribute "soundtrack_vi" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (417)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 06:48:19 [warning] [application] Failed to set unsafe attribute "soundtrack_es" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (417)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 06:48:19 [warning] [application] Failed to set unsafe attribute "category" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (417)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 06:48:19 [warning] [application] Failed to set unsafe attribute "tags" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (417)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 06:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 11:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 11:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 11:42:16 [warning] [application] Failed to set unsafe attribute "soundtrack" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (273)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 11:42:16 [warning] [application] Failed to set unsafe attribute "soundtrack_vi" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (273)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 11:42:16 [warning] [application] Failed to set unsafe attribute "soundtrack_es" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (273)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 11:42:16 [warning] [application] Failed to set unsafe attribute "category" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (273)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 11:42:16 [warning] [application] Failed to set unsafe attribute "tags" of "Post".
+in D:\xampp\htdocs\lilely-quote\protected\modules\backend\controllers\PostController.php (273)
+in D:\xampp\htdocs\lilely-quote\index.php (14)
+2015/06/09 11:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 11:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 11:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0035-20141208-3109757206.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-0035-20141208-3109757206.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-sticking-point-solution-8738421765.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/the-sticking-point-solution-8738421765.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-48-6341533507.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-48-6341533507.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/secrets-of-closing-the-sale-3687673755.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/sec...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/secrets-of-closing-the-sale-3687673755.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0043-20141208-6987487217.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-0043-20141208-6987487217.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-34-4310477813.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-34-4310477813.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-hunchback-of-notre-dame-9647459723.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/the-hunchback-of-notre-dame-9647459723.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/who-move-my-cheese-5809912672.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/who...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/who-move-my-cheese-5809912672.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/if-you-want-it-done-right,-you-don't-have-to-do-it-yourself-287764063.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/if-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/if-you-want-it-done-right,-you-don't-have-to-do-it-yourself-287764063.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 11:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 11:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sự-kỳ-diệu-của-tư-duy-lớn-5633142399.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/s%E1%BB%B1-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-t%C6%B0-duy-l%E1%BB%9Bn-5633142399.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 11:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 11:57:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "media/home/Sequence00.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence00.ogv
+HTTP_REFERER=http://localhost/lilely-quote/en/
+---
+2015/06/09 15:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 15:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sự-kỳ-diệu-của-tư-duy-lớn-5633142399.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/s%E1%BB%B1-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-t%C6%B0-duy-l%E1%BB%9Bn-5633142399.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 15:19:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/user/profile
+---
+2015/06/09 15:19:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 15:19:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/sự-kỳ-diệu-của-tư-duy-lớn-5633142399.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/s\xE1\xBB...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/s%E1%BB%B1-k%E1%BB%B3-di%E1%BB%87u-c%E1%BB%A7a-t%C6%B0-duy-l%E1%BB%9Bn-5633142399.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateBook/150
+---
+2015/06/09 15:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-48-6341533507.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-48-6341533507.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/secrets-of-closing-the-sale-3687673755.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/sec...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/secrets-of-closing-the-sale-3687673755.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-sticking-point-solution-8738421765.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/the-sticking-point-solution-8738421765.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0035-20141208-3109757206.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-0035-20141208-3109757206.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/to-kill-a-mockingbird-7178271724.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/to-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/to-kill-a-mockingbird-7178271724.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-0043-20141208-6987487217.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-0043-20141208-6987487217.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/the-hunchback-of-notre-dame-9647459723.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/the...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/the-hunchback-of-notre-dame-9647459723.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/book-34-4310477813.jpg".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/boo...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/book-34-4310477813.jpg
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/who-move-my-cheese-5809912672.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/who...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/who-move-my-cheese-5809912672.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/if-you-want-it-done-right,-you-don't-have-to-do-it-yourself-287764063.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/if-...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/if-you-want-it-done-right,-you-don%27t-have-to-do-it-yourself-287764063.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/dare-to-dream-4562060502.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/dar...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/dare-to-dream-4562060502.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/book/7-habits-eff-people-5727450647.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/book/7-h...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/images/book/7-habits-eff-people-5727450647.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/book
+---
+2015/06/09 15:20:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/quote
+---
+2015/06/09 15:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "avatars/logo-7452381779.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('avatars/logo-74...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilely-quote/en/avatars/logo-7452381779.png
+HTTP_REFERER=http://localhost/lilely-quote/en/backend/post/updateQuote/167
+---
+2015/06/09 15:27:57 [error] [php] Undefined offset: 1 (D:\xampp\htdocs\lilely-quote\protected\extensions\Common.php:316)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CBaseController.php(95): QuoteController->renderInternal()
+#1 D:\xampp\htdocs\yii\web\CController.php(869): QuoteController->renderFile()
+#2 D:\xampp\htdocs\yii\web\CController.php(782): QuoteController->renderPartial()
+#3 D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php(58): QuoteController->render()
+#4 unknown(0): QuoteController->actionShow()
+#5 D:\xampp\htdocs\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\htdocs\yii\web\CController.php(286): QuoteController->runAction()
+#9 D:\xampp\htdocs\yii\web\CController.php(265): QuoteController->runActionWithFilters()
+#10 D:\xampp\htdocs\yii\web\CWebApplication.php(282): QuoteController->run()
+#11 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/lilely-quote/quote/imagine-a-world-without-hate-official-video
+in D:\xampp\htdocs\lilely-quote\protected\extensions\Common.php (316)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\quote\show.php (104)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php (58)
+2015/06/09 15:38:08 [error] [php] Undefined offset: 1 (D:\xampp\htdocs\lilely-quote\protected\extensions\Common.php:316)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CBaseController.php(95): QuoteController->renderInternal()
+#1 D:\xampp\htdocs\yii\web\CController.php(869): QuoteController->renderFile()
+#2 D:\xampp\htdocs\yii\web\CController.php(782): QuoteController->renderPartial()
+#3 D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php(58): QuoteController->render()
+#4 unknown(0): QuoteController->actionShow()
+#5 D:\xampp\htdocs\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\htdocs\yii\web\CController.php(286): QuoteController->runAction()
+#9 D:\xampp\htdocs\yii\web\CController.php(265): QuoteController->runActionWithFilters()
+#10 D:\xampp\htdocs\yii\web\CWebApplication.php(282): QuoteController->run()
+#11 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/lilely-quote/quote/imagine-a-world-without-hate-official-video
+in D:\xampp\htdocs\lilely-quote\protected\extensions\Common.php (316)
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\quote\show.php (104)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php (58)
+2015/06/09 16:03:31 [error] [php] Undefined variable: start (D:\xampp\htdocs\lilely-quote\themes\full-home\views\quote\show.php:334)
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CController.php(869): QuoteController->renderFile()
+#1 D:\xampp\htdocs\yii\web\CController.php(782): QuoteController->renderPartial()
+#2 D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php(58): QuoteController->render()
+#3 unknown(0): QuoteController->actionShow()
+#4 D:\xampp\htdocs\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\xampp\htdocs\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\xampp\htdocs\yii\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\xampp\htdocs\yii\web\CController.php(286): QuoteController->runAction()
+#8 D:\xampp\htdocs\yii\web\CController.php(265): QuoteController->runActionWithFilters()
+#9 D:\xampp\htdocs\yii\web\CWebApplication.php(282): QuoteController->run()
+#10 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\lilely-quote\index.php(14): CWebApplication->run()
+REQUEST_URI=/lilely-quote/quote/imagine-a-world-without-hate-official-video
+in D:\xampp\htdocs\lilely-quote\themes\full-home\views\quote\show.php (334)
+in D:\xampp\htdocs\lilely-quote\protected\controllers\QuoteController.php (58)
+in D:\xampp\htdocs\lilely-quote\index.php (14)

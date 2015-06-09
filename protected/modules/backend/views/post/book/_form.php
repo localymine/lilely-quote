@@ -108,10 +108,13 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label">Youtube Link</label>
-                                <div class="col-md-10">
+                                <label class="col-md-2 control-label">Movie Information</label>
+                                <div class="col-md-7">
                                     <?php echo $form->textField($model, 'post_youtube' . $suffix, array('class' => 'form-control')) ?>
-                                    <div class="help-block">ex: 3KyvlMJefR4;GH5n9lVZcM4</div>
+                                    <div class="help-block">ex: v=rN5Z4eifmEg&list=PL4DD121BD11D869B0</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <?php echo $form->dropDownList($model, 'post_mv_type' . $suffix, Post::item_alias('mv_type'), array('class' => 'form-control')) ?>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -144,7 +147,7 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                                     <?php echo $form->textArea($model, 'post_excerpt' . $suffix, array('class' => 'form-control custom_editor')) ?>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Book Cover Image</label>
                                 <div class="col-md-8">
@@ -292,7 +295,7 @@ Common::register_script('input-form', $script);
             dataType: 'json',
             cacheResults: true
         }
-    }).bind('isTagAllowed', function(e, data) {
+    }).bind('isTagAllowed', function (e, data) {
 
         var formData = $(e.target).siblings('input#Post_tags').val();
         list = eval(formData);
@@ -313,7 +316,7 @@ Common::register_script('input-form', $script);
         }
     });
 
-    $('.clear-slug').click(function() {
+    $('.clear-slug').click(function () {
         var id = $(this).data('slug-id');
         $('#' + id).val("");
     });

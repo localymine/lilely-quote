@@ -58,7 +58,7 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                     <?php echo $form->errorSummary($model); ?>
                 </div>
             </div>
-            
+
             <div class="form-group">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
@@ -87,33 +87,36 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                             $suffix = '_' . $l;
                         }
                         ?>
-                    <div class="tab-pane fade in <?php echo $active ?>" id="<?php echo $lang; ?>">
-                        
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">Title</label>
-                            <div class="col-md-10">
-                                <?php echo $form->textField($model, 'post_title' . $suffix, array('class' => 'form-control')) ?>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">Slug</label>
-                            <div class="col-md-10">
-                                <div class="input-group">
-                                    <?php echo $form->textField($model, 'slug' . $suffix, array('class' => 'form-control', 'form' => 'stories-form', 'id' => 'slug-' . $lang)) ?>
-                                    <span class="input-group-addon"><a class="clear-slug hand" data-slug-id="<?php echo 'slug-' . $lang ?>"><i class="fa fa-times text-danger"></i></a></span>
+                        <div class="tab-pane fade in <?php echo $active ?>" id="<?php echo $lang; ?>">
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Title</label>
+                                <div class="col-md-10">
+                                    <?php echo $form->textField($model, 'post_title' . $suffix, array('class' => 'form-control')) ?>
                                 </div>
-                                <div class="help-block">Auto generate slug when empty</div>
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">Youtube Link</label>
-                            <div class="col-md-10">
-                                <?php echo $form->textField($model, 'post_youtube' . $suffix, array('class' => 'form-control')) ?>
-                                <div class="help-block">ex: 3KyvlMJefR4;GH5n9lVZcM4</div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Slug</label>
+                                <div class="col-md-10">
+                                    <div class="input-group">
+                                        <?php echo $form->textField($model, 'slug' . $suffix, array('class' => 'form-control', 'form' => 'stories-form', 'id' => 'slug-' . $lang)) ?>
+                                        <span class="input-group-addon"><a class="clear-slug hand" data-slug-id="<?php echo 'slug-' . $lang ?>"><i class="fa fa-times text-danger"></i></a></span>
+                                    </div>
+                                    <div class="help-block">Auto generate slug when empty</div>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Movie Information</label>
+                                <div class="col-md-7">
+                                    <?php echo $form->textField($model, 'post_youtube' . $suffix, array('class' => 'form-control')) ?>
+                                    <div class="help-block">ex: v=rN5Z4eifmEg&list=PL4DD121BD11D869B0</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <?php echo $form->dropDownList($model, 'post_mv_type' . $suffix, Post::item_alias('mv_type'), array('class' => 'form-control')) ?>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Info About the Video</label>
@@ -164,7 +167,7 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                 </div>
             </div>
         </div>
-        
+
         <div class="block clearfix">
             <div class="form-group">
                 <label class="control-label">Performer</label>
@@ -173,7 +176,7 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                 </div>
             </div>
         </div>
-        
+
         <div class="block clearfix">
             <div class="form-group">
                 <label class="col-md-2 control-label">Image</label>
@@ -186,7 +189,7 @@ Common::register('textext.plugin.arrow.js', 'pro/js/jqtextext', CClientScript::P
                 </div>
             </div>
         </div>
-        
+
         <div class="block clearfix">
             <div class="form-group">
                 <label class="col-md-2 control-label">Composer Photo</label>
@@ -289,7 +292,7 @@ Common::register_script('input-form', $script);
             dataType: 'json',
             cacheResults: true
         }
-    }).bind('isTagAllowed', function(e, data) {
+    }).bind('isTagAllowed', function (e, data) {
 
         var formData = $(e.target).siblings('input#Post_tags').val();
         list = eval(formData);
@@ -310,7 +313,7 @@ Common::register_script('input-form', $script);
         }
     });
 
-    $('.clear-slug').click(function() {
+    $('.clear-slug').click(function () {
         var id = $(this).data('slug-id');
         $('#' + id).val("");
     });

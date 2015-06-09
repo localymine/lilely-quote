@@ -15,6 +15,7 @@
  * @property string $post_content
  * @property string $post_excerpt
  * @property string $post_youtube
+ * @property string $post_mv_type
  * @property string $quote_author
  * @property string $performer
  * @property string $image
@@ -55,7 +56,7 @@ class Post extends CActiveRecord {
             array('soundtrack', 'file', 'types' => 'mp3', 'maxSize' => 1024 * 1024 * 10, 'allowEmpty' => true, 'on' => 'insert'), // 10MB
             array('soundtrack', 'file', 'types' => 'mp3', 'maxSize' => 1024 * 1024 * 10, 'allowEmpty' => true, 'on' => 'update'),
             array('quote_author, performer', 'length', 'max' => 128),
-            array('visits, menu_order', 'numerical'),
+            array('visits, menu_order, post_mv_type', 'numerical'),
             array('post_content, post_group, post_date, post_excerpt, post_modified, last_visited', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -167,7 +168,7 @@ class Post extends CActiveRecord {
                 'langTableName' => 'post_lang',
                 'langForeignKey' => 'post_id',
                 'langField' => 'lang_id',
-                'localizedAttributes' => array('soundtrack', 'post_title', 'post_title_clean', 'about', 'from', 'post_content', 'post_excerpt', 'post_youtube', 'cover', 'slug'), //attributes of the model to be translated
+                'localizedAttributes' => array('soundtrack', 'post_title', 'post_title_clean', 'about', 'from', 'post_content', 'post_excerpt', 'post_youtube', 'post_mv_type', 'cover', 'slug'), //attributes of the model to be translated
                 'localizedPrefix' => 'l_',
                 'languages' => Yii::app()->params['translatedLanguages'], // array of your translated languages. Example : array('fr' => 'Fran�ais', 'en' => 'English')
                 'defaultLanguage' => Yii::app()->params['defaultLanguage'], //your main language. Example : 'fr'
@@ -190,6 +191,10 @@ class Post extends CActiveRecord {
 
     public static function item_alias($type, $code = NULL) {
         $_items = array(
+            'mv_type' => array(
+                0 => 'Youtube',
+                1 => 'Vimeo'
+            )
         );
 
         if (isset($code))

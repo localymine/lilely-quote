@@ -100,8 +100,12 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
 
         <?php if (isset($post->post_youtube) && $post->post_youtube != ''): ?>
             <?php
-            $arr_keyvalue = Common::multiExplode(array('?', '&'), $post->post_youtube);
-            $yt_video_ids = Common::pairsKeyValue($arr_keyvalue, '=');
+            if ($post->post_mv_type == 0){
+                $arr_keyvalue = Common::multiExplode(array('?', '&'), $post->post_youtube);
+                $yt_video_ids = Common::pairsKeyValue($arr_keyvalue, '=');
+            } else {
+                $yt_video_ids = $post->post_youtube;
+            }
             ?>
             <div class="row">
                 <div class="col-md-2"></div>
@@ -118,7 +122,11 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                                     ), false, true);
                             ?>
                         </div>
+                        <?php if ($post->post_mv_type == 0): ?>
                         <div id="yt-player"></div>
+                        <?php else: ?>
+                        <iframe id="yt-player" src="//player.vimeo.com/video/<?php echo $yt_video_ids?>?autoplay=1" width="630" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <?php endif; ?>
                     </div>
                     <?php
                     $this->widget('SocialNetwork', array(
@@ -266,8 +274,14 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
 <?php endif; ?>
 
 <?php
-$script = <<< EOD
 
+$v_id = isset($yt_video_ids['v']) ? $yt_video_ids['v'] : '';
+$v_s = isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0;
+$v_e = isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0;
+$post_id = $post->id;
+$post_type = $post->post_type;
+
+$script = <<< EOD
 $(function(){
     $('.trans-show-btn').on('click', function(){
         $('.music-text').toggleClass('hidden');
@@ -315,14 +329,25 @@ $(document).ready(function() {
         warningAlerts: false
     });
 });
+function loadAnotherVideo() {
+    var data = {id: $post_id, type: '$post_type'};
+    $.ajax({
+        url: "<?php echo Yii::app()->createUrl('loadMore') ?>",
+        type: 'post',
+        data: data,
+        success: function(html) {
+            $('.yt-rel-holder').html(html);
+        }
+    });
+}
 EOD;
 Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClientScript::POS_END);
 ?>
 
+<?php if ($post->post_mv_type == 0): ?>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
-
     tag.src = "//www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -332,8 +357,8 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('yt-player', {
-            videoId: '<?php echo isset($yt_video_ids['v']) ? $yt_video_ids['v'] : '' ?>',
-            playerVars: {'wmode': 'transparent', 'rel': 0, 'start': '<?php echo isset($yt_video_ids['start']) ? $yt_video_ids['start'] : 0  ?>', 'end': '<?php echo isset($yt_video_ids['end']) ? $yt_video_ids['end'] : 0  ?>'},
+            videoId: '<?php echo $v_id ?>',
+            playerVars: {'wmode': 'transparent', 'rel': 0, 'start': '<?php echo $v_s  ?>', 'end': '<?php echo $v_e ?>'},
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -365,15 +390,5 @@ Yii::app()->clientScript->registerScript('trans-quote-' . rand(), $script, CClie
         }
     }
     //
-    function loadAnotherVideo() {
-        var data = {id: <?php echo $post->id ?>, type: '<?php echo $post->post_type ?>'};
-        $.ajax({
-            url: "<?php echo Yii::app()->createUrl('loadMore') ?>",
-            type: 'post',
-            data: data,
-            success: function(html) {
-                $('.yt-rel-holder').html(html);
-            }
-        });
-    }
 </script>
+<?php endif; ?>
