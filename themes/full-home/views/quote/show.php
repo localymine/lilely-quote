@@ -122,10 +122,11 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                                     ), false, true);
                             ?>
                         </div>
+			<?php var_dump($post->post_mv_type) ?>
                         <?php if ($post->post_mv_type == 0): ?>
                         <div id="yt-player"></div>
                         <?php else: ?>
-                        <iframe id="yt-player" src="//player.vimeo.com/video/<?php echo $yt_video_ids?>?autoplay=1" width="630" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe id="yt-player" src="//player.vimeo.com/video/<?php echo $yt_video_ids ?>?autoplay=1" width="630" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         <?php endif; ?>
                     </div>
                     <?php

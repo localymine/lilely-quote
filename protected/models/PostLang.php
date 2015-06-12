@@ -71,6 +71,7 @@ class PostLang extends CActiveRecord {
             'l_post_content' => 'L Post Content',
             'l_post_excerpt' => 'L Post Excerpt',
             'l_post_youtube' => 'L Post Youtube',
+	    'l_post_mv_type' => 'L Post Movie Type',
             'l_slug' => 'L Slug',
         );
     }

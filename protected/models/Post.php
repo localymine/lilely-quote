@@ -97,6 +97,7 @@ class Post extends CActiveRecord {
             'post_content' => 'Post Content',
             'post_excerpt' => 'Post Excerpt',
             'post_youtube' => 'Youtube Url',
+	    'post_mv_type' => 'Post Moive Type',
             'quote_author' => 'Quote Author',
             'performer' => 'Performer',
             'image' => 'Image',
