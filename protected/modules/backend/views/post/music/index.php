@@ -43,7 +43,9 @@ Common::register('jquery-ui-1.10.4.custom.min.js', 'pro', CClientScript::POS_END
     <div class="col-md-12">
         <div class="block">
             <div class="block-title">
-                <h2>List Music</h2><div class="block-options pull-right"><i class="fa fa-star" style="color:#1BBAE1"></i>Show   <i class="fa fa-star" style="color:#ccc"></i>Hidden</div>
+                <h2>List Music</h2>
+                <a href="<?php echo Yii::app()->createUrl('backend/post/music') ?>">All</a> | <a href="<?php echo Yii::app()->createUrl('backend/post/musicHiddenList') ?>">Hidden</a>
+                <div class="block-options pull-right"><i class="fa fa-star" style="color:#1BBAE1"></i>Show   <i class="fa fa-star" style="color:#ccc"></i>Hidden</div>
                 <div class="table-responsive">
 
                     <table class="table table-vcenter table-striped">

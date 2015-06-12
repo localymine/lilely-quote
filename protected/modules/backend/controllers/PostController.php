@@ -153,7 +153,7 @@ class PostController extends Controller {
 
         if ($admin == 1) {
             // administrator, see all stories of another
-            $condition = " post_type = '$post_type' ";
+            $condition = " post_type = '$post_type' AND disp_flag = 1 ";
             if (trim($keyword) != '') {
                 $keyword = Common::clean_text($keyword);
                 $t_keys = Common::make_keywords($keyword);
@@ -183,7 +183,96 @@ class PostController extends Controller {
             $posts = $model->multilang()->findAll($criteria);
         } elseif ($admin == 2) {
             // normal admin, only see what they posted
-            $condition = " post_type = '$post_type' AND post_author = " . Yii::app()->user->user_id;
+            $condition = " post_type = '$post_type' AND disp_flag = 1  AND post_author = " . Yii::app()->user->user_id;
+            if (trim($keyword) != '') {
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+//                'order' => 'post_date DESC',
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        }
+
+        $this->render('quote/index', array(
+            'posts' => $posts,
+            'item_count' => $item_count,
+            'page_size' => $page_size,
+            'pages' => $pages,
+            'keyword' => $keyword,
+        ));
+    }
+    
+    public function actionQuoteHiddenList() {
+
+        $model = new Post;
+        $item_count = 0;
+        $page_size = Yii::app()->params['pageSize'];
+        $condition = '';
+        $pages = NULL;
+        $post_type = 'quote';
+        $keyword = '';
+
+        $model->refresh_menu_order($post_type);
+
+        if (isset($_REQUEST['keyword'])) {
+            $keyword = $_REQUEST['keyword'];
+        }
+
+        $module_user = Yii::app()->getModule('user');
+        $admin = $module_user->isAdmin();
+
+        if ($admin == 1) {
+            // administrator, see all stories of another
+            $condition = " post_type = '$post_type' AND disp_flag = 0 ";
+            if (trim($keyword) != '') {
+                $keyword = Common::clean_text($keyword);
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                    $condition .= " OR quote_author LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        } elseif ($admin == 2) {
+            // normal admin, only see what they posted
+            $condition = " post_type = '$post_type' AND disp_flag = 0 AND post_author = " . Yii::app()->user->user_id;
             if (trim($keyword) != '') {
                 $t_keys = Common::make_keywords($keyword);
                 $condition .= " AND (post_title LIKE '%$keyword%' ";
@@ -603,7 +692,7 @@ class PostController extends Controller {
 
         if ($admin == 1) {
             // administrator, see all stories of another
-            $condition = " post_type = '$post_type' ";
+            $condition = " post_type = '$post_type' AND disp_flag = 1 ";
             if (trim($keyword) != '') {
                 $keyword = Common::clean_text($keyword);
                 $t_keys = Common::make_keywords($keyword);
@@ -633,7 +722,95 @@ class PostController extends Controller {
             $posts = $model->multilang()->findAll($criteria);
         } elseif ($admin == 2) {
             // normal admin, only see what they posted
-            $condition = " post_type = '$post_type' AND post_author = " . Yii::app()->user->user_id;
+            $condition = " post_type = '$post_type' AND disp_flag = 1 AND post_author = " . Yii::app()->user->user_id;
+            if (trim($keyword) != '') {
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        }
+
+        $this->render('book/index', array(
+            'posts' => $posts,
+            'item_count' => $item_count,
+            'page_size' => $page_size,
+            'pages' => $pages,
+            'keyword' => $keyword,
+        ));
+    }
+    
+    public function actionBookHiddenList() {
+
+        $model = new Post;
+        $item_count = 0;
+        $page_size = Yii::app()->params['pageSize'];
+        $condition = '';
+        $pages = NULL;
+        $post_type = 'book';
+        $keyword = '';
+
+        $model->refresh_menu_order($post_type);
+
+        if (isset($_REQUEST['keyword'])) {
+            $keyword = $_REQUEST['keyword'];
+        }
+
+        $module_user = Yii::app()->getModule('user');
+        $admin = $module_user->isAdmin();
+
+        if ($admin == 1) {
+            // administrator, see all stories of another
+            $condition = " post_type = '$post_type' AND disp_flag = 0 ";
+            if (trim($keyword) != '') {
+                $keyword = Common::clean_text($keyword);
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                    $condition .= " OR quote_author LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        } elseif ($admin == 2) {
+            // normal admin, only see what they posted
+            $condition = " post_type = '$post_type' AND disp_flag = 0 AND post_author = " . Yii::app()->user->user_id;
             if (trim($keyword) != '') {
                 $t_keys = Common::make_keywords($keyword);
                 $condition .= " AND (post_title LIKE '%$keyword%' ";
@@ -1049,7 +1226,7 @@ class PostController extends Controller {
 
         if ($admin == 1) {
             // administrator, see all stories of another
-            $condition = " post_type = '$post_type' ";
+            $condition = " post_type = '$post_type' AND disp_flag = 1 ";
             if (trim($keyword) != '') {
                 $keyword = Common::clean_text($keyword);
                 $t_keys = Common::make_keywords($keyword);
@@ -1079,7 +1256,95 @@ class PostController extends Controller {
             $posts = $model->multilang()->findAll($criteria);
         } elseif ($admin == 2) {
             // normal admin, only see what they posted
-            $condition = " post_type = '$post_type' AND post_author = " . Yii::app()->user->user_id;
+            $condition = " post_type = '$post_type' AND disp_flag = 1 AND post_author = " . Yii::app()->user->user_id;
+            if (trim($keyword) != '') {
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        }
+
+        $this->render('music/index', array(
+            'posts' => $posts,
+            'item_count' => $item_count,
+            'page_size' => $page_size,
+            'pages' => $pages,
+            'keyword' => $keyword,
+        ));
+    }
+    
+    public function actionMusicHiddenList() {
+
+        $model = new Post;
+        $item_count = 0;
+        $page_size = Yii::app()->params['pageSize'];
+        $condition = '';
+        $pages = NULL;
+        $post_type = 'music';
+        $keyword = '';
+
+        $model->refresh_menu_order($post_type);
+
+        if (isset($_REQUEST['keyword'])) {
+            $keyword = $_REQUEST['keyword'];
+        }
+
+        $module_user = Yii::app()->getModule('user');
+        $admin = $module_user->isAdmin();
+
+        if ($admin == 1) {
+            // administrator, see all stories of another
+            $condition = " post_type = '$post_type' AND disp_flag = 0 ";
+            if (trim($keyword) != '') {
+                $keyword = Common::clean_text($keyword);
+                $t_keys = Common::make_keywords($keyword);
+                $condition .= " AND (post_title LIKE '%$keyword%' ";
+                foreach ($t_keys as $key) {
+                    $condition .= " OR post_title LIKE '%$key%' ";
+                    $condition .= " OR quote_author LIKE '%$key%' ";
+                }
+                $condition .= ")";
+            }
+            $item_count = $model->count($condition);
+
+            // the pagination itself
+            $pages = new CPagination($item_count);
+            $pages->setPageSize($page_size);
+            if (trim($keyword) != '') {
+                $pages->params = array('keyword' => $keyword);
+            }
+
+            $criteria = new CDbCriteria(array(
+                'condition' => $condition,
+                'order' => 'menu_order',
+                'limit' => $pages->limit,
+                'offset' => $pages->offset,
+            ));
+
+            $posts = $model->multilang()->findAll($criteria);
+        } elseif ($admin == 2) {
+            // normal admin, only see what they posted
+            $condition = " post_type = '$post_type' AND disp_flag = 0 AND post_author = " . Yii::app()->user->user_id;
             if (trim($keyword) != '') {
                 $t_keys = Common::make_keywords($keyword);
                 $condition .= " AND (post_title LIKE '%$keyword%' ";
