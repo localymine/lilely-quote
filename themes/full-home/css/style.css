@@ -2322,9 +2322,6 @@ nav ul li ul li a:hover {
   cursor: pointer;
 }
 /* **** FAQ **** */
-.advertise {
-  padding: 0 30px;
-}
 /* for bootbox alert */
 .largeWidth {
   margin: 0 auto;
@@ -5952,4 +5949,47 @@ nav ul li ul li a:hover {
 .sp-lang a span {
   vertical-align: middle;
   font-family: "Open Sans";
+}
+/******************************************************************************/
+.advertise {
+  padding: 0 30px;
+  margin-top: 130px;
+}
+.advertise .thankyou {
+  font-size: 24px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.advertise .ad-form {
+  width: 500px;
+}
+.advertise #AdvertiseRelation_f_interest label {
+  font-weight: normal;
+}
+.advertise .intro {
+  margin-bottom: 30px;
+}
+.advertise .mhline {
+  margin-top: 30px;
+}
+.advertise .mhline .hline {
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 1px;
+  background: red;
+  margin: 0 auto;
+}
+.advertise .first {
+  text-align: center;
+}
+.advertise .mid {
+  text-align: left;
+  line-height: 2em;
+}
+.advertise .last {
+  text-align: left;
+  line-height: 2em;
 }

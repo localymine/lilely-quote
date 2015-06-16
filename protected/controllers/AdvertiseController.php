@@ -2,8 +2,12 @@
 
 class AdvertiseController extends FrontController {
 
+    public $lang = 'en';
+    public $languages = array();
 
     public function init() {
+        $this->lang = Yii::app()->language;
+        $this->languages = Yii::app()->request->languages;
         
         parent::init();
     }
