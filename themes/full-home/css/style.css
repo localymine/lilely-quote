@@ -374,7 +374,8 @@ blockquote:after {
 .quote-video-holder .quote-video-play-btn {
   /*background: rgba(203,28,23,0.7);*/
   border-radius: 8px;
-  padding: 5px 20px;
+  /*padding: 5px 20px;*/
+  padding: 0px;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -5474,6 +5475,15 @@ nav ul li ul li a:hover {
   color: #ffda39;
   border-color: #ffda39;
 }
+.btn-home-st3 {
+  background: #ffda39;
+  border: 3px solid #ffda39;
+}
+.btn-home-st3:hover {
+  background: #fff;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  color: #333;
+}
 #video_player {
   margin-top: 105px;
   display: table;
@@ -5992,4 +6002,8 @@ nav ul li ul li a:hover {
 .advertise .last {
   text-align: left;
   line-height: 2em;
+}
+/******************************************************************************/
+.fa-6x {
+  font-size: 6em;
 }

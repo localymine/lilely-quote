@@ -13,9 +13,9 @@ foreach ($this->languages as $key => $value){
 <div class="hslug-qo">
     <a href="<?php echo Yii::app()->createUrl($row->post_type . '/show', array('slug' => $row->slug)) ?>">
         <img alt="<?php echo $row->post_content ?>" src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $row->post_type ?>/<?php echo $image_entry ?>" class="img-responsive">
-        <!--<div class="quote-video-holder">-->
-            <!--<div class="quote-video-play-btn"><i class="fa fa-play fa-3x"></i></div>-->
-        <!--</div>-->
+        <div class="quote-video-holder">
+            <div class="quote-video-play-btn"><i class="fa fa-play-circle-o fa-6x"></i></div>
+        </div>
     </a>
 </div>
 <div class="m-a-quote">
