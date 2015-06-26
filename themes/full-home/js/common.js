@@ -267,3 +267,9 @@ $(document).ready(function() {
     });
     //
 });
+
+$(function(){
+   $('.language').on('click', function(){
+      $('.lang').slideToggle();
+   });
+});

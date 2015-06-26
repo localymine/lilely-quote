@@ -4768,7 +4768,7 @@ nav ul li ul li a:hover {
     padding-right: 30px !important;
   }
   .new-top-home .top-holder .lang-link {
-    padding-top: 0 !important;
+    /*padding-top: 0 !important;*/
     margin-top: -30px !important;
     float: right;
   }
@@ -5105,7 +5105,7 @@ nav ul li ul li a:hover {
   }
   .new-top-home .top-holder .lang-link {
     float: right;
-    padding-top: 0 !important;
+    /*padding-top: 0 !important;*/
     margin-top: 0px !important;
   }
   .new-top-home .top-holder .lang-btn {
@@ -5425,7 +5425,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .lang-link {
     float: right;
     /*padding-top: 44px !important;*/
-    padding-top: 20px !important;
+    /*padding-top: 20px !important;*/
     margin-top: 0px !important;
   }
   .new-top-home .top-holder .lang-btn {
@@ -6122,4 +6122,35 @@ nav ul li ul li a:hover {
 /******************************************************************************/
 .fa-6x {
   font-size: 6em;
+}
+/******************************************************************************/
+.sp-lang {
+  float: right;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.language {
+  display: table;
+}
+.language span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.language span:hover {
+  cursor: pointer;
+  color: #cb1c17;
+}
+ul.lang {
+  position: absolute;
+  display: none;
+  background: #f2f2f2;
+  width: 110px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ul.lang li {
+  padding: 5px 10px 3px;
+}
+ul.lang li a {
+  display: block;
 }

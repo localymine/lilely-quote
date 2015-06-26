@@ -4026,7 +4026,7 @@ nav{
             }
         }
         .lang-link{
-            padding-top: 0 !important;
+            /*padding-top: 0 !important;*/
             margin-top: -30px !important;
             float: right;
         }
@@ -4372,7 +4372,7 @@ nav{
         }
         .lang-link{
             float: right;
-            padding-top: 0 !important;
+            /*padding-top: 0 !important;*/
             margin-top: 0px !important;
         }
         .lang-btn{
@@ -4701,7 +4701,7 @@ nav{
         .lang-link{
             float: right;
             /*padding-top: 44px !important;*/
-            padding-top: 20px !important;
+            /*padding-top: 20px !important;*/
             margin-top: 0px !important;
         }
         .lang-btn{
@@ -5424,5 +5424,35 @@ nav{
     font-size: 6em;
 }
 /******************************************************************************/
+.sp-lang{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.language{
+    display: table;
+    span{
+        display: table-cell;
+        vertical-align: middle;
+        &:hover{
+            cursor: pointer;
+            color: @main-color;
+        }
+    }
+}
+ul.lang{
+    position: absolute;
+    display: none;
+    background: #f2f2f2;
+    width: 110px;
+    margin: 0 !important;
+    padding: 0 !important;
+    li{
+        padding: 5px 10px 3px;
+        a{
+            display: block;
+        }
+    }
+}
 /******************************************************************************/
 /******************************************************************************/
