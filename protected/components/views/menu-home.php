@@ -16,8 +16,8 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
     <div class="container new-top-home">
 
         <div class="navbar-header">
-            
-            
+
+            <!--
             <a id="sp-menu" href="sidr">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
@@ -26,6 +26,7 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                     <span class="icon-bar"></span>
                 </button>
             </a>
+            -->
             <a class="navbar-brand logo-padding" href="<?php echo $back_url ?>">
                 <img class="img-responsive sm" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
             </a>
@@ -187,30 +188,81 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
     </div>
 </nav>
 
+
+<div role="navigation" class="navbar navbar-default navbar-fixed-bottom menu-bt">
+    <div class="container">
+        <div class="navbar-header">
+
+            <a id="sp-menu" href="sidr" class="pull-left menu-bt-btn">
+                <button class="navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </a>
+            <ul class="lst-btn">
+                <li>
+                    <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('quote') ?>" title="<?php echo Common::t('Quote', 'translate', NULL, $lang) ?>">
+                        <span class="br-lf">
+                            <i class="fa fa-m-quote <?php echo ($controller == 'quote' || $r_type == 'quote') ? 'active' : '' ?>"></i>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('book') ?>" title="<?php echo Common::t('Audiobook', 'translate', NULL, $lang) ?>">
+                        <span class="br-lf">
+                            <i class="fa fa-m-book <?php echo ($controller == 'book' || $r_type == 'book') ? 'active' : '' ?>"></i>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-lilely btn-cate-st dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="true" aria-expanded="false" data-href="<?php echo Yii::app()->createUrl('music') ?>" title="<?php echo Common::t('Music', 'translate', NULL, $lang) ?>">
+                        <span>
+                            <i class="fa fa-m-classical-music <?php echo ($controller == 'music' || $r_type == 'music') ? 'active' : '' ?>"></i>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-lilely btn-cate-st" data-href="#">
+                        <span>
+                            <i class="glyphicon glyphicon-search search"></i>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </div><!--/.container -->
+</div>
+
 <div id="sidr" style="display: none;">
     <a class="logo-padding" href="<?php echo $back_url ?>">
         <img width="62" alt="Lilely" src="<?php echo Yii::app()->theme->baseurl ?>/img/logo.png" />
     </a>
+    <div class="pull-right" style="margin-top: 15px; margin-right: 15px;">
+        <button class="close close-sidr" type="button"><i class="fa fa-times"></i></button>
+    </div>
     <ul class="sidebar">
         <li>
-        <?php
-        $form_high_school = $this->beginWidget('CActiveForm', array(
-            'id' => 'top-search-form',
-            'method' => 'get',
-            'action' => Yii::app()->createUrl('search'),
-            'htmlOptions' => array(
-                'class' => 'inner',
-                'role' => 'search',
-            )
-        ));
-        ?>
+            <?php
+            $form_high_school = $this->beginWidget('CActiveForm', array(
+                'id' => 'top-search-form',
+                'method' => 'get',
+                'action' => Yii::app()->createUrl('search'),
+                'htmlOptions' => array(
+                    'class' => 'inner',
+                    'role' => 'search',
+                )
+            ));
+            ?>
             <div class="inner-addon right-addon">
                 <?php echo CHtml::textField('kw', (isset($_GET['kw']) ? $_GET['kw'] : ''), array('placeholder' => Common::t('Search...', 'translate', NULL, $lang), 'class' => 'form-control top-search')) ?>
                 <span>
                     <i class="glyphicon glyphicon-search search" onclick="$('#top-search-form').submit();"></i>
                 </span>
             </div>
-        <?php $this->endWidget(); ?>
+            <?php $this->endWidget(); ?>
         </li>
         <li>
             <a class="s1" href="<?php echo Yii::app()->createUrl('quote') ?>"><i class="fa fa-m-quote-b <?php echo ($controller == 'quote' || $r_type == 'quote') ? 'active' : '' ?>"></i></a>

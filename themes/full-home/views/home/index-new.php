@@ -75,14 +75,14 @@ $banner = Slide::model()->load_banner()->findAll();
     </div>
 </div>
 
-<div class="container clearfix home-content">
+<div class="container clearfix home-content sp-view">
     <div class="welcome-home">
         <!--<h1 class="h-hi-1"><?php // echo Common::t('Welcome!', 'translate', NULL, $lang)  ?></h1>-->
         <!--<h2 class="h-hi-2"><?php // echo Common::t('We are Lilely', 'translate', NULL, $lang)  ?></h2>-->
         <h1 class="h-ct"><?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $lang) ?></h1>
     </div>
     
-    <div class="welcome-home">
+    <div class="welcome-home bt-acc">
         <a href="<?php echo Yii::app()->createUrl('account') ?>">
             <buton class="btn btn-home-st1 btn-home-st3">Join Our Network</buton>
         </a>

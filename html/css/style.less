@@ -3562,6 +3562,7 @@ nav{
 .navbar-collapse.in{
     overflow-y: visible;
 }
+/*=================================================================== work 320*/
 @media (min-width: 320px) {
 .newest-quote .item .m-a-quote{
     margin-top: -175px !important;
@@ -3608,6 +3609,7 @@ nav{
     font-size: 10px !important;
 }
 .top-3-cat{
+    display: none !important;
     margin: 0 auto;
     width: 320px !important;
     .row{
@@ -3618,6 +3620,7 @@ nav{
     }
 }
 .h-n-subscribe{
+    display: none !important;
     height: 143px !important;
     width: 768px !important;
     padding-top: 0 !important;
@@ -3632,6 +3635,9 @@ nav{
     button{
         margin-left: 25px !important;
     }
+}
+.footer-holder-new{
+    display: none !important;
 }
 .footer-holder-new footer ul.link li{
     &:nth-child(1){
@@ -3676,8 +3682,68 @@ nav{
         }
     }
 }
+.bt-acc{
+    display: none !important;
 }
-
+.home-content{
+    &.sp-view{
+        position: fixed !important;
+        height: 700px !important;
+        background: url('../img/book_06.jpg');
+        .welcome-home{
+                background: rgba(0,0,0,0.7);
+            .h-ct{
+                color: #fff;
+                margin-top: 50%;
+                vertical-align: middle;
+                padding-top: 10px !important;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.menu-bt{
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: @new-main-color;
+    display: block !important;
+    .menu-bt-btn{
+        margin-left: 5px;
+        button{
+            border-color: #fff !important;
+            .icon-bar{
+                background-color: #fff !important;
+            }
+        }
+    }
+    .lst-btn{
+        width: 100%;
+        list-style-type: none;
+        margin-top: 9px;
+        li{
+            button{
+                span.br-lf{
+                    border-right: 1px solid #fff;
+                    display: block;
+                    height: 12px;
+                    margin-top: 0;
+                    padding-top: 0;
+                    padding-right: 10px;
+                    width: 50px;
+                    i{
+                        margin-top: -10px;
+                    }
+                }
+                padding: 0 12px;
+            }
+            display: inline-block;
+            width: 60px;
+        }
+    }
+}
+}
+/*------------------------------------------------------------------- work 768*/
 @media (min-width: 768px) {
 .newest-quote .item .m-a-quote{
     margin-top: -175px !important;
@@ -3723,6 +3789,7 @@ nav{
     font-size: 20px !important;
 }
 .top-3-cat{
+    display: none !important;
     margin: 0 auto !important;
     /*width: 768px !important;*/
     .row{
@@ -3732,6 +3799,7 @@ nav{
     }
 }
 .h-n-subscribe{
+    display: none !important;
     height: 143px !important;
     width: 768px !important;
     padding-top: 0 !important;
@@ -3746,6 +3814,9 @@ nav{
     button{
         margin-left: 25px !important;
     }
+}
+.footer-holder-new{
+    display: none !important;
 }
 .footer-holder-new footer ul.link li{
     &:nth-child(1){
@@ -3993,8 +4064,31 @@ nav{
         }
     }
 }
+.bt-acc{
+    display: none !important;
 }
-
+.home-content{
+    &.sp-view{
+        position: relative !important;
+        height: auto !important;
+        background: #fff;
+        .welcome-home{
+                background: #fff;
+            .h-ct{
+                color: @brand-primary;
+                margin-top: auto;
+                vertical-align: middle;
+                padding-top: 10px !important;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.menu-bt{
+    display: none !important;
+}
+}
+/*----------------------------------------------------------------------- work*/
 @media (min-width: 992px) {
 .newest-quote .item .m-a-quote{
     margin-top: -62px !important;
@@ -4044,6 +4138,7 @@ nav{
     font-size: 20px !important;
 }
 .top-3-cat{
+    display: none important;
     margin: 0 auto !important;
     width: 970px !important;
     .row{
@@ -4053,6 +4148,7 @@ nav{
     }
 }
 .h-n-subscribe{
+    display: none !important;
     height: 78px !important;
     width: 970px !important;
     padding-top: 20px !important;
@@ -4065,6 +4161,9 @@ nav{
     button{
         margin-left: 0 !important;
     }
+}
+.footer-holder-new{
+    display: none !important;
 }
 .footer-holder-new footer ul.link li{
     &:nth-child(1){
@@ -4310,8 +4409,14 @@ nav{
         }
     }
 }
+.bt-acc{
+    display: none !important;
 }
-
+.menu-bt{
+    display: none !important;
+}
+}
+/*------------------------------------------------------------------ work 1200*/
 @media (min-width: 1200px) {
 .newest-quote .item .m-a-quote{
     margin-top: -62px !important;
@@ -4361,6 +4466,7 @@ nav{
     font-size: 20px !important;
 }
 .top-3-cat{
+    display: block !important;
     margin: 0 auto !important;
     width: 1170px !important;
     margin-top: 30px !important;
@@ -4372,6 +4478,7 @@ nav{
     }
 }
 .h-n-subscribe{
+    display: block !important;
     height: 78px !important;
     width: 1170px !important;
     padding-top: 20px !important;
@@ -4384,6 +4491,9 @@ nav{
     button{
         margin-left: 0 !important;
     }
+}
+.footer-holder-new{
+    display: block !important;
 }
 .footer-holder-new footer ul.link li{
     &:nth-child(1){
@@ -4628,6 +4738,12 @@ nav{
         }
     }
 }
+.bt-acc{
+    display: inherit !important;
+}
+.menu-bt{
+    display: none !important;
+}
 }
 
 #navbar{
@@ -4866,6 +4982,7 @@ nav{
         }
     }
     .top-3-cat{
+        display: block;
         width: 1170px;
         margin-top: 30px;
         font-family: @font-new-home;

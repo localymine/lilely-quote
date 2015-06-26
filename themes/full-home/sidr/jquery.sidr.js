@@ -338,4 +338,14 @@ $(document).ready(function() {
             $this.next().slideDown(100);
         }
     });
+    //
+    $('.close-sidr').on('click', function(){
+       $.sidr('close', 'sidr'); 
+    });
+});
+$(document).on('click', function (e) {
+    var container = $('#sidr');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $.sidr('close', 'sidr');
+    }
 });
