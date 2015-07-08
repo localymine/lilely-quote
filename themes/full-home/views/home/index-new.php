@@ -86,6 +86,10 @@ $banner = Slide::model()->load_banner()->findAll();
         <a href="<?php echo Yii::app()->createUrl('account') ?>">
             <buton class="btn btn-home-st1 btn-home-st3">Join Our Network</buton>
         </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0)">
+            <buton class="btn btn-home-st1 btn-home-st3">Choose Your Plan</buton>
+        </a>
     </div>
 
     <div class="container top-3-cat">

@@ -365,11 +365,23 @@ blockquote:after {
 .gallery > .row > div > .book-item {
   border: none;
 }
+/* pc */
+@media screen and (min-width: 699px) {
+  .quote-video-holder {
+    top: 28% !important;
+  }
+}
+/* sp */
+@media screen and (max-width: 700px) {
+  .quote-video-holder {
+    top: 17% !important;
+  }
+}
 .quote-video-holder {
   text-align: center;
   position: absolute;
   top: 28%;
-  left: 43%;
+  left: 46%;
 }
 .quote-video-holder .quote-video-play-btn {
   /*background: rgba(203,28,23,0.7);*/
@@ -978,6 +990,11 @@ nav ul li ul li a:hover {
 .fa-fw {
   text-align: center;
   padding-right: 5px;
+}
+.fa-ll-play {
+  background: url('../img/play-icon.png');
+  width: 34px;
+  height: 33px;
 }
 .fa-facebook-24 {
   background: url('../img/facebook-24.png');

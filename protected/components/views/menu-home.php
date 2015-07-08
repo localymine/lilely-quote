@@ -223,13 +223,6 @@ $summary = Common::t('Lilely is a single place to discover, listen and share all
                         </span>
                     </button>
                 </li>
-                <li>
-                    <button class="btn btn-lilely btn-cate-st" data-href="#">
-                        <span>
-                            <i class="glyphicon glyphicon-search search"></i>
-                        </span>
-                    </button>
-                </li>
             </ul>
         </div>
 
