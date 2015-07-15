@@ -28,6 +28,8 @@
         
         <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
 
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        
         <!-- Bootstrap core CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- font awesome CSS -->

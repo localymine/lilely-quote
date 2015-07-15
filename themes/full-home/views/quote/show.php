@@ -122,7 +122,6 @@ $model_line = Post::model()->localized($lang)->findByPk($post->id);
                                     ), false, true);
                             ?>
                         </div>
-			<?php var_dump($post->post_mv_type) ?>
                         <?php if ($post->post_mv_type == 0): ?>
                         <div id="yt-player"></div>
                         <?php else: ?>

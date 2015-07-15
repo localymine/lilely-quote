@@ -1,5 +1,5 @@
 <div class="pull-right">
-    <div id="language" class="language"><i class="fa fa-m-global"></i><span><?php echo $languages[$language] ?></span></div>
+    <div id="language" class="language"><i class="fa fa-m-global"></i><span><?php echo Common::t($languages[$language], 'translate') ?></span></div>
     <ul id="lang" class="lang">
     <?php foreach ($languages as $l => $lang): ?>
         <?php

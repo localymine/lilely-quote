@@ -509,7 +509,7 @@ blockquote:after {
   display: none;
 }
 .gallery > .row > div > .item .m-a-quote .box-trans-quote .q {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 .gallery > .row > div > .item .m-a-quote .box-trans-quote .q a {
   color: #cb1c17 !important;
@@ -4616,7 +4616,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -4772,7 +4772,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -4808,7 +4808,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -4952,7 +4952,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -5108,7 +5108,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -5144,7 +5144,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -5217,7 +5217,7 @@ nav ul li ul li a:hover {
     margin: 0 auto !important;
     width: 1170px !important;
     margin-top: 30px !important;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
   }
   .top-3-cat .row .col-md-4 {
     margin-top: 5px;
@@ -5271,7 +5271,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -5427,7 +5427,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -5464,7 +5464,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -5523,7 +5523,7 @@ nav ul li ul li a:hover {
   position: absolute;
   margin-top: 210px;
   font-size: 90px;
-  font-family: "Roboto Condensed";
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 .home-video .home-mid-content .lets-live-lilely .text {
@@ -5554,7 +5554,7 @@ nav ul li ul li a:hover {
   right: 40px;
   bottom: -40px;
   list-style: none;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   z-index: 10;
 }
@@ -5582,7 +5582,7 @@ nav ul li ul li a:hover {
   font-size: 20px;
   border-radius: 50px;
   padding: 10px 20px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   width: 220px;
 }
 .btn-home-st1:hover {
@@ -5597,7 +5597,7 @@ nav ul li ul li a:hover {
   border-radius: 50px;
   border: 3px solid #fff;
   padding: 10px 20px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   width: 220px;
 }
 .btn-home-st2 i {
@@ -5681,7 +5681,7 @@ nav ul li ul li a:hover {
   background: #fff;
 }
 .home-content .welcome-home {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 .home-content .welcome-home .h-hi-1 {
@@ -5718,7 +5718,13 @@ nav ul li ul li a:hover {
   display: block;
   width: 1170px;
   margin-top: 30px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
+}
+.home-content .top-3-cat .row {
+  width: 1194px;
+  margin: 0 auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .home-content .top-3-cat .hold-title {
   position: absolute;
@@ -5742,7 +5748,7 @@ nav ul li ul li a:hover {
 .home-content .top-3-cat .hold-title .t2 {
   font-size: 24px;
   font-weight: bold;
-  width: calc(302px);
+  width: 307px;
   background: rgba(0, 0, 0, 0.5);
   padding-left: 25px;
 }
@@ -5755,12 +5761,13 @@ nav ul li ul li a:hover {
 }
 .home-content .top-3-cat img.bi {
   border-top: 3px solid #ffda39;
+  width: 94.0%;
 }
 .home-content .h-n-subscribe {
   width: 1170px;
   background: #898989;
   height: 78px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   padding-top: 20px;
   margin-top: 40px;
 }
@@ -5779,17 +5786,17 @@ nav ul li ul li a:hover {
   margin: 0 auto;
 }
 .home-content .h-n-subscribe #email::-moz-placeholder {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-size: 14px;
 }
 .home-content .h-n-subscribe #email::-webkit-input-placeholder {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-size: 14px;
 }
 .home-content .h-n-subscribe #email::-ms-input-placeholder {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-size: 14px;
 }
@@ -5819,11 +5826,11 @@ nav ul li ul li a:hover {
   }
 }
 .footer-holder-new {
-  height: 210px;
+  height: 150px;
   width: 100%;
   background: #000;
   color: #a1a1a1;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 .footer-holder-new footer {
   width: 1170px;
@@ -5872,7 +5879,7 @@ nav ul li ul li a:hover {
   color: #ffda39;
 }
 .footer-holder-new footer .footer-contanter-2 .addr {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   text-align: right;
 }
 .footer-holder-new footer .footer-contanter-2 .addr h1 {
@@ -5904,6 +5911,7 @@ nav ul li ul li a:hover {
   margin: 0 auto;
   /*width: 654px;*/
   width: 754px;
+  max-width: 100%;
 }
 .newest-quote .item .m-a-quote {
   margin-top: -62px;

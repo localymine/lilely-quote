@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="35">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="37">
         <file>
             <url>html/css/style.less</url>
             <bookmark id="6">
@@ -15,92 +15,97 @@
             </bookmark>
             <bookmark id="11">
                 <name/>
-                <line>529</line>
+                <line>542</line>
                 <key/>
             </bookmark>
             <bookmark id="22">
                 <name/>
-                <line>536</line>
+                <line>549</line>
                 <key/>
             </bookmark>
             <bookmark id="18">
                 <name/>
-                <line>590</line>
+                <line>603</line>
                 <key/>
             </bookmark>
             <bookmark id="12">
                 <name/>
-                <line>664</line>
+                <line>677</line>
                 <key/>
             </bookmark>
             <bookmark id="20">
                 <name/>
-                <line>1087</line>
+                <line>1105</line>
                 <key/>
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1212</line>
+                <line>1230</line>
                 <key/>
             </bookmark>
             <bookmark id="28">
                 <name/>
-                <line>1300</line>
+                <line>1318</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1360</line>
+                <line>1378</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2204</line>
+                <line>2222</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>2998</line>
+                <line>3016</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3511</line>
+                <line>3529</line>
                 <key/>
             </bookmark>
             <bookmark id="35">
                 <name/>
-                <line>3565</line>
+                <line>3583</line>
                 <key/>
             </bookmark>
             <bookmark id="32">
                 <name/>
-                <line>3649</line>
+                <line>3667</line>
                 <key/>
             </bookmark>
             <bookmark id="33">
                 <name/>
-                <line>4031</line>
+                <line>4049</line>
                 <key/>
             </bookmark>
             <bookmark id="34">
                 <name/>
-                <line>4695</line>
+                <line>4713</line>
                 <key/>
             </bookmark>
             <bookmark id="29">
                 <name/>
-                <line>4695</line>
+                <line>4713</line>
                 <key/>
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>4695</line>
+                <line>4713</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>4695</line>
+                <line>4713</line>
+                <key/>
+            </bookmark>
+            <bookmark id="37">
+                <name/>
+                <line>5001</line>
                 <key/>
             </bookmark>
         </file>
@@ -160,6 +165,13 @@
             <file>file:/var/www/html/lilely.localhost/themes/full-home/views/layouts/main-home.php</file>
             <file>file:/var/www/html/lilely.localhost/protected/components/views/menu.php</file>
         </group>
-        <group/>
+        <group>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/LanguageSelector.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/es/translate.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
+        </group>
     </open-files>
 </project-private>

@@ -32,10 +32,10 @@ and open the template in the editor.
 @font-size: 12px;
 @hashtag-color: #4F9000;
 /*@font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
-@font-default: "Open Sans";
+@font-default: 'Open Sans', sans-serif;
 @top-home-border: #0F0F0F;
 @bottom-home-border: #7b8a95;
-@font-new-home: "Open Sans";
+@font-new-home: 'Open Sans', sans-serif;
 @new-main-color: #ffda39;
 
 html{
@@ -4488,7 +4488,7 @@ nav{
     margin: 0 auto !important;
     width: 1170px !important;
     margin-top: 30px !important;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     .row{
         .col-md-4{
             margin-top: 5px;
@@ -4804,7 +4804,7 @@ nav{
             position: absolute;
             margin-top: 210px;
             font-size: 90px;
-            font-family: "Roboto Condensed";
+            font-family: @font-new-home;
             font-weight: 400;
             .text{
                 width: 1170px;
@@ -5004,6 +5004,12 @@ nav{
         width: 1170px;
         margin-top: 30px;
         font-family: @font-new-home;
+        .row{
+            width: 1194px;
+            margin: 0 auto;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
         .hold-title{
             position: absolute;
             bottom: 20px;
@@ -5016,7 +5022,7 @@ nav{
             .t1{
                 width: 67px;
                 /*background: @new-main-color;*/
-                background: rgba(255, 218, 57, 0.75);
+                background: fade(@new-main-color, 75%);
                 text-align: center;
             }
             .t1.first{
@@ -5032,13 +5038,14 @@ nav{
                 }
                 font-size: 24px;
                 font-weight: bold;
-                width: calc(369px - 67px);
+                width: 307px;
                 background: rgba(0 ,0 , 0, 0.5);
                 padding-left: 25px;
             }
         }
         img.bi{
             border-top: 3px solid @new-main-color;
+            width: 94.0%;
         }
     }
     .h-n-subscribe{
@@ -5063,17 +5070,17 @@ nav{
             margin: 0 auto;
         }
         #email::-moz-placeholder{
-            font-family: "Open Sans";
+            font-family: @font-default;
             font-style: italic;
             font-size: 14px;
         }
         #email::-webkit-input-placeholder{
-            font-family: "Open Sans";
+            font-family: @font-default;
             font-style: italic;
             font-size: 14px;
         }
         #email::-ms-input-placeholder{
-            font-family: "Open Sans";
+            font-family: @font-default;
             font-style: italic;
             font-size: 14px;
         }
@@ -5104,7 +5111,7 @@ nav{
 }
 }
 .footer-holder-new {
-    height:210px;
+    height:150px;
     width: 100%;
     background: #000;
     color: #a1a1a1;
@@ -5192,6 +5199,7 @@ nav{
                     margin: 0 auto;
                     /*width: 654px;*/
                     width: 754px;
+                    max-width: 100%;
                 }
             }
         }

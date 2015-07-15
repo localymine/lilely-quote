@@ -82,16 +82,6 @@ $banner = Slide::model()->load_banner()->findAll();
         <h1 class="h-ct"><?php echo Common::t('Lilely is a single place to discover, listen and share all the messages uplifting you.', 'translate', NULL, $lang) ?></h1>
     </div>
     
-    <div class="welcome-home bt-acc">
-        <a href="<?php echo Yii::app()->createUrl('account') ?>">
-            <buton class="btn btn-home-st1 btn-home-st3">Join Our Network</buton>
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="javascript:void(0)">
-            <buton class="btn btn-home-st1 btn-home-st3">Choose Your Plan</buton>
-        </a>
-    </div>
-
     <div class="container top-3-cat">
         <div class="row">
             <div class="col-md-4">
