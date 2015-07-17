@@ -166,12 +166,7 @@
             <file>file:/var/www/html/lilely.localhost/protected/components/views/menu.php</file>
         </group>
         <group>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/views/language_selector.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/components/LanguageSelector.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/vi/translate.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/protected/messages/es/translate.php</file>
-            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/show.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
         </group>
     </open-files>
 </project-private>

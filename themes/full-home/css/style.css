@@ -509,7 +509,7 @@ blockquote:after {
   display: none;
 }
 .gallery > .row > div > .item .m-a-quote .box-trans-quote .q {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .gallery > .row > div > .item .m-a-quote .box-trans-quote .q a {
   color: #cb1c17 !important;
@@ -573,7 +573,7 @@ blockquote:after {
   min-height: 82px;
   font-size: 18px;
   /*font-weight: bold;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .gallery > .row > div > .item .m-a-quote .quote .q {
   font-size: 18px;
@@ -832,7 +832,7 @@ div.oc-text-x4 {
   font-size: 12px;
 }
 body {
-  font-family: Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
 .container {
@@ -888,7 +888,7 @@ footer ul.footer > li > a.active {
   color: #cb1c17;
 }
 .j-n-p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   color: #505050;
   text-align: left;
@@ -2077,7 +2077,7 @@ nav ul li ul li a:hover {
 #menu-modal {
   background: rgba(255, 255, 255, 0.98);
   top: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #menu-modal .modal-content {
   background: transparent !important;
@@ -2150,7 +2150,7 @@ nav ul li ul li a:hover {
   border-radius: 25px;
   height: 50px;
   font-size: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #menu-modal .modal-content .modal-header .top-holder .top-search-form .top-search:focus {
   border-color: #cb1c17;
@@ -4020,7 +4020,7 @@ nav ul li ul li a:hover {
   padding: 5px;
   font-size: calc(24px);
   /*font-weight: bold;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .relation-holder .relation-list .rel-entry.book {
   box-shadow: 0 0 10px #333;
@@ -4076,7 +4076,7 @@ nav ul li ul li a:hover {
   font-size: 1.3em;
 }
 .topic-holder .topic-text {
-  font-family: "Droid Serif", Palatino, Georgia, "Times New Roman", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #333333;
   font-size: 3em;
@@ -4616,7 +4616,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -4772,7 +4772,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -4808,7 +4808,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -4952,7 +4952,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -5108,7 +5108,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -5144,7 +5144,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -5271,7 +5271,7 @@ nav ul li ul li a:hover {
   .new-top-home .top-holder .hold-fnc .drop-topics .btn-topics-st {
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 120px;
     height: 32px;
     border-top-right-radius: 0;
@@ -5427,7 +5427,7 @@ nav ul li ul li a:hover {
     padding-right: 18px;
   }
   .new-top-home .top-holder .hold-fnc .social-link .join-us {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin-top: 10px;
     margin-right: 5px;
@@ -5464,7 +5464,7 @@ nav ul li ul li a:hover {
     display: table-cell;
     vertical-align: middle;
     padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
   }
   .new-top-home .top-holder .lang-btn .fa-m-global {
@@ -5524,7 +5524,7 @@ nav ul li ul li a:hover {
   position: absolute;
   margin-top: 210px;
   font-size: 90px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .home-video .home-mid-content .lets-live-lilely .text {
@@ -5555,7 +5555,7 @@ nav ul li ul li a:hover {
   right: 40px;
   bottom: -40px;
   list-style: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   z-index: 10;
 }
@@ -5583,7 +5583,7 @@ nav ul li ul li a:hover {
   font-size: 20px;
   border-radius: 50px;
   padding: 10px 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 220px;
 }
 .btn-home-st1:hover {
@@ -5598,7 +5598,7 @@ nav ul li ul li a:hover {
   border-radius: 50px;
   border: 3px solid #fff;
   padding: 10px 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 220px;
 }
 .btn-home-st2 i {
@@ -5682,7 +5682,7 @@ nav ul li ul li a:hover {
   background: #fff;
 }
 .home-content .welcome-home {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 .home-content .welcome-home .h-hi-1 {
@@ -5719,7 +5719,7 @@ nav ul li ul li a:hover {
   display: block;
   width: 1170px;
   margin-top: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .home-content .top-3-cat .row {
   width: 1194px;
@@ -5768,7 +5768,7 @@ nav ul li ul li a:hover {
   width: 1170px;
   background: #898989;
   height: 78px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 20px;
   margin-top: 40px;
 }
@@ -5787,17 +5787,17 @@ nav ul li ul li a:hover {
   margin: 0 auto;
 }
 .home-content .h-n-subscribe #email::-moz-placeholder {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 14px;
 }
 .home-content .h-n-subscribe #email::-webkit-input-placeholder {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 14px;
 }
 .home-content .h-n-subscribe #email::-ms-input-placeholder {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 14px;
 }
@@ -5831,7 +5831,7 @@ nav ul li ul li a:hover {
   width: 100%;
   background: #03afd9;
   color: #FFF;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .footer-holder-new footer {
   width: 1170px;
@@ -5880,7 +5880,7 @@ nav ul li ul li a:hover {
   color: #FFF;
 }
 .footer-holder-new footer .footer-contanter-2 .addr {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: right;
 }
 .footer-holder-new footer .footer-contanter-2 .addr h1 {
@@ -6100,7 +6100,7 @@ nav ul li ul li a:hover {
 }
 .sp-lang a span {
   vertical-align: middle;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /******************************************************************************/
 .advertise {
