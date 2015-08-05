@@ -7,7 +7,7 @@ $this->pageTitle = 'Quotes' . ' | ' . Yii::app()->name;
     <div id="newest-quote" class="row newest-quote">
         <?php foreach($model_story_2 as $row): ?>
         <div class="col-xs-12 col-md-6">
-            <div class="item quote-item">
+            <div class="item quote-item el2">
                 <?php $this->renderPartial('../_line/_l_quote', array('row' => $row)) ?>
             </div>
         </div>

@@ -5,107 +5,107 @@
             <url>html/css/style.less</url>
             <bookmark id="6">
                 <name/>
-                <line>210</line>
+                <line>206</line>
                 <key/>
             </bookmark>
             <bookmark id="1">
                 <name/>
-                <line>327</line>
+                <line>323</line>
                 <key/>
             </bookmark>
             <bookmark id="11">
                 <name/>
-                <line>542</line>
+                <line>549</line>
                 <key/>
             </bookmark>
             <bookmark id="22">
                 <name/>
-                <line>549</line>
+                <line>556</line>
                 <key/>
             </bookmark>
             <bookmark id="18">
                 <name/>
-                <line>603</line>
+                <line>610</line>
                 <key/>
             </bookmark>
             <bookmark id="12">
                 <name/>
-                <line>677</line>
+                <line>684</line>
                 <key/>
             </bookmark>
             <bookmark id="20">
                 <name/>
-                <line>1105</line>
+                <line>1112</line>
                 <key/>
             </bookmark>
             <bookmark id="16">
                 <name/>
-                <line>1230</line>
+                <line>1237</line>
                 <key/>
             </bookmark>
             <bookmark id="28">
                 <name/>
-                <line>1318</line>
+                <line>1325</line>
                 <key/>
             </bookmark>
             <bookmark id="10">
                 <name/>
-                <line>1378</line>
+                <line>1385</line>
                 <key/>
             </bookmark>
             <bookmark id="8">
                 <name/>
-                <line>2222</line>
+                <line>2229</line>
                 <key/>
             </bookmark>
             <bookmark id="9">
                 <name/>
-                <line>3016</line>
+                <line>3023</line>
                 <key/>
             </bookmark>
             <bookmark id="15">
                 <name/>
-                <line>3529</line>
+                <line>3536</line>
                 <key/>
             </bookmark>
             <bookmark id="35">
                 <name/>
-                <line>3583</line>
+                <line>3590</line>
                 <key/>
             </bookmark>
             <bookmark id="32">
                 <name/>
-                <line>3667</line>
+                <line>3674</line>
                 <key/>
             </bookmark>
             <bookmark id="33">
                 <name/>
-                <line>4049</line>
+                <line>4056</line>
                 <key/>
             </bookmark>
             <bookmark id="34">
                 <name/>
-                <line>4713</line>
+                <line>4720</line>
                 <key/>
             </bookmark>
             <bookmark id="29">
                 <name/>
-                <line>4713</line>
+                <line>4720</line>
                 <key/>
             </bookmark>
             <bookmark id="27">
                 <name/>
-                <line>4713</line>
+                <line>4720</line>
                 <key/>
             </bookmark>
             <bookmark id="23">
                 <name/>
-                <line>4713</line>
+                <line>4720</line>
                 <key/>
             </bookmark>
             <bookmark id="37">
                 <name/>
-                <line>5001</line>
+                <line>5008</line>
                 <key/>
             </bookmark>
         </file>
@@ -166,6 +166,10 @@
             <file>file:/var/www/html/lilely.localhost/protected/components/views/menu.php</file>
         </group>
         <group>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/quote/index.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_l_quote.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/_line/_story.php</file>
+            <file>file:/D:/xampp/htdocs/lilely-quote/themes/full-home/views/home/index-new.php</file>
             <file>file:/D:/xampp/htdocs/lilely-quote/html/css/style.less</file>
         </group>
     </open-files>
