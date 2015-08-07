@@ -546,6 +546,9 @@ blockquote:after {
   width: auto;
   font-weight: bold;
 }
+a.jp-play {
+  display: none;
+}
 .gallery > .row > div > .item .m-a-quote .gr-btn-func {
   display: inline-block;
   margin-left: 5px;

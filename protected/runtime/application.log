@@ -3256,3 +3256,21 @@ Stack trace:
 REQUEST_URI=/media/home/Sequence00.ogv
 HTTP_REFERER=http://lilely-quote.localhost/
 ---
+2015/08/07 01:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "media/home/Sequence00.ogv".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('media/home/Sequ...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/media/home/Sequence00.ogv
+HTTP_REFERER=http://lilely-quote.localhost/
+---
+2015/08/07 01:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "images/author/antoine-françois-prévost-(quote1)-5328444722.png".' in D:\xampp\htdocs\yii\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\web\CWebApplication.php(141): CWebApplication->runController('images/author/a...')
+#1 D:\xampp\htdocs\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\lilely-quote\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/author/antoine-fran%C3%A7ois-pr%C3%A9vost-(quote1)-5328444722.png
+HTTP_REFERER=http://lilely-quote.localhost/quote
+---
