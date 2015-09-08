@@ -38,13 +38,13 @@ foreach ($this->languages as $key => $value){
         ?>
         <?php if (isset($arr_tags)): ?>
             <div class="hold-hashtag-title topic-of-<?php echo $row->id ?>">
-                <span class="hashtag-title"><?php echo isset($arr_tags) ? (join($arr_tags, ' & ')) : '' ?></span>
+                <span class="hashtag-title parallelogram-1"><?php echo isset($arr_tags) ? (join($arr_tags, ' & ')) : '' ?></span>
             </div>
         <?php endif; ?>
         
         <?php if (isset($arr_trans_tags)): ?>
             <div class="hold-hashtag-title topic-trans-of-<?php echo $row->id ?> hide">
-                <span class="hashtag-title"><?php echo isset($arr_trans_tags) ? (join($arr_trans_tags, ' & ')) : '' ?></span>
+                <span class="hashtag-title parallelogram-1"><?php echo isset($arr_trans_tags) ? (join($arr_trans_tags, ' & ')) : '' ?></span>
             </div>
         <?php endif; ?>
         

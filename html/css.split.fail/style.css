@@ -5726,7 +5726,7 @@ https://css-tricks.com/examples/ShapesOfCSS/
   .top-3-cat {
     /*display: none !important;*/
     margin: 0 auto;
-    /*width: 320px !important;*/
+    width: 320px;
   }
   .top-3-cat .row .col-md-4 {
     margin-top: 5px;
@@ -5734,7 +5734,7 @@ https://css-tricks.com/examples/ShapesOfCSS/
   }
   .top-3-cat img.bi {
     border-top: 3px solid #00c96d;
-    width: auto !important;
+    width: auto;
   }
   .top-3-cat .hold-title .t2 {
     padding-left: 0 !important;
@@ -5757,9 +5757,10 @@ https://css-tricks.com/examples/ShapesOfCSS/
     margin-left: 25px !important;
   }
   .footer-holder-new {
-    display: none !important;
-    /*height: 184px;*/
-    /*margin-bottom: 150px !important;*/
+    /*display: none !important;*/
+    height: 184px;
+    /*        margin-bottom: 150px !important;*/
+    margin-bottom: 150px;
   }
   .footer-holder-new.f-vi {
     margin-top: 0 !important;
