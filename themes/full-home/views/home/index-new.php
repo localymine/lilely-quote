@@ -111,33 +111,6 @@ $banner = Slide::model()->load_banner()->findAll();
             </div>
         </div>
     </div>
-    
-    <div class="container top-3-cat sp-view">
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <div class="hold-title">
-                    <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/quote-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('quote') ?>"><?php echo Common::t('Quote to live by', 'translate', NULL, $lang) ?></a></div>
-                </div>
-                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseurl ?>/img/quote_06.jpg"/>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="hold-title">
-                    <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/book-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('book') ?>"><?php echo Common::t('Knowledge is power', 'translate', NULL, $lang) ?></a></div>
-                </div>
-                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseurl ?>/img/book_06.jpg"/>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="hold-title">
-                    <div class="t1"><img src="<?php echo Yii::app()->theme->baseurl ?>/img/music-w.png"/></div>
-                    <div class="t2"><a href="<?php echo Yii::app()->createUrl('music') ?>"><?php echo Common::t('Learn English with songs', 'translate', NULL, $lang) ?></a></div>
-                </div>
-                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseurl ?>/img/music_06.jpg"/>
-            </div>
-        </div>
-    </div>
-
     <!--
     <div class="container h-n-subscribe">
         <?php

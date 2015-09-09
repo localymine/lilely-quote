@@ -1,5 +1,81 @@
+@media only screen and (max-width: 690px) {
+    blockquote {
+        font-size: 16px;
+        padding: 0px 30px;
+    }
+    blockquote:before, blockquote:after {
+        font-size: 30px;
+    }
+}
+/*----------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 699px){
+    .el2{
+        .quote-video-holder{
+            top: 28% !important;
+        }
+    }
+    .quote-video-holder{
+        top: 24% !important;
+    }
+}
+/* sp */
+@media screen and (max-width: 700px){
+    .el2{
+        .quote-video-holder{
+            top: 13% !important;
+        }
+    }
+    .quote-video-holder{
+        left: 42% !important;
+        top: 13% !important;
+    }
+}
+/*----------------------------------------------------------------------------*/
+@media (max-width: 700px) {
+    #video_player video, #video_player figcaption {
+        display: table-row;
+    }
+    #video_container {
+        padding-top: 56.25%;
+    }
+    #video_player figcaption a {
+        display: inline-block;
+        width: 33.33%;
+
+    }
+}
+/**/
+@media (max-width: 767px) {
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        margin: 0;
+    }
+}
 /*------------------------------------------------------------------- work 768*/
 @media (min-width: 768px) {
+    #wrapper {
+        padding-left: @width-sidebar;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: @width-sidebar;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding-top: 0;
+        padding: 10px;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        margin-right: 0;
+        position: relative;
+    }
     .newest-quote .item .m-a-quote{
         margin-top: -175px !important;
     }
@@ -341,5 +417,44 @@
     }
     .menu-bt{
         display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    /*    .new-top-home{
+            width: auto !important;
+            .nav-header{
+                .logo-padding{
+                    padding-left: 19px !important;
+                    img.sm{
+                        width: 59px !important;
+                    }
+                }
+            }
+        }*/
+    .navbar-brand{
+        .logo{
+            margin-left: 10px !important;
+            margin-top: 3px !important;
+        }
+        .main-menu{
+            margin-left: -8px !important;
+            margin-top: 10px !important;
+        }
+    }
+    .quote-item{
+        height: 363px !important;
+    }
+    .music-item{
+        height: 250px !important;
+    }
+    .yt-rel-holder{
+        margin-top: -30 !important;
+        padding-bottom: 28px !important;
+        padding-top: 29px !important;
+        a{
+            .title{
+                font-size: 8px;
+            }
+        }
     }
 }
